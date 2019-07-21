@@ -432,7 +432,33 @@
           <a href="http://isa.uin-malang.ac.id/reminder/Login"
             class="project-card__link">www.kemahasiswaan.uin-malang.ac.id</a>
         </div>
+        </div>
+        <div class="row project-card" data-toggle="modal" data-target="#portfolioModal4" data-portfolio-tag="mobile apps">
+        <div class="col-md-6 col-lg-5 project-card__img">
+          <img class="" src="assets/img/img_project_8_mono.png" alt="project-img">
+        </div>
+        <div class="col-md-6 col-lg-7 project-card__info">
+          <h3 class="project-card__title">Popular Movies Udacity Accociate Android Nanodegree</h3>
+          <p class="project-card__description">
+              This is my version of Udacity's Popular Movie project. In this project implementing The Movie DB API of popular movies, top rated movies, movie's trailers and reviews. It also has endless scroll on movies list. It is also implementing Model View Presenter (MVP) architecture. I build this as part of Udacity Associate Android Developer Fast Track program i've enrolled.
+          </p>
+          <p class="project-card__stack">Used stack:</p>
+          <ul class="tags">
+            <li>Android Model View Presenter / MVP Architecture</li>
+            <li>Content Provider</li>
+            <li>Android Room Persistence</li>
+            <li>Butter Knife</li>
+            <li>RxJava</li>
+            <li>RxAndroid</li>
+            <li>Glide</li>
+            <li>GlidePalette</li>
+            <li>Card View</li>
+            <li>Recycle View</li>
+          </ul>
+          <a href="https://github.com/amed12/PopularMovies2" class="project-card__link">www.github.com</a>
+        </div>
       </div>
+      
     </div>
   </section>
   <!--Portfolio-->
@@ -702,6 +728,80 @@
               <li>MySql</li>
               <li>JQuery Ajax</li>
               <li>BootstrapCSSFramework</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade portfolio-modal" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body col-md-11 col-lg-9 ml-auto mr-auto">
+          <p class="portfolio-modal__title">Popular Movies App Udacity Associate Android Nanodegree Program</p>
+          <img class="portfolio-modal__img" src="assets/img/img_project_8_mono.png" alt="modal_img">
+          <p class="portfolio-modal__description">
+            PROJECT SPECIFICATION<br>
+            User Interface<br> 
+            <ul>
+            <li>- Layout</li>
+<li>-UI contains an element (e.g., a spinner or settings menu) to toggle the sort order of the movies by: most popular, highest rated.</li>
+
+<li>-Movies are displayed in the main layout via a grid of their corresponding movie poster thumbnails.</li>
+
+<li>-UI contains a screen for displaying the details for a selected movie.</li>
+
+<li>-Movie Details layout contains title, release date, movie poster, vote average, and plot synopsis.</li>
+
+<li>-Movie Details layout contains a section for displaying trailer videos and user reviews.</li>
+</ul>
+User Interface - Function
+<ul>
+<li>-When a user changes the sort criteria (most popular, highest rated, and favorites) the main view gets updated correctly.</li>
+
+<li>-When a movie poster thumbnail is selected, the movie details screen is launched.</li>
+
+<li>-When a trailer is selected, app uses an Intent to launch the trailer.</li>
+
+<li>-In the movies detail screen, a user can tap a button(for example, a star) to mark it as a Favorite.</li>
+</ul>
+Network API Implementation
+<ul>
+<li>-In a background thread, app queries the /movie/popular or /movie/top_rated API for the sort criteria specified in the settings menu.</li>
+
+<li>-App requests for related videos for a selected movie via the /movie/{id}/videos endpoint in a background thread and displays those details when the user selects a movie.</li>
+
+<li>-App requests for user reviews for a selected movie via the /movie/{id}/reviews endpoint in a background thread and displays those details when the user selects a movie.</li>
+</ul>
+Data Persistence
+<ul>
+<li>-The titles and ids of the user's favorite movies are stored in a ContentProvider backed by a SQLite database. This ContentProvider is updated whenever the user favorites or unfavorites a movie.</li>
+
+<li>-When the "favorites" setting option is selected, the main view displays the entire favorites collection based on movie ids stored in the ContentProvider.</li>
+</ul>
+###General Project Guidelines -App conforms to common standards found in the Android Nanodegree General Project Guidelines.
+          </p>
+          <div class="portfolio-modal__link">
+          <a href="https://github.com/amed12/PopularMovies2" class="project-card__link">www.github.com</a>
+          </div>
+          <div class="portfolio-modal__stack">
+            <p class="portfolio-modal__stack-title">Using stack:</p>
+            <ul class="tags">
+            <li>Android Model View Presenter / MVP Architecture</li>
+            <li>Content Provider</li>
+            <li>Android Room Persistence</li>
+            <li>Butter Knife</li>
+            <li>RxJava</li>
+            <li>RxAndroid</li>
+            <li>Glide</li>
+            <li>GlidePalette</li>
+            <li>Card View</li>
+            <li>Recycle View</li>
             </ul>
           </div>
         </div>
