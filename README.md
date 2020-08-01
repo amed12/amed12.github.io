@@ -26,11 +26,9 @@
 
 ## &#x1f4c8; GitHub Stats
 
+
 <a href="https://github.com/amed12/amed12">
-  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=amed12&hide=java,html&title_color=ffffff&text_color=c9cacc&icon_color=2bbc8a&bg_color=1d1f21" />
-</a>
-<a href="https://github.com/amed12/amed12">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=amed12&show_icons=true&line_height=27&count_private=true&title_color=ffffff&text_color=c9cacc&icon_color=2bbc8a&bg_color=1d1f21" alt="Martin's GitHub Stats" />
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=amed12&show_icons=true&line_height=27&count_private=true&title_color=ffffff&text_color=c9cacc&icon_color=2bbc8a&bg_color=1d1f21" alt="Achmad's GitHub Stats" />
 </a>
 
   ## 👨🏻‍💻 Languages and Tools <br />
