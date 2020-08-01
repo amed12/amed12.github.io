@@ -14,13 +14,11 @@
   
 - 🤔 I’m looking for help with **Data Structure for tech interview purpose**  
   
-- 👨‍💻 All of my projects are available at [http://amed12.github.io/](http://amed12.github.io/)  
-  
-- 📝 I regulary write articles on [http://sun3toline.blogspot.com/](http://sun3toline.blogspot.com/)  
+- 👨‍💻 All of my projects are available at [http://amed12.github.io/](http://amed12.github.io/)
   
 - 💬 Ask me about **Android Development**  
   
-- 📫 How to reach me **http://about.me/achmadfathullah**  
+- 📫 How to reach me [about.me/achmadfathullah](http://about.me/achmadfathullah)
   
 - ⚡ Fun fact **I'm always watch Anime after working hours**
 
