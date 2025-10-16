@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { Settings } from 'lucide-react';
 import PortfolioPage from './pages/PortfolioPage';
+import CVPage from './pages/CVPage';
 import AdminPanel from './components/Admin/AdminPanel';
 import { getData } from './utils/dataManager';
 
@@ -51,6 +52,7 @@ function App() {
         {/* Main Content */}
         <Routes>
           <Route path="/" element={<PortfolioPage data={data} />} />
+          <Route path="/cv" element={<CVPage data={data} />} />
           <Route path="/admin" element={<PortfolioPage data={data} />} />
         </Routes>
 

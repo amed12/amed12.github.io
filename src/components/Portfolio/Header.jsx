@@ -1,4 +1,5 @@
-import { Github, Linkedin, Facebook, Mail, Phone, MapPin, Download } from 'lucide-react';
+import { Github, Linkedin, Facebook, Mail, Phone, MapPin, Download, FileText } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header = ({ profile }) => {
   if (!profile) return null;
@@ -78,18 +79,27 @@ const Header = ({ profile }) => {
               )}
             </div>
 
-            {/* CV Download */}
-            {profile.cvLink && (
-              <a
-                href={profile.cvLink}
-                target="_blank"
-                rel="noopener noreferrer"
+            {/* CV Buttons */}
+            <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+              <Link
+                to="/cv"
                 className="inline-flex items-center gap-2 bg-white text-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
               >
-                <Download className="w-5 h-5" />
-                Download CV
-              </a>
-            )}
+                <FileText className="w-5 h-5" />
+                View ATS CV
+              </Link>
+              {profile.cvLink && (
+                <a
+                  href={profile.cvLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-primary-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-800 transition-colors"
+                >
+                  <Download className="w-5 h-5" />
+                  Download Original CV
+                </a>
+              )}
+            </div>
           </div>
         </div>
       </div>
