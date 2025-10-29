@@ -133,8 +133,8 @@ Testing
 This project is configured to deploy to GitHub Pages automatically.
 
 ### Automatic Deployment
-- Push to `main` branch triggers automatic deployment via GitHub Actions
-- The site will be available at: `https://amed12.github.io/amed12.github.io/`
+- Push to `master` branch triggers automatic deployment via GitHub Actions
+- The site will be available at: `https://amed12.github.io/`
 
 ### Manual Deployment
 ```bash
@@ -158,9 +158,10 @@ npm run preview
 ```
 
 ### Deployment Configuration
-- **Base Path**: `/amed12.github.io/` (configured in `vite.config.js`)
+- **Base Path**: `/` (root domain - configured in `vite.config.js`)
 - **Build Output**: `dist/` directory
-- **GitHub Actions**: Automatic deployment on push to main branch
+- **GitHub Actions**: Automatic deployment on push to master branch
 - **Dependencies**: Uses `gh-pages` for manual deployment
+- **Live URL**: https://amed12.github.io/
 
 </details>
