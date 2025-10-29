@@ -1,9 +1,9 @@
 {
   "profile": {
     "name": "Achmad Fathullah",
-    "title": "Mobile Engineer | Apple Developer Academy Graduate Cohort 4 | Problem Solver with 5+ Years Performance & User Experience",
+    "title": "Apple Developer Academy Graduate Cohort 4 | Mobile Engineer | Problem Solver | Enhancing Mobile Performance & User Experience @Qiscus",
     "age": 29,
-    "phone": "+62 815-7305-4909",
+    "phone": "081573054909",
     "email": "fathullahachmad1996@gmail.com",
     "address": "Malang, East Java, Indonesia",
     "bio": "As a mobile developer with a passion for creating intuitive and engaging apps, I bring a wealth of experience to the table. With expertise in both native apps for iOS and Android, as well as cross-platform development using Flutter and React Native, I've honed my skills to deliver seamless user experiences across a variety of devices and platforms. I take pride in my ability to stay on top of the latest trends and technologies in the mobile space, and am always looking for new ways to push the boundaries of what's possible. Whether I'm working on a new project or collaborating with a team, I approach every task with a thoughtful and detail-oriented mindset, striving to deliver the best possible results for my clients and users alike.",
@@ -11,9 +11,9 @@
     "cvLink": "https://1drv.ms/b/s!AtI7s8jKZxi3gdIwCTV0Uz-xGil3FA?e=cxQieY",
     "social": {
       "github": "https://github.com/amed12",
-      "linkedin": "https://www.linkedin.com/in/fathullahachmad/",
+      "linkedin": "http://www.linkedin.com/in/fathullahachmad",
       "facebook": "https://www.facebook.com/AchmadFathullah1996",
-      "blog": "https://lambat-bobcat-5b5.notion.site/Achmad-Mobile-Dev-Notes-44f7c21dafd41sca37650750"
+      "blog": "https://jumbled-bobcat-5b5.notion.site/Achmad-Mobile-Dev-Notes-34f472e81dda415ca37650750"
     },
     "website": "www.linkedin.com/in/fathullahachmad/"
   },
@@ -45,46 +45,105 @@
       "location": "Yogyakarta, Indonesia",
       "startDate": "January 2023",
       "endDate": "Present",
-      "duration": "5 years 1 month",
-      "description": "Mobile Application Support & Maintenance – Debug, troubleshoot, and resolve technical issues in Qiscus' mobile applications (Android & iOS).\n\nPerformance Optimization – Monitor app performance and implement optimizations to ensure a seamless user experience.\n\nIncident Management – Work closely with the support team to investigate and resolve customer-reported issues in a timely manner.\n\nCollaboration with Backend & Product Teams – Communicate effectively with cross-functional teams to improve app stability and resolve bugs."
+      "duration": "2 years 10 months",
+      "description": "Mobile Application Support & Maintenance - Debug, troubleshoot, and resolve technical issues in Qiscus' mobile applications (Android & iOS).\n\nPerformance Optimization - Monitor app performance and implement optimizations to ensure a seamless user experience.\n\nIncident Management - Work closely with the support team to investigate and resolve customer-reported issues in a timely manner.\n\nCollaboration with Backend & Product Teams - Communicate effectively with cross-functional teams to improve app stability and resolve bugs.\n\nAutomation & Monitoring - Develop scripts, tools, or processes to automate monitoring and improve efficiency in handling incidents.\n\nDocumentation & Knowledge Sharing - Maintain technical documentation and contribute to best practices for mobile app support."
     },
     {
       "id": "exp2",
-      "title": "Software Engineer",
-      "company": "Bank Mandiri Taspen",
-      "location": "Jakarta",
-      "startDate": "March 2019",
-      "endDate": "August 2019",
-      "description": "1. Building and maintaining API for mobile banking Apps Bank Mandiri Taspen\n2. Building and maintaining Backoffice web for Mobile Banking Apps\n3. Building and maintaining mobile banking Apps Bank Mandiri Taspen\n4. Develop new Feature Deposito according to existing business needs and collaborate with other engineers"
+      "title": "Android Developer",
+      "company": "Qiscus - Customer Engagement Platform",
+      "location": "Indonesia",
+      "startDate": "October 2020",
+      "endDate": "December 2022",
+      "duration": "2 years 3 months",
+      "description": "Collaborate in a team to define, design, and develop any features for improving customer experience (CX).\n\nCreate a great design and build advanced mobile applications for the Android platform.\n\nWork with external data sources and APIs.\n\nContribute to unit-test code processes for robustness, including edge cases, usability, and general reliability.\n\nActively carry out bug fixing and improving applications for better performance.\n\nContinuously seeking insights, discover, evaluate, and implement new technologies to maximize the optimization of mobile development."
     },
     {
       "id": "exp3",
-      "title": "Freelance Software Developer",
-      "company": "Self-employed",
-      "location": "Malang",
-      "startDate": "June 2017",
-      "endDate": "February 2019",
-      "description": "Completed several system projects including scholarship information systems and reminder information systems for UIN Malang"
+      "title": "iOS Developer",
+      "company": "Apple Developer Academy @ BINUS",
+      "location": "Indonesia",
+      "startDate": "February 2021",
+      "endDate": "December 2021",
+      "duration": "11 months",
+      "description": "In Apple Developer Academy, I learn so many things about Software Development Process, including CBL (Challenge Based Learning), SCRUM, iOS Apps Development using Swift, and many more."
     },
     {
       "id": "exp4",
-      "title": "Laboratory Assistant Android Class",
-      "company": "UIN Maliki Malang",
-      "location": "Malang",
+      "title": "Android Developer",
+      "company": "Vascomm",
+      "location": "Malang Area, East Java, Indonesia",
+      "startDate": "January 2020",
+      "endDate": "September 2020",
+      "duration": "9 months",
+      "description": "Bug Fixing on mobile apps.\n\nBuilding and maintaining mobile apps.\n\nInterconnect with the server.\n\nComplete the work in accordance with the deadline."
+    },
+    {
+      "id": "exp5",
+      "title": "Contract Software Engineer",
+      "company": "Bank Mandiri Taspen",
+      "location": "Greater Jakarta Area, Indonesia",
+      "startDate": "March 2019",
+      "endDate": "August 2019",
+      "duration": "6 months",
+      "description": "Building and maintaining web (Rest API, Backoffice) using Laravel Lumen and Zend Framework.\n\nBuilding and maintaining mobile application using Android Native development (Java).\n\nBuilding and maintaining database using MySQL and PostgreSQL.\n\nProvides solution architect from business requirements.\n\nDemonstrated technical documentation capability.\n\nUphold high quality standard delivery (and mobile compliance)."
+    },
+    {
+      "id": "exp6",
+      "title": "Full-stack Software Developer",
+      "company": "Freelance :: Self Employed",
+      "location": "Malang Area, East Java, Indonesia",
+      "startDate": "March 2017",
+      "endDate": "August 2020",
+      "duration": "3 years 6 months",
+      "description": "Has finished on several system projects, namely scholarship information systems and reminder information systems (management system for foreign students who will continue their studies at the university or who will take time off, manage their personal data then give warnings / reminders to e-mails of foreign students when there is important information that must be immediately followed up).\n\nProjects:\n1. Scholarship information systems (http://kemahasiswaan.uin-malang.ac.id/beasiswa)\n2. Reminder Information systems (http://isa.uin-malang.ac.id/reminder/)\n3. PDAM Giri Tirta Gresik Apps"
+    },
+    {
+      "id": "exp7",
+      "title": "Laboratory Assistant Mobile Development Class",
+      "company": "Universitas Islam Negeri Maulana Malik Ibrahim",
+      "location": "Malang Area, East Java, Indonesia",
       "startDate": "August 2016",
       "endDate": "January 2018",
-      "description": "Mentoring student Informatics Engineering for class android development practicum"
+      "duration": "1 year 6 months",
+      "description": "Mentoring student informatic engineering for Mobile Development Practicum class."
+    },
+    {
+      "id": "exp8",
+      "title": "Internship Student",
+      "company": "PT.PLN (Persero)",
+      "location": "Surabaya Area, East Java, Indonesia",
+      "startDate": "January 2017",
+      "endDate": "February 2017",
+      "duration": "2 months",
+      "description": "Create an information system work order with a SQL Server database and CodeIgniter as a WEB Backend."
     }
   ],
   "education": [
     {
       "id": "edu1",
-      "degree": "Bachelor of Informatics Engineering",
-      "school": "State Islamic University Maulana Malik Ibrahim Malang",
+      "degree": "Bachelor's Degree, Jurusan Teknik Informatika",
+      "school": "Universitas Islam Negeri Maulana Malik Ibrahim",
       "startDate": "2014",
-      "endDate": "2019",
+      "endDate": "2018",
       "gpa": "3.64/4.00",
-      "description": "Faculty of Science and Technology"
+      "description": "Fakultas Sains dan Teknologi"
+    },
+    {
+      "id": "edu2",
+      "degree": "Indonesia Android Fast Track Scholarship Program",
+      "school": "Udacity",
+      "startDate": "2017",
+      "endDate": "2017",
+      "description": "Information Technology"
+    },
+    {
+      "id": "edu3",
+      "degree": "Apple Developer Academy",
+      "school": "Apple Developer Academy | Indonesia",
+      "startDate": "February 2021",
+      "endDate": "December 2021",
+      "description": "Information Technology"
     }
   ],
   "certifications": [
