@@ -126,4 +126,41 @@ Testing
 ## What I want to learn or improve in the future
 - UI/UX design
 
+---
+
+## 🚀 Deployment
+
+This project is configured to deploy to GitHub Pages automatically.
+
+### Automatic Deployment
+- Push to `main` branch triggers automatic deployment via GitHub Actions
+- The site will be available at: `https://amed12.github.io/amed12.github.io/`
+
+### Manual Deployment
+```bash
+# Install dependencies
+npm install
+
+# Deploy manually
+npm run deploy
+```
+
+### Local Development
+```bash
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+### Deployment Configuration
+- **Base Path**: `/amed12.github.io/` (configured in `vite.config.js`)
+- **Build Output**: `dist/` directory
+- **GitHub Actions**: Automatic deployment on push to main branch
+- **Dependencies**: Uses `gh-pages` for manual deployment
+
 </details>
