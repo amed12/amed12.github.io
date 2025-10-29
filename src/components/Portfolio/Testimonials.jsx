@@ -7,8 +7,8 @@ const Testimonials = ({ testimonials }) => {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-12 text-center">Testimonials</h2>
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-          {testimonials.slice(0, 2).map((testimonial) => (
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+          {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="card hover:shadow-lg transition-shadow relative">
               <Quote className="w-10 h-10 text-primary-200 absolute top-4 right-4" />
               <div className="relative z-10">
