@@ -4,7 +4,7 @@ import { forwardRef } from 'react';
 const CVTemplate = forwardRef(({ data }, ref) => {
   if (!data) return null;
 
-  const { profile, skills, experience, projects, education, certifications } = data;
+  const { profile, skills, languages, experience, projects, education, certifications, honors } = data;
 
   // Group skills by category
   const groupedSkills = {
@@ -209,6 +209,38 @@ const CVTemplate = forwardRef(({ data }, ref) => {
               <div key={cert.id} className="text-sm" style={{ fontSize: '10pt' }}>
                 <span className="font-semibold">{cert.title}</span> | {cert.issuer} | {cert.date}
               </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Honors & Awards */}
+      {honors && honors.length > 0 && (
+        <div className="mb-6">
+          <h2 className="text-base font-bold mb-2 border-b border-gray-600" style={{ fontSize: '12pt' }}>
+            HONORS & AWARDS
+          </h2>
+          <div className="space-y-1">
+            {honors.map((honor) => (
+              <div key={honor.id} className="text-sm" style={{ fontSize: '10pt' }}>
+                <span className="font-semibold">{honor.title}</span> | {honor.issuer} | {honor.date}
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Languages */}
+      {languages && languages.length > 0 && (
+        <div className="mb-6">
+          <h2 className="text-base font-bold mb-2 border-b border-gray-600" style={{ fontSize: '12pt' }}>
+            LANGUAGES
+          </h2>
+          <div className="text-sm" style={{ fontSize: '10pt' }}>
+            {languages.map((lang, idx) => (
+              <span key={idx}>
+                {lang.name} ({lang.level}){idx < languages.length - 1 ? ' | ' : ''}
+              </span>
             ))}
           </div>
         </div>

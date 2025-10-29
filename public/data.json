@@ -1,44 +1,52 @@
 {
   "profile": {
     "name": "Achmad Fathullah",
-    "title": "Software Engineer, Android Developer",
-    "age": 28,
+    "title": "Mobile Engineer | Apple Developer Academy Graduate Cohort 4 | Problem Solver with 5+ Years Performance & User Experience",
+    "age": 29,
     "phone": "+62 815-7305-4909",
     "email": "fathullahachmad1996@gmail.com",
-    "address": "Zaenal Zakse No.46 Street RT.004 RW.001 Kel. Jodipan, Kec. Blimbing Malang, Jawa Timur, 65137",
-    "bio": "I'm Achmad that's born in June 09, 1996. A software engineer who has high enthusiasm with new technology especially on Mobile Application Development. Skilled in Java/Kotlin Android Development. Spirit of self improvisation is high, puts forward analytical thinking and Strong engineering professional graduated from UIN Maliki Malang.",
+    "address": "Malang, East Java, Indonesia",
+    "bio": "As a mobile developer with a passion for creating intuitive and engaging apps, I bring a wealth of experience to the table. With expertise in both native apps for iOS and Android, as well as cross-platform development using Flutter and React Native, I've honed my skills to deliver seamless user experiences across a variety of devices and platforms. I take pride in my ability to stay on top of the latest trends and technologies in the mobile space, and am always looking for new ways to push the boundaries of what's possible. Whether I'm working on a new project or collaborating with a team, I approach every task with a thoughtful and detail-oriented mindset, striving to deliver the best possible results for my clients and users alike.",
     "avatar": "/avatar.jpg",
     "cvLink": "https://1drv.ms/b/s!AtI7s8jKZxi3gdIwCTV0Uz-xGil3FA?e=cxQieY",
     "social": {
       "github": "https://github.com/amed12",
       "linkedin": "https://www.linkedin.com/in/fathullahachmad/",
-      "facebook": "https://www.facebook.com/AchmadFathullah1996"
-    }
+      "facebook": "https://www.facebook.com/AchmadFathullah1996",
+      "blog": "https://lambat-bobcat-5b5.notion.site/Achmad-Mobile-Dev-Notes-44f7c21dafd41sca37650750"
+    },
+    "website": "www.linkedin.com/in/fathullahachmad/"
   },
   "skills": [
-    { "name": "Android Development", "level": 95 },
-    { "name": "Kotlin", "level": 95 },
-    { "name": "Git", "level": 95 },
-    { "name": "Java", "level": 90 },
-    { "name": "JavaScript", "level": 90 },
-    { "name": "PHP", "level": 90 },
-    { "name": "HTML5", "level": 90 },
-    { "name": "PHP Frameworks (Laravel, CodeIgniter, Zend)", "level": 85 },
-    { "name": "Bootstrap", "level": 80 },
-    { "name": "jQuery", "level": 75 },
-    { "name": "CSS3", "level": 70 },
-    { "name": "Flutter", "level": 65 },
-    { "name": "Dart", "level": 65 }
+    { "name": "SwiftUI", "level": 95 },
+    { "name": "Flutter", "level": 95 },
+    { "name": "Dart", "level": 95 },
+    { "name": "iOS Development", "level": 90 },
+    { "name": "Android Development", "level": 90 },
+    { "name": "Kotlin", "level": 90 },
+    { "name": "React Native", "level": 85 },
+    { "name": "Git", "level": 90 },
+    { "name": "Java", "level": 85 },
+    { "name": "JavaScript", "level": 80 },
+    { "name": "Firebase", "level": 85 },
+    { "name": "RESTful APIs", "level": 90 },
+    { "name": "UI/UX Design", "level": 80 }
+  ],
+  "languages": [
+    { "name": "Arabic", "level": "Elementary" },
+    { "name": "English", "level": "Native or Bilingual" },
+    { "name": "Indonesian", "level": "Professional Working" }
   ],
   "experience": [
     {
       "id": "exp1",
-      "title": "Android Developer",
-      "company": "PT. Vascomm Solusi Teknologi",
-      "location": "Malang",
-      "startDate": "January 2020",
+      "title": "Mobile Engineer (iOS, Android, Flutter and RN)",
+      "company": "Qiscus - Customer Engagement Platform",
+      "location": "Yogyakarta, Indonesia",
+      "startDate": "January 2023",
       "endDate": "Present",
-      "description": "Bug Fixing on Mobile Apps, Building and maintaining mobile apps, Interconnect with server, and complete the work in accordance with the deadline"
+      "duration": "5 years 1 month",
+      "description": "Mobile Application Support & Maintenance – Debug, troubleshoot, and resolve technical issues in Qiscus' mobile applications (Android & iOS).\n\nPerformance Optimization – Monitor app performance and implement optimizations to ensure a seamless user experience.\n\nIncident Management – Work closely with the support team to investigate and resolve customer-reported issues in a timely manner.\n\nCollaboration with Backend & Product Teams – Communicate effectively with cross-functional teams to improve app stability and resolve bugs."
     },
     {
       "id": "exp2",
@@ -82,24 +90,45 @@
   "certifications": [
     {
       "id": "cert1",
+      "title": "Certificate of completion Indonesia Android Kejar Intermediate Class",
+      "issuer": "Google Developers",
+      "date": "Issued",
+      "link": ""
+    },
+    {
+      "id": "cert2",
       "title": "Belajar Android Jetpack Pro",
       "issuer": "Dicoding Academy",
       "date": "28 Jan 2020 - 28 Jan 2023",
       "link": "https://www.dicoding.com/certificates/G4EXGMQ2EXRL"
     },
     {
-      "id": "cert2",
+      "id": "cert3",
       "title": "Belajar Fundamental Aplikasi Android",
       "issuer": "Dicoding Academy",
       "date": "27 Nov 2019 - 27 Nov 2022",
       "link": "https://www.dicoding.com/certificates/G1OP8QWEVXQK"
     },
     {
-      "id": "cert3",
+      "id": "cert4",
       "title": "Associate Android Developer",
       "issuer": "Google Developers",
       "date": "Aug 2017 - Dec 2020",
       "link": "https://www.credential.net/ove5czfg"
+    }
+  ],
+  "honors": [
+    {
+      "id": "honor1",
+      "title": "Juara 3 Inotek 2016 Malang",
+      "issuer": "UIN Maliki Malang",
+      "date": "2016"
+    },
+    {
+      "id": "honor2",
+      "title": "Juara 1 ICT UIN MALIKI 2016",
+      "issuer": "UIN Maliki Malang",
+      "date": "2016"
     }
   ],
   "projects": [
