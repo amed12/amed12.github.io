@@ -19,6 +19,9 @@ const Testimonials = ({ testimonials }) => {
                   {testimonial.project && (
                     <p className="text-sm text-gray-500 mt-1">Project: {testimonial.project}</p>
                   )}
+                  {testimonial.date && (
+                    <p className="text-sm text-gray-400 mt-1">{testimonial.date}</p>
+                  )}
                 </div>
               </div>
             </div>
