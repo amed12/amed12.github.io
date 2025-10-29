@@ -1,0 +1,275 @@
+{
+  "profile": {
+    "name": "Achmad Fathullah",
+    "title": "Software Engineer, Android Developer",
+    "age": 28,
+    "phone": "+62 815-7305-4909",
+    "email": "fathullahachmad1996@gmail.com",
+    "address": "Zaenal Zakse No.46 Street RT.004 RW.001 Kel. Jodipan, Kec. Blimbing Malang, Jawa Timur, 65137",
+    "bio": "I'm Achmad that's born in June 09, 1996. A software engineer who has high enthusiasm with new technology especially on Mobile Application Development. Skilled in Java/Kotlin Android Development. Spirit of self improvisation is high, puts forward analytical thinking and Strong engineering professional graduated from UIN Maliki Malang.",
+    "avatar": "/avatar.jpg",
+    "cvLink": "https://1drv.ms/b/s!AtI7s8jKZxi3gdIwCTV0Uz-xGil3FA?e=cxQieY",
+    "social": {
+      "github": "https://github.com/amed12",
+      "linkedin": "https://www.linkedin.com/in/fathullahachmad/",
+      "facebook": "https://www.facebook.com/AchmadFathullah1996"
+    }
+  },
+  "skills": [
+    { "name": "Android Development", "level": 95 },
+    { "name": "Kotlin", "level": 95 },
+    { "name": "Git", "level": 95 },
+    { "name": "Java", "level": 90 },
+    { "name": "JavaScript", "level": 90 },
+    { "name": "PHP", "level": 90 },
+    { "name": "HTML5", "level": 90 },
+    { "name": "PHP Frameworks (Laravel, CodeIgniter, Zend)", "level": 85 },
+    { "name": "Bootstrap", "level": 80 },
+    { "name": "jQuery", "level": 75 },
+    { "name": "CSS3", "level": 70 },
+    { "name": "Flutter", "level": 65 },
+    { "name": "Dart", "level": 65 }
+  ],
+  "experience": [
+    {
+      "id": "exp1",
+      "title": "Android Developer",
+      "company": "PT. Vascomm Solusi Teknologi",
+      "location": "Malang",
+      "startDate": "January 2020",
+      "endDate": "Present",
+      "description": "Bug Fixing on Mobile Apps, Building and maintaining mobile apps, Interconnect with server, and complete the work in accordance with the deadline"
+    },
+    {
+      "id": "exp2",
+      "title": "Software Engineer",
+      "company": "Bank Mandiri Taspen",
+      "location": "Jakarta",
+      "startDate": "March 2019",
+      "endDate": "August 2019",
+      "description": "1. Building and maintaining API for mobile banking Apps Bank Mandiri Taspen\n2. Building and maintaining Backoffice web for Mobile Banking Apps\n3. Building and maintaining mobile banking Apps Bank Mandiri Taspen\n4. Develop new Feature Deposito according to existing business needs and collaborate with other engineers"
+    },
+    {
+      "id": "exp3",
+      "title": "Freelance Software Developer",
+      "company": "Self-employed",
+      "location": "Malang",
+      "startDate": "June 2017",
+      "endDate": "February 2019",
+      "description": "Completed several system projects including scholarship information systems and reminder information systems for UIN Malang"
+    },
+    {
+      "id": "exp4",
+      "title": "Laboratory Assistant Android Class",
+      "company": "UIN Maliki Malang",
+      "location": "Malang",
+      "startDate": "August 2016",
+      "endDate": "January 2018",
+      "description": "Mentoring student Informatics Engineering for class android development practicum"
+    }
+  ],
+  "education": [
+    {
+      "id": "edu1",
+      "degree": "Bachelor of Informatics Engineering",
+      "school": "State Islamic University Maulana Malik Ibrahim Malang",
+      "startDate": "2014",
+      "endDate": "2019",
+      "gpa": "3.64/4.00",
+      "description": "Faculty of Science and Technology"
+    }
+  ],
+  "certifications": [
+    {
+      "id": "cert1",
+      "title": "Belajar Android Jetpack Pro",
+      "issuer": "Dicoding Academy",
+      "date": "28 Jan 2020 - 28 Jan 2023",
+      "link": "https://www.dicoding.com/certificates/G4EXGMQ2EXRL"
+    },
+    {
+      "id": "cert2",
+      "title": "Belajar Fundamental Aplikasi Android",
+      "issuer": "Dicoding Academy",
+      "date": "27 Nov 2019 - 27 Nov 2022",
+      "link": "https://www.dicoding.com/certificates/G1OP8QWEVXQK"
+    },
+    {
+      "id": "cert3",
+      "title": "Associate Android Developer",
+      "issuer": "Google Developers",
+      "date": "Aug 2017 - Dec 2020",
+      "link": "https://www.credential.net/ove5czfg"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj1",
+      "title": "Mobile Banking Mandiri Taspen",
+      "category": "mobile",
+      "description": "Focus on development new feature 'DEPOSITO'",
+      "image": "/projects/mandiri-taspen.png",
+      "link": "https://www.bankmantap.co.id/home/tnc",
+      "technologies": [
+        "Android MVP Architecture",
+        "Content Provider",
+        "Android Room Persistence",
+        "Butter Knife",
+        "RxJava",
+        "RxAndroid",
+        "Glide",
+        "Card View",
+        "Recycle View"
+      ]
+    },
+    {
+      "id": "proj2",
+      "title": "Sitamoto Mobile Apps",
+      "category": "mobile",
+      "description": "Kelola perangkat IoT kamu cukup dengan sentuhan tombol atau menggunakan suara, kami memberikan pendekatan yang mudah dan praktis namun detail untuk kebutuhan pemakaian perangkat IoT sehari-hari",
+      "image": "/projects/sitamoto.png",
+      "link": "https://sitamoto.id/id",
+      "technologies": [
+        "MVP Architecture",
+        "Material Design",
+        "Constraint Layout",
+        "Retrofit",
+        "OkHttp",
+        "Firebase FCM",
+        "Firebase Crashlytics",
+        "Jetpack Component",
+        "Kotlin",
+        "Android Room Persistence",
+        "Kotlin Coroutine",
+        "Glide"
+      ]
+    },
+    {
+      "id": "proj3",
+      "title": "Ceklok Mobile Apps",
+      "category": "mobile",
+      "description": "CEKLOK merupakan platform HRIS yang ikut berkembang dengan perusahaan. Features: Authentication with AI face Recognition, Absence & Leave, Overtime, etc",
+      "image": "/projects/ceklok.png",
+      "link": "https://ceklok.id/id",
+      "technologies": [
+        "MVP Architecture",
+        "Material Design",
+        "Constraint Layout",
+        "Retrofit",
+        "OkHttp",
+        "Jetpack Component",
+        "Kotlin",
+        "Android Room Persistence",
+        "Kotlin Coroutine",
+        "Glide"
+      ]
+    },
+    {
+      "id": "proj4",
+      "title": "Commjunction Mobile Apps",
+      "category": "mobile",
+      "description": "COMMJUNCTION memberikan platform komunitas yang dapat dipersonalisasikan dengan kebutuhan sebuah komunitas untuk mencapai tujuan bersama",
+      "image": "/projects/commjunction.png",
+      "link": "https://commjunction.id/id",
+      "technologies": [
+        "MVP Architecture",
+        "Material Design",
+        "Constraint Layout",
+        "Retrofit",
+        "OkHttp",
+        "Jetpack Component",
+        "Kotlin",
+        "Kotlin Coroutine",
+        "Glide"
+      ]
+    },
+    {
+      "id": "proj5",
+      "title": "Bank Mandiri Taspen Backoffice",
+      "category": "web",
+      "description": "Web app page for Mobile Banking to record and manage all transaction on Mobile Banking Mandiri Taspen. Backoffice merupakan aplikasi berbasis web yang berfungsi untuk mencatat aktifitas yang dilakukan mobile banking, pengelola user mobile banking (Lupa password, Pendaftaran User baru, Block user, etc), Pencatat log error dan transaksi, Pembukaan deposito special rate dan lain lain.",
+      "image": "/projects/backoffice.png",
+      "link": "https://www.bankmantap.co.id/home/tnc",
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Bootstrap",
+        "Elastic Search",
+        "Redis",
+        "Pimcore 4 CMS",
+        "MySQL",
+        "Zend PHP Framework"
+      ]
+    },
+    {
+      "id": "proj6",
+      "title": "Sistem Informasi Beasiswa UIN Malang",
+      "category": "web",
+      "description": "Sistem Informasi Beasiswa (SIBEA) merupakan sistem manajemen penerimaan dan pendaftaran beasiswa lingkup Universitas Islam Negeri Maulana Malik Ibrahim Malang",
+      "image": "/projects/sibea.png",
+      "link": "http://kemahasiswaan.uin-malang.ac.id/beasiswa/",
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "CodeIgniter",
+        "MySQL",
+        "jQuery Ajax",
+        "Materialize CSS"
+      ]
+    },
+    {
+      "id": "proj7",
+      "title": "Sistem Informasi Reminder UIN Malang",
+      "category": "web",
+      "description": "Reminder information systems (management system for foreign students who will continue their studies at the university or who will take time off, manage their personal data then give warnings / reminders to e-mails of foreign students when there is important information that must be immediately followed up)",
+      "image": "/projects/reminder.png",
+      "link": "http://isa.uin-malang.ac.id/reminder/Login",
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "CodeIgniter",
+        "MySQL",
+        "jQuery Ajax",
+        "Bootstrap"
+      ]
+    },
+    {
+      "id": "proj8",
+      "title": "Popular Movies App",
+      "category": "mobile",
+      "description": "This is my version of Udacity's Popular Movie project. In this project implementing The Movie DB API of popular movies, top rated movies, movie's trailers and reviews. It also has endless scroll on movies list. It is also implementing Model View Presenter (MVP) architecture. I build this as part of Udacity Associate Android Developer Fast Track program.",
+      "image": "/projects/popular-movies.png",
+      "link": "https://github.com/amed12/PopularMovies2",
+      "technologies": [
+        "Android MVP Architecture",
+        "Content Provider",
+        "Android Room Persistence",
+        "Butter Knife",
+        "RxJava",
+        "RxAndroid",
+        "Glide",
+        "Card View",
+        "Recycle View"
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "test1",
+      "name": "Mr. Fahudi",
+      "position": "Bagian Kemahasiswaan UIN Maliki Malang",
+      "project": "SI Beasiswa dan SI Reminder UIN Malang",
+      "message": "Aplikasinya menarik, simple dan sesuai dengan kebutuhan yang ada."
+    },
+    {
+      "id": "test2",
+      "name": "Chely Bramitha Sandi",
+      "position": "Contract Software-engineer",
+      "project": "",
+      "message": "Achmad is Good Personal, Hard work, fast learning, funny, and have innovative good in current project."
+    }
+  ]
+}
