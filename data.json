@@ -347,13 +347,21 @@
   "testimonials": [
     {
       "id": "test1",
+      "name": "Muharam Adi Nugraha",
+      "position": "Product Manager at Bytedance",
+      "project": "Android Development Projects",
+      "message": "I'm working with Mr. Achmad Fathulah his Manager trough Mr. Yunizar as his team leader with daily basis communication as a System Analyst & UI/UX Designer. Mr. Achmad Fathulah shows a great talent on development for Android Development with such punctuality, given the problems and opportunities, he had shown his great potential by dealing with such complicated matters in short time, showing a steady increase of Performance mades him a great talent with great personality so to speak.\n\nHe had shown her great talent as Mobile Development Engineer especially on Android Mobile Development, It is such an honor to be working with Mr. Achmad and I hope the best for his future and what comes next on his career.",
+      "date": "September 19, 2020"
+    },
+    {
+      "id": "test2",
       "name": "Mr. Fahudi",
       "position": "Bagian Kemahasiswaan UIN Maliki Malang",
       "project": "SI Beasiswa dan SI Reminder UIN Malang",
       "message": "Aplikasinya menarik, simple dan sesuai dengan kebutuhan yang ada."
     },
     {
-      "id": "test2",
+      "id": "test3",
       "name": "Chely Bramitha Sandi",
       "position": "Contract Software-engineer",
       "project": "",
