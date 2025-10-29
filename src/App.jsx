@@ -38,7 +38,7 @@ function App() {
   }
 
   return (
-    <Router basename="/amed12.github.io">
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="relative">
         {/* Admin Button - Fixed position */}
         <button

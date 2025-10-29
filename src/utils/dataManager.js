@@ -1,6 +1,7 @@
 // Data Manager - Handles loading and saving portfolio data
 
-const DATA_URL = '/data.json';
+// Use import.meta.env.BASE_URL to get the correct base path
+const DATA_URL = `${import.meta.env.BASE_URL}data.json`;
 
 // Load data from JSON file
 export const loadData = async () => {
