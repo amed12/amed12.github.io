@@ -1,0 +1,246 @@
+1. Senior Software Engineer, Mobile (Flutter) - GrabKios
+
+About the job
+Company Description
+
+About Grab and Our Workplace
+
+Grab is Southeast Asia's leading superapp. From getting your favourite meals delivered to helping you manage your finances and getting around town hassle-free, we've got your back with everything. In Grab, purpose gives us joy and habits build excellence, while harnessing the power of Technology and AI to deliver the mission of driving Southeast Asia forward by economically empowering everyone, with heart, hunger, honour, and humility.
+
+Job Description
+
+Get to Know the Team
+
+At GrabKios, we empower the people of Southeast Asia, from consumers and drivers to everyday entrepreneurs, by enabling financial inclusion for the underserved. The team is building innovative solutions by enabling commerce through payment services (checkout, payments platform, grab pay products, rewards), empowering through Lending(driver & merchants), empowering through agents (Kios) & protecting users through Insurance(scenario insurance).
+
+Get to Know the Role
+
+We are seeking an experienced Senior Software Engineer specializing in Mobile (Flutter) development to join our innovative team in Jakarta, Indonesia. In this role, you will be at the forefront of developing and optimizing our mobile applications, focusing on creating efficient, user-friendly, and scalable solutions for our customers. You will be reporting to an Engineering Manager. This will be an onsite role based in Jakarta.
+
+The Critical Tasks You Will Perform
+
+Design and implement new features for our Flutter-based mobile applications
+Optimize application performance, addressing factors such as response time, battery usage, and storage impact
+Develop clear, scalable programming solutions using best practices like dependency injection and MVVM architecture
+Write robust unit tests and integration tests
+Continuously refactor and improve existing codebase to enhance functionality and maintain technical consistency
+Serve in the on-call rotation for critical mobile issues, balancing rapid fixes with logical troubleshooting
+
+Qualifications
+
+What Essential Skills You Will Need
+
+Bachelor's degree in Computer Science, Software Engineering, or a related field
+4+ years of professional experience in mobile app development, with at least 2 years focused on Flutter and Dart (web development experience is a bonus)
+Strong proficiency in Flutter framework and Dart programming language
+Experience with state management solutions and clean architecture patterns (e.g., MVVM, BLoC)
+Solid understanding of mobile app performance optimization techniques
+Expertise in writing testable code, creating end-to-end unit tests, and implementing automation techniques
+Familiarity with RESTful APIs and experience in designing efficient API integrations
+Proficiency with version control systems
+Experience with app analytics tools and crash reporting systems
+Experience managing technical features or significant app areas from concept through release
+Familiarity with Agile development methodologies
+
+Additional Information
+
+Life at Grab
+
+We care about your well-being at Grab, here are some of the global benefits we offer:
+
+We have your back with Term Life Insurance and comprehensive Medical Insurance.
+With GrabFlex, create a benefits package that suits your needs and aspirations.
+Celebrate moments that matter in life with loved ones through Parental and Birthday leave, and give back to your communities through Love-all-Serve-all (LASA) volunteering leave
+We have a confidential Grabber Assistance Programme to guide and uplift you and your loved ones through life's challenges.
+Balancing personal commitments and life's demands are made easier with our FlexWork arrangements such as differentiated hours
+
+What We Stand For At Grab
+
+We are committed to building an inclusive and equitable workplace that provides equal opportunity for Grabbers to grow and perform at their best. We consider all candidates fairly and equally regardless of nationality, ethnicity, race, religion, age, gender, family commitments, physical and mental impairments or disabilities, and other attributes that make them unique.
+
+2. Mobile Developer - PermataBank
+
+About the job
+Company Description:
+
+
+
+We are one of the top 10 biggest banks in terms of assets in Indonesia and listed in the Indonesia Stock Exchange, that offer banking products and services that help people and companies to succeed, creating wealth and growth through our Retail Banking, SME and Wholesale businesses.
+
+
+
+
+Why PermataBank ?
+
+
+
+Here at PermataBank, you will Learn, Grow, and Make A Difference
+You will have the appetite and the ability to learn many things, challenged to grow beyond ways you can imagine, and see the incredible difference you would have made along the journey.
+This is our platform for you. We cannot promise a smooth ride, but rest assured, it is going to be a meaningful journey!
+Learn : We always think innovatively to improve the way we work, making it easier, better and faster.
+Grow : We provide excellent service to customers and encourage excellent performance in our daily work.
+Make a difference : We understand each other and together build strong relationships with internal and external parties based on mutual respect.
+
+
+Job Description
+
+
+
+Manage and develop Mobile Application ( Android or iOS based on skills placement)
+Collaborates with the backend developers and other team members to create efficient and user friendly applications
+
+
+Job requirements
+
+
+
+Bachelor’s Degree in Computer Science or related field
+Preferred Skills > Language : HTML/CSS, Javascript, Typescript , ReactJs, ReactNative
+Proficiency inMobile Platform (Android & IOS)
+Excellent problem-solving skills
+
+
+
+
+PT Bank Permata Tbk hereby informs that the company does not impose any charges in the employee recruitment process.
+
+3. Senior Software Engineer (Mobile – Android / iOS) - ASTRO
+
+About the job
+About the Role
+
+We’re looking for passionate Senior Mobile Engineers (Android or iOS) to join our team and help shape the future of Astro’s mobile experience. You’ll play a key role in designing, developing, and optimizing our mobile applications that serve millions of users every day.
+As part of a cross-functional squad, you’ll collaborate with product managers, designers, and backend engineers to deliver high-quality, high-performance mobile experiences — while mentoring junior engineers and championing best practices.
+
+
+What You’ll Do
+
+Design, develop, and maintain Android (Kotlin) or iOS (Swift) applications.
+Collaborate with cross-functional teams to define, design, and ship new features.
+Ensure the performance, quality, and responsiveness of mobile applications.
+Identify and fix bugs, optimize app startup time, and improve performance metrics.
+Conduct code reviews and mentor junior engineers.
+Stay up-to-date with the latest technologies, frameworks, and best practices.
+Participate actively in sprint planning and technical discussions.
+
+
+What We’re Looking For
+
+General Qualifications
+
+Bachelor’s degree in Computer Science, Engineering, or related field.
+3+ years of professional experience in mobile application development.
+Deep understanding of modern mobile architectures (MVVM, MVI, or VIPER).
+Strong debugging, profiling, and performance optimization skills.
+Experience working with CI/CD pipelines and version control (Git).
+Comfortable working in Agile environments.
+For Android Engineers
+
+Expert in Kotlin and Android development.
+Skilled with performance profiling tools (Android Studio Profiler, Perfetto, Systrace, Firebase Performance, LeakCanary).
+Strong understanding of memory management, rendering performance, and RecyclerView optimizations.
+Experience reducing app load time and optimizing cold starts.
+Proficient with Jetpack Compose and legacy View systems.
+Experience with Dependency Injection (Hilt/Koin/Dagger) and Kotlin Coroutines/Flow.
+For iOS Engineers
+
+Proficient in Swift, SwiftUI, and Xcode.
+Experience integrating with RESTful APIs and mobile backends.
+Strong understanding of UI/UX design principles and flexible UI components.
+Familiar with thread management and Combine.
+Experience with automated testing, remote-configured UI, and CI/CD pipelines.
+
+
+Why Join Astro
+
+Competitive salary and benefits package.
+Work From Anywhere (WFA) flexibility.
+Opportunities for professional growth and skill development.
+Collaborative, fast-paced, and impact-driven environment.
+✨ If you’re passionate about building seamless, high-performance mobile experiences and want to work on products that matter — we’d love to meet you!
+
+4. Android Engineer - Client App (SDE 2) - Kredivo Group
+
+About the job
+Responsibilities
+
+Own the technical vision and roadmap for our mobile applications, aligning them with business goals.
+Design and implement scalable, secure, and maintainable architectures for Android and iOS apps.
+Champion adoption of standards and best practices within mobile engineering.
+Advocate for and implement reusable components and libraries to optimize development efforts.
+Lead the effort to analyze and troubleshoot performance bottlenecks, implementing effective solutions.
+Stay up-to-date on evolving security threats and implement robust security measures.
+Mentor and guide junior developers, fostering a culture of growth and collaboration.
+Effectively communicate technical concepts to both technical and non-technical stakeholders.
+
+Requirements
+
+Minimum 3 years of experience as a android developer.
+Relevant education (Bachelor's degree).
+Proven expertise in Android development, with strong architectural skills.
+Good understanding of mobile performance optimization techniques.
+Proficient with Kotlin, Android SDK, Android Studio, and other various tools.
+Solid knowledge of solid principles, clean architecture, security principles and best practices in mobile development.
+Continuous learning to stay updated with new frameworks and technologies.
+Excellent communication, collaboration, and leadership skills.
+Passion for building user-centric, secure, and high-performing mobile applications.
+
+5. Senior Software Engineer, Mobile (Android) - Grab
+
+About the job
+Company Description
+
+About Grab and Our Workplace
+
+Grab is Southeast Asia's leading superapp. From getting your favourite meals delivered to helping you manage your finances and getting around town hassle-free, we've got your back with everything. In Grab, purpose gives us joy and habits build excellence, while harnessing the power of Technology and AI to deliver the mission of driving Southeast Asia forward by economically empowering everyone, with heart, hunger, honour, and humility.
+
+Job Description
+
+Get to Know the Team
+
+Join the Grab ACE team, where we are committed to developing the most reliable and beloved food platform in Southeast Asia. As an engineer at Grab, you become a necessary part of our core. Our enthusiasm is rooted in our work, and we take pride in creating exceptional services and tools that cater to hundreds of millions of consumers, delivery partners, and fellow Grabbers. We focus on enhancing our delivery and dine-in platforms.
+
+Get to Know the Role
+
+You will report into the Software Engineering Manager and you will work on the Android passenger app that benefits millions of consumers every day. Awaiting you are exhilarating product ideas and engrossing engineering challenges, where you will be one of the first to experience your own work within the Grab app! This role is based in Beijing.
+
+The Critical Tasks You Will Perform
+
+As Senior Software Engineer, Android you are expected to work on both product development and engineering improvements.
+
+Work with the product and design team to understand requirements, provide product feedback, own and implement the product from start to finish.
+Create and participate in technical discussions with other engineering teams
+Write code that is reusable, scalable and testable. Make sure products are delivered on time and with high quality.
+Collaborate with QAs to make sure our app releases are always worthy of five star ratings.
+Review code from other team members, provide constructive feedback and aim to raise the engineering bar.
+Improve the codebase. Propose and set better engineering solutions for the team.
+Be responsible and responsive during on-call duty. Debug and troubleshoot production issues.
+Provide technical guidance, mentorship and knowledge sharing to peers.
+
+Qualifications
+
+What Essential Skills You Will Need
+
+A degree in computer science, software engineering or related fields with 5+ years of working experience on mobile application development
+Programming experience in Java or Kotlin, familiarity with design patterns, multi-threading, and good coding style and habits.
+Understanding of the Android system and programming paradigm including OOP, TDD, reactive patterns, and dependency injection.
+Working knowledge of several architectural approaches including clean architecture, MVP, and MVVM.
+Experience in Android automated testing, familiarity with Android testing frameworks like Espresso, UI Automator, Mockito, Powermock, or Appium.
+Fluent in English, with a conscientious, and teamwork, and a positive and optimistic outlook.
+
+Additional Information
+
+Life at Grab
+
+We care about your well-being at Grab, here are some of the global benefits we offer:
+
+We have your back with Term Life Insurance and comprehensive Medical Insurance.
+With GrabFlex, create a benefits package that suits your needs and aspirations.
+Celebrate moments that matter in life with loved ones through Parental and Birthday leave, and give back to your communities through Love-all-Serve-all (LASA) volunteering leave
+We have a confidential Grabber Assistance Programme to guide and uplift you and your loved ones through life's challenges.
+Balancing personal commitments and life's demands are made easier with our FlexWork arrangements such as differentiated hours
+
+What We Stand For At Grab
+
+We are committed to building an inclusive and equitable workplace that provides equal opportunity for Grabbers to grow and perform at their best. We consider all candidates fairly and equally regardless of nationality, ethnicity, race, religion, age, gender, family commitments, physical and mental impairments or disabilities, and other attributes that make them unique.
+
