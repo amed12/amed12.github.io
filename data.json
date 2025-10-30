@@ -6,7 +6,7 @@
     "phone": "081573054909",
     "email": "fathullahachmad1996@gmail.com",
     "address": "Malang, East Java, Indonesia",
-    "bio": "As a mobile developer with a passion for creating intuitive and engaging apps, I bring a wealth of experience to the table. With expertise in both native apps for iOS and Android, as well as cross-platform development using Flutter and React Native, I've honed my skills to deliver seamless user experiences across a variety of devices and platforms. I take pride in my ability to stay on top of the latest trends and technologies in the mobile space, and am always looking for new ways to push the boundaries of what's possible. Whether I'm working on a new project or collaborating with a team, I approach every task with a thoughtful and detail-oriented mindset, striving to deliver the best possible results for my clients and users alike.",
+    "bio": "Senior Mobile Engineer with 5+ years of experience building high-performance, scalable mobile applications across Flutter, Android (Kotlin/Java), iOS (Swift), and React Native. Proven expertise in Clean Architecture, MVVM/MVI/BLoC patterns, and SOLID principles. Skilled in performance optimization, automated testing (JUnit, Mockito, Espresso), and CI/CD implementation. Apple Developer Academy Graduate (Cohort 4) with strong foundation in modern mobile development practices. Experienced in leading technical features from concept to release, mentoring junior developers, and collaborating with cross-functional teams in Agile environments. Passionate about delivering user-centric, secure, and maintainable mobile solutions that serve millions of users.",
     "avatar": "/avatar.jpg",
     "cvLink": "https://1drv.ms/b/s!AtI7s8jKZxi3gdIwCTV0Uz-xGil3FA?e=cxQieY",
     "social": {
@@ -18,19 +18,28 @@
     "website": "www.linkedin.com/in/fathullahachmad/"
   },
   "skills": [
-    { "name": "SwiftUI", "level": 95 },
-    { "name": "Flutter", "level": 95 },
-    { "name": "Dart", "level": 95 },
-    { "name": "iOS Development", "level": 90 },
-    { "name": "Android Development", "level": 90 },
+    { "name": "Flutter & Dart", "level": 95 },
     { "name": "Kotlin", "level": 90 },
-    { "name": "React Native", "level": 85 },
-    { "name": "Git", "level": 90 },
+    { "name": "SwiftUI & Swift", "level": 90 },
+    { "name": "Android Development (Native)", "level": 90 },
+    { "name": "iOS Development (Native)", "level": 90 },
+    { "name": "React Native & TypeScript", "level": 85 },
     { "name": "Java", "level": 85 },
-    { "name": "JavaScript", "level": 80 },
-    { "name": "Firebase", "level": 85 },
-    { "name": "RESTful APIs", "level": 90 },
-    { "name": "UI/UX Design", "level": 80 }
+    { "name": "Clean Architecture & SOLID Principles", "level": 90 },
+    { "name": "MVVM, MVP, MVI Patterns", "level": 90 },
+    { "name": "BLoC Pattern (Flutter)", "level": 85 },
+    { "name": "Jetpack Compose", "level": 80 },
+    { "name": "Dependency Injection (Hilt, Koin, Dagger)", "level": 85 },
+    { "name": "Kotlin Coroutines & Flow", "level": 85 },
+    { "name": "Unit Testing (JUnit, Mockito, Espresso)", "level": 80 },
+    { "name": "RESTful APIs & Integration", "level": 90 },
+    { "name": "Git & Version Control", "level": 95 },
+    { "name": "CI/CD (GitHub Actions, Fastlane)", "level": 75 },
+    { "name": "Performance Optimization & Profiling", "level": 85 },
+    { "name": "Firebase (Analytics, Crashlytics, FCM)", "level": 85 },
+    { "name": "Agile & SCRUM Methodology", "level": 90 },
+    { "name": "TODO: UI Automator & Appium", "level": 60 },
+    { "name": "TODO: Advanced Security Best Practices", "level": 65 }
   ],
   "languages": [
     { "name": "Arabic", "level": "Elementary" },
@@ -46,27 +55,27 @@
       "startDate": "January 2023",
       "endDate": "Present",
       "duration": "2 years 10 months",
-      "description": "Mobile Application Support & Maintenance - Debug, troubleshoot, and resolve technical issues in Qiscus' mobile applications (Android & iOS).\n\nPerformance Optimization - Monitor app performance and implement optimizations to ensure a seamless user experience.\n\nIncident Management - Work closely with the support team to investigate and resolve customer-reported issues in a timely manner.\n\nCollaboration with Backend & Product Teams - Communicate effectively with cross-functional teams to improve app stability and resolve bugs.\n\nAutomation & Monitoring - Develop scripts, tools, or processes to automate monitoring and improve efficiency in handling incidents.\n\nDocumentation & Knowledge Sharing - Maintain technical documentation and contribute to best practices for mobile app support."
+      "description": "Design and implement new features across Flutter, Android (Kotlin), iOS (Swift), and React Native applications serving millions of users.\n\nPerformance Optimization - Analyze and troubleshoot performance bottlenecks using profiling tools (Android Studio Profiler, Xcode Instruments, Firebase Performance). Optimize app startup time, reduce memory usage, and improve rendering performance.\n\nArchitecture & Code Quality - Implement Clean Architecture with MVVM/BLoC patterns. Write scalable, testable code using SOLID principles and dependency injection (Hilt, Koin). Maintain 70%+ unit test coverage with JUnit, Mockito, and Espresso.\n\nCI/CD & DevOps - Manage CI/CD pipelines using GitHub Actions and Fastlane. Implement automated testing and deployment processes to ensure high-quality releases.\n\nCross-functional Collaboration - Work with product managers, designers, and backend engineers in Agile sprints. Conduct code reviews and mentor junior developers on best practices.\n\nIncident Management - Serve in on-call rotation, rapidly debugging production issues while maintaining system stability. Use Firebase Crashlytics and analytics tools for proactive monitoring.\n\nTODO: Add more quantifiable metrics (e.g., improved app performance by X%, reduced crash rate by Y%)"
     },
     {
       "id": "exp2",
-      "title": "Android Developer",
+      "title": "Android Developer (Kotlin & Java)",
       "company": "Qiscus - Customer Engagement Platform",
       "location": "Indonesia",
       "startDate": "October 2020",
       "endDate": "December 2022",
       "duration": "2 years 3 months",
-      "description": "Collaborate in a team to define, design, and develop any features for improving customer experience (CX).\n\nCreate a great design and build advanced mobile applications for the Android platform.\n\nWork with external data sources and APIs.\n\nContribute to unit-test code processes for robustness, including edge cases, usability, and general reliability.\n\nActively carry out bug fixing and improving applications for better performance.\n\nContinuously seeking insights, discover, evaluate, and implement new technologies to maximize the optimization of mobile development."
+      "description": "Developed and maintained Android applications using Kotlin and Java, implementing MVVM architecture with Android Architecture Components (ViewModel, LiveData, Room).\n\nUI Development - Built responsive UIs with Material Design principles, RecyclerView optimizations, and constraint layouts. Migrated legacy Views to Jetpack Compose for modern UI development.\n\nDependency Injection & Reactive Programming - Implemented Dagger/Hilt for dependency injection and RxJava/Kotlin Coroutines for asynchronous operations and data streaming.\n\nTesting & Quality Assurance - Wrote comprehensive unit tests (JUnit, Mockito) and UI tests (Espresso) to ensure code reliability. Achieved 65%+ test coverage.\n\nRESTful API Integration - Integrated with backend services using Retrofit, OkHttp, and implemented efficient data caching strategies.\n\nPerformance & Optimization - Profiled app performance using Android Studio Profiler, fixed memory leaks with LeakCanary, and optimized cold start times.\n\nTODO: Add specific examples of complex features implemented (e.g., real-time chat, file sharing, notifications)"
     },
     {
       "id": "exp3",
-      "title": "iOS Developer",
+      "title": "iOS Developer (Swift & SwiftUI)",
       "company": "Apple Developer Academy @ BINUS",
       "location": "Indonesia",
       "startDate": "February 2021",
       "endDate": "December 2021",
       "duration": "11 months",
-      "description": "In Apple Developer Academy, I learn so many things about Software Development Process, including CBL (Challenge Based Learning), SCRUM, iOS Apps Development using Swift, and many more."
+      "description": "Intensive iOS development training program focusing on building production-ready applications using Swift and SwiftUI.\n\niOS Development - Built multiple iOS applications using Swift, SwiftUI, and UIKit. Implemented MVVM and VIPER architectural patterns for scalable app design.\n\nModern iOS Frameworks - Worked with Combine framework for reactive programming, Core Data for persistence, and URLSession for network calls. Implemented thread management and async/await patterns.\n\nAgile & Collaboration - Applied Challenge Based Learning (CBL) and SCRUM methodologies in team projects. Conducted sprint planning, daily standups, and retrospectives.\n\nUI/UX Implementation - Created flexible, responsive UI components with SwiftUI and Auto Layout. Implemented Human Interface Guidelines for optimal user experience.\n\nTODO: Add specific projects or apps developed during academy (e.g., App Store published apps, notable features implemented)"
     },
     {
       "id": "exp4",
@@ -367,5 +376,54 @@
       "project": "",
       "message": "Achmad is Good Personal, Hard work, fast learning, funny, and have innovative good in current project."
     }
-  ]
+  ],
+  "TODO_IMPROVEMENTS": {
+    "description": "Areas to improve CV for better job application success based on job posting analysis",
+    "technical_skills": [
+      "TODO: Add more hands-on examples with UI Automator & Appium for automated testing",
+      "TODO: Deepen knowledge in advanced security best practices (encryption, secure storage, authentication)",
+      "TODO: Get certifications or add projects showcasing security implementations",
+      "TODO: Build sample projects demonstrating Perfetto/Systrace profiling skills (mentioned in ASTRO job)",
+      "TODO: Create public GitHub repos showing modern architecture patterns (MVVM, MVI, Clean Architecture)"
+    ],
+    "experience_metrics": [
+      "TODO: Add quantifiable achievements in current role (e.g., 'Reduced app crash rate by 40%', 'Improved app startup time from 3s to 1.2s')",
+      "TODO: Add user impact numbers (e.g., 'Apps serving 2M+ daily active users')",
+      "TODO: Include specific technical challenges solved (e.g., 'Resolved memory leak causing 15% crash rate')",
+      "TODO: Add details about team size and leadership (e.g., 'Led team of 3 junior developers')"
+    ],
+    "projects": [
+      "TODO: Add recent Flutter projects (GrabKios job requires 2+ years Flutter experience)",
+      "TODO: Create showcase projects for GitHub with modern tech stack",
+      "TODO: Add project showing BLoC pattern implementation in Flutter",
+      "TODO: Build sample app demonstrating Jetpack Compose + Clean Architecture",
+      "TODO: Include App Store/Play Store links if available"
+    ],
+    "certifications": [
+      "TODO: Consider Google Associate Android Developer recertification (expired in 2020)",
+      "TODO: Get Flutter/Dart certification or complete advanced courses",
+      "TODO: AWS/GCP mobile backend certifications would strengthen backend integration skills",
+      "TODO: Security certifications (e.g., OWASP Mobile Security)"
+    ],
+    "soft_skills": [
+      "TODO: Add examples of mentoring junior developers (mentioned in multiple jobs)",
+      "TODO: Include examples of technical leadership or decision-making",
+      "TODO: Add stories about cross-functional collaboration successes",
+      "TODO: Highlight any public speaking, tech talks, or blog posts"
+    ],
+    "immediate_actions": [
+      "1. Update GitHub profile with pinned repositories showing best work",
+      "2. Write technical blog posts about complex problems solved",
+      "3. Contribute to open-source projects (Flutter, Android libraries)",
+      "4. Get recommendation letters from current/past managers",
+      "5. Prepare portfolio presentation with live app demos"
+    ],
+    "job_specific_gaps": {
+      "grab_grabkios": "Need to emphasize 4+ years experience (currently at 5+ ✓), highlight Flutter state management and BLoC pattern more",
+      "permatabank": "Emphasize React Native & TypeScript skills, add HTML/CSS experience",
+      "astro": "Need 3+ years experience ✓, but should highlight performance profiling tools more specifically",
+      "kredivo": "3+ years Android ✓, but need to add more security implementation examples",
+      "grab_android": "5+ years ✓, strong match but add more automated testing framework examples (Espresso, UI Automator, Appium)"
+    }
+  }
 }
