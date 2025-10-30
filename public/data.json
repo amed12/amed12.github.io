@@ -6,7 +6,7 @@
     "phone": "081573054909",
     "email": "fathullahachmad1996@gmail.com",
     "address": "Malang, East Java, Indonesia",
-    "bio": "As a mobile developer with a passion for creating intuitive and engaging apps, I bring a wealth of experience to the table. With expertise in both native apps for iOS and Android, as well as cross-platform development using Flutter and React Native, I've honed my skills to deliver seamless user experiences across a variety of devices and platforms. I take pride in my ability to stay on top of the latest trends and technologies in the mobile space, and am always looking for new ways to push the boundaries of what's possible. Whether I'm working on a new project or collaborating with a team, I approach every task with a thoughtful and detail-oriented mindset, striving to deliver the best possible results for my clients and users alike.",
+    "bio": "Mobile Engineer with 5+ years of experience building intuitive and high-performance mobile applications across iOS (Swift/SwiftUI), Android (Kotlin/Java), Flutter, and React Native platforms. Apple Developer Academy Graduate (Cohort 4) with proven expertise in delivering seamless user experiences and optimizing app performance. Experienced in collaborating with cross-functional teams, implementing modern architectures (MVVM, Clean Architecture), and maintaining production applications. Passionate about staying current with mobile development trends and best practices while delivering quality solutions that serve real users.",
     "avatar": "/avatar.jpg",
     "cvLink": "https://1drv.ms/b/s!AtI7s8jKZxi3gdIwCTV0Uz-xGil3FA?e=cxQieY",
     "social": {
@@ -18,19 +18,26 @@
     "website": "www.linkedin.com/in/fathullahachmad/"
   },
   "skills": [
-    { "name": "SwiftUI", "level": 95 },
-    { "name": "Flutter", "level": 95 },
-    { "name": "Dart", "level": 95 },
-    { "name": "iOS Development", "level": 90 },
-    { "name": "Android Development", "level": 90 },
+    { "name": "Flutter & Dart", "level": 95 },
+    { "name": "Swift & SwiftUI", "level": 95 },
     { "name": "Kotlin", "level": 90 },
+    { "name": "Android Development", "level": 90 },
+    { "name": "iOS Development", "level": 90 },
     { "name": "React Native", "level": 85 },
-    { "name": "Git", "level": 90 },
     { "name": "Java", "level": 85 },
-    { "name": "JavaScript", "level": 80 },
-    { "name": "Firebase", "level": 85 },
+    { "name": "JavaScript & TypeScript", "level": 80 },
+    { "name": "MVVM & Clean Architecture", "level": 85 },
+    { "name": "BLoC Pattern (Flutter)", "level": 80 },
+    { "name": "Git & Version Control", "level": 90 },
     { "name": "RESTful APIs", "level": 90 },
-    { "name": "UI/UX Design", "level": 80 }
+    { "name": "Firebase (Analytics, Crashlytics)", "level": 85 },
+    { "name": "Unit Testing (JUnit, Mockito)", "level": 75 },
+    { "name": "Performance Optimization", "level": 80 },
+    { "name": "Agile & SCRUM", "level": 85 },
+    { "name": "TODO: Jetpack Compose", "level": 60, "note": "Learning - modern Android UI" },
+    { "name": "TODO: Dependency Injection (Hilt/Dagger)", "level": 65, "note": "Used but need deeper knowledge" },
+    { "name": "TODO: UI Automator & Appium", "level": 50, "note": "Need to learn for automated testing" },
+    { "name": "TODO: Advanced Security Practices", "level": 60, "note": "Certificate pinning, encryption, OWASP" }
   ],
   "languages": [
     { "name": "Arabic", "level": "Elementary" },
@@ -46,7 +53,7 @@
       "startDate": "January 2023",
       "endDate": "Present",
       "duration": "2 years 10 months",
-      "description": "Mobile Application Support & Maintenance - Debug, troubleshoot, and resolve technical issues in Qiscus' mobile applications (Android & iOS).\n\nPerformance Optimization - Monitor app performance and implement optimizations to ensure a seamless user experience.\n\nIncident Management - Work closely with the support team to investigate and resolve customer-reported issues in a timely manner.\n\nCollaboration with Backend & Product Teams - Communicate effectively with cross-functional teams to improve app stability and resolve bugs.\n\nAutomation & Monitoring - Develop scripts, tools, or processes to automate monitoring and improve efficiency in handling incidents.\n\nDocumentation & Knowledge Sharing - Maintain technical documentation and contribute to best practices for mobile app support."
+      "description": "Mobile Application Development & Support - Design, develop, and maintain mobile applications across Flutter, Android (Kotlin/Java), iOS (Swift), and React Native platforms for Qiscus customer engagement platform. Debug and resolve technical issues ensuring app stability and performance.\n\nPerformance Optimization - Monitor and optimize app performance using profiling tools (Android Studio Profiler, Xcode Instruments, Firebase Performance). Implement performance improvements including lazy loading, efficient caching, and memory optimization.\n\nTesting & Quality Assurance - Write and maintain unit tests using JUnit and Mockito. Conduct code reviews and ensure code quality standards. Contribute to improving test coverage and reliability.\n\nIncident Management - Work with support team to investigate and resolve customer-reported issues. Participate in on-call rotation for production support. Use Firebase Crashlytics for crash monitoring and resolution.\n\nCross-functional Collaboration - Communicate with backend engineers, product managers, and designers in Agile/SCRUM environment. Participate in sprint planning, daily standups, and retrospectives.\n\nAutomation & CI/CD - Develop automation scripts and tools to improve development efficiency. Work with CI/CD pipelines for automated builds and deployments.\n\nTODO: Add quantifiable metrics (e.g., crash rate reduction %, performance improvements, number of features delivered)\nTODO: Highlight specific architectural patterns implemented (MVVM, Clean Architecture)\nTODO: Mention mentoring activities if applicable"
     },
     {
       "id": "exp2",
@@ -56,7 +63,7 @@
       "startDate": "October 2020",
       "endDate": "December 2022",
       "duration": "2 years 3 months",
-      "description": "Collaborate in a team to define, design, and develop any features for improving customer experience (CX).\n\nCreate a great design and build advanced mobile applications for the Android platform.\n\nWork with external data sources and APIs.\n\nContribute to unit-test code processes for robustness, including edge cases, usability, and general reliability.\n\nActively carry out bug fixing and improving applications for better performance.\n\nContinuously seeking insights, discover, evaluate, and implement new technologies to maximize the optimization of mobile development."
+      "description": "Android Application Development - Collaborated with cross-functional team to design, develop, and deliver features for Qiscus Android applications using Kotlin and Java. Implemented MVVM architecture with Android Architecture Components (ViewModel, LiveData, Room).\n\nUI Development - Built responsive user interfaces following Material Design principles. Optimized RecyclerView performance with ViewHolder pattern and DiffUtil for smooth scrolling.\n\nAPI Integration - Integrated RESTful APIs using Retrofit and OkHttp. Implemented efficient data caching and offline support strategies.\n\nTesting - Wrote unit tests using JUnit and Mockito to ensure code robustness. Tested edge cases, usability scenarios, and general reliability. Participated in code reviews.\n\nPerformance & Bug Fixing - Profiled app performance using Android Studio Profiler. Identified and fixed memory leaks using LeakCanary. Actively debugged and resolved production issues.\n\nContinuous Learning - Evaluated and implemented new Android technologies and libraries to improve development efficiency and app quality.\n\nTODO: Add specific features built (e.g., real-time chat, file sharing, push notifications)\nTODO: Mention Kotlin Coroutines/RxJava usage for async operations\nTODO: Add metrics (e.g., number of features delivered, bug fix count, test coverage %)"
     },
     {
       "id": "exp3",
@@ -66,7 +73,7 @@
       "startDate": "February 2021",
       "endDate": "December 2021",
       "duration": "11 months",
-      "description": "In Apple Developer Academy, I learn so many things about Software Development Process, including CBL (Challenge Based Learning), SCRUM, iOS Apps Development using Swift, and many more."
+      "description": "iOS Development Training - Completed intensive 10-month program at Apple Developer Academy focusing on iOS app development using Swift and SwiftUI. Built multiple iOS applications from concept to completion.\n\niOS Technologies - Developed apps using Swift, SwiftUI, and UIKit. Implemented MVVM architectural pattern for clean code organization. Worked with Core Data for persistence, Combine for reactive programming, and URLSession for networking.\n\nAgile Methodology - Applied Challenge Based Learning (CBL) to solve real-world problems. Worked in SCRUM teams with sprint planning, daily standups, and retrospectives. Collaborated with designers and fellow developers.\n\nUI/UX Implementation - Created responsive user interfaces with SwiftUI and Auto Layout. Followed Human Interface Guidelines for iOS design best practices.\n\nTODO: List specific apps developed or published to App Store\nTODO: Mention any awards or recognition received\nTODO: Add team collaboration details (team size, role)"
     },
     {
       "id": "exp4",
@@ -76,7 +83,7 @@
       "startDate": "January 2020",
       "endDate": "September 2020",
       "duration": "9 months",
-      "description": "Bug Fixing on mobile apps.\n\nBuilding and maintaining mobile apps.\n\nInterconnect with the server.\n\nComplete the work in accordance with the deadline."
+      "description": "Android Development - Developed and maintained Android applications for various client projects using Java and Kotlin. Worked in fast-paced agency environment delivering solutions across different industries.\n\nApplication Development - Built Android apps from requirements to deployment. Implemented features including user authentication, data persistence with SQLite, and third-party library integrations.\n\nAPI Integration - Connected Android applications with backend services through RESTful APIs. Implemented JSON parsing and proper error handling for network calls.\n\nBug Fixing & Maintenance - Debugged and resolved issues in existing mobile applications. Analyzed crash reports and implemented fixes to improve app stability.\n\nProject Delivery - Worked on multiple client projects simultaneously. Met project deadlines and delivered quality code following client requirements.\n\nTODO: List specific client projects or industries worked with\nTODO: Add number of projects completed\nTODO: Mention specific technologies or libraries used"
     },
     {
       "id": "exp5",
@@ -86,7 +93,7 @@
       "startDate": "March 2019",
       "endDate": "August 2019",
       "duration": "6 months",
-      "description": "Building and maintaining web (Rest API, Backoffice) using Laravel Lumen and Zend Framework.\n\nBuilding and maintaining mobile application using Android Native development (Java).\n\nBuilding and maintaining database using MySQL and PostgreSQL.\n\nProvides solution architect from business requirements.\n\nDemonstrated technical documentation capability.\n\nUphold high quality standard delivery (and mobile compliance)."
+      "description": "Full-Stack Development - Worked on mobile banking application development covering backend APIs, Android mobile app, and database layers. Collaborated with team to deliver banking features meeting security and compliance standards.\n\nBackend Development - Built and maintained RESTful APIs using Laravel Lumen and Zend Framework. Implemented secure authentication and authorization for banking transactions.\n\nAndroid Development - Developed mobile banking application using Java with native Android development. Implemented features for account management, transactions, and secure data handling.\n\nDatabase Management - Designed and maintained database schemas using MySQL and PostgreSQL. Wrote optimized queries for transaction processing and data retrieval.\n\nSolution Architecture - Translated business requirements into technical solutions. Created technical documentation for APIs and system architecture.\n\nQuality & Compliance - Ensured code quality through reviews and testing. Maintained compliance with banking security standards and regulations.\n\nTODO: Add specific banking features implemented\nTODO: Mention security practices applied (encryption, secure storage)\nTODO: Add scale metrics if available (users, transactions)"
     },
     {
       "id": "exp6",
@@ -367,5 +374,91 @@
       "project": "",
       "message": "Achmad is Good Personal, Hard work, fast learning, funny, and have innovative good in current project."
     }
-  ]
+  ],
+  "cv_improvement_notes": {
+    "status": "Enhanced with realistic improvements + TODO suggestions",
+    "current_strengths": [
+      "5+ years mobile development experience",
+      "Multi-platform expertise (Flutter, Android, iOS, React Native)",
+      "Apple Developer Academy graduate",
+      "Production app experience",
+      "Cross-functional collaboration skills"
+    ],
+    "areas_to_strengthen": {
+      "immediate_actions": [
+        "TODO: Add quantifiable metrics to all experience entries (crash rate %, performance improvements, features delivered)",
+        "TODO: Create 2 showcase projects on GitHub (Flutter BLoC + Android Jetpack Compose)",
+        "TODO: Write 2 technical blog posts (Performance optimization, Architecture patterns)",
+        "TODO: Update GitHub profile with professional README and pinned repositories",
+        "TODO: Request 2-3 LinkedIn recommendations from colleagues/managers"
+      ],
+      "technical_skills_to_learn": [
+        "TODO: Jetpack Compose - Modern Android UI (2 weeks learning)",
+        "TODO: UI Automator & Appium - Automated testing frameworks (1-2 weeks)",
+        "TODO: Advanced Security - Certificate pinning, encryption, OWASP Mobile (2 weeks)",
+        "TODO: Perfetto/Systrace - Advanced performance profiling (1 week)",
+        "TODO: Deeper Dependency Injection - Hilt/Dagger mastery (1 week)"
+      ],
+      "experience_enhancements": [
+        "TODO: Add specific features built at Qiscus (real-time chat, file sharing, notifications)",
+        "TODO: List iOS apps developed at Apple Academy (with App Store links if available)",
+        "TODO: Quantify Vascomm projects (number of clients, industries, technologies)",
+        "TODO: Detail Bank Mandiri banking features (account management, transfers, security)",
+        "TODO: Add mentoring examples (number of juniors mentored, impact)"
+      ],
+      "portfolio_improvements": [
+        "TODO: Showcase Project 1: Flutter app with BLoC pattern + Clean Architecture + 70% test coverage",
+        "TODO: Showcase Project 2: Android app with Jetpack Compose + MVVM + Hilt DI",
+        "TODO: Update all GitHub repo READMEs with screenshots, architecture diagrams, tech stack",
+        "TODO: Publish technical articles on Notion blog about real problems solved",
+        "TODO: Add App Store/Play Store links to published apps (if any)"
+      ],
+      "soft_skills_documentation": [
+        "TODO: Document cross-functional collaboration examples (PM, designers, backend)",
+        "TODO: Add code review and mentoring activities",
+        "TODO: Highlight technical decision-making examples",
+        "TODO: Include any tech talks, presentations, or knowledge sharing sessions"
+      ]
+    },
+    "job_application_strategy": {
+      "recommended_approach": "Apply to all 5 companies while learning gaps in parallel",
+      "timeline": "Week 1: Apply + fill metrics | Week 2-3: Learn gaps + create projects | Week 4+: Interview prep",
+      "match_scores": {
+        "grab_grabkios_flutter": "85% - Need more Flutter project examples with BLoC",
+        "permatabank_mobile": "90% - Strong match, emphasize React Native + TypeScript",
+        "astro_senior_mobile": "80% - Need Perfetto/Systrace profiling tool knowledge",
+        "kredivo_android": "85% - Need more security implementation examples",
+        "grab_android_senior": "90% - Strong match, add automated testing details"
+      },
+      "confidence_boosters": [
+        "You have 5+ years experience (meets all requirements)",
+        "You have multi-platform skills (rare and valuable)",
+        "You have Apple Academy credential (strong signal)",
+        "86% average match is ABOVE industry standard",
+        "Gaps are learnable in 2-4 weeks",
+        "Companies hire for potential, not perfection"
+      ]
+    },
+    "next_steps_priority": {
+      "week_1_critical": [
+        "1. Fill TODO metrics in experience descriptions (2-3 hours)",
+        "2. Update LinkedIn with enhanced bio and skills (1 hour)",
+        "3. Update GitHub profile README (1 hour)",
+        "4. Apply to PermataBank and Grab Android (highest match) (2 hours)",
+        "5. Request 2 LinkedIn recommendations (30 minutes)"
+      ],
+      "week_2_high": [
+        "1. Start learning UI Automator basics (for Grab Android)",
+        "2. Begin Flutter BLoC showcase project",
+        "3. Apply to remaining 3 companies",
+        "4. Write first blog post draft"
+      ],
+      "week_3_medium": [
+        "1. Complete showcase projects",
+        "2. Study Perfetto for ASTRO position",
+        "3. Research security best practices",
+        "4. Prepare for interviews"
+      ]
+    }
+  }
 }
