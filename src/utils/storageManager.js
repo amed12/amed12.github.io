@@ -4,7 +4,10 @@ const STORAGE_KEYS = {
   TODOS: 'career_dashboard_todos',
   APPLICATIONS: 'career_dashboard_applications',
   WEEKLY_GOALS: 'career_dashboard_weekly_goals',
-  SKILLS: 'career_dashboard_skills'
+  SKILLS: 'career_dashboard_skills',
+  ACHIEVEMENTS: 'career_dashboard_achievements',
+  NETWORKING: 'career_dashboard_networking',
+  ACTION_ITEMS: 'career_dashboard_action_items'
 };
 
 // ============ TODOs Management ============
@@ -284,4 +287,237 @@ export const clearAllData = () => {
   localStorage.removeItem(STORAGE_KEYS.APPLICATIONS);
   localStorage.removeItem(STORAGE_KEYS.WEEKLY_GOALS);
   localStorage.removeItem(STORAGE_KEYS.SKILLS);
+  localStorage.removeItem(STORAGE_KEYS.ACHIEVEMENTS);
+  localStorage.removeItem(STORAGE_KEYS.NETWORKING);
+  localStorage.removeItem(STORAGE_KEYS.ACTION_ITEMS);
+};
+
+// ============ Skills Management ============
+
+export const getSkills = () => {
+  try {
+    const stored = localStorage.getItem(STORAGE_KEYS.SKILLS);
+    return stored ? JSON.parse(stored) : getDefaultSkills();
+  } catch (error) {
+    console.error('Error getting skills:', error);
+    return getDefaultSkills();
+  }
+};
+
+export const saveSkills = (skills) => {
+  try {
+    localStorage.setItem(STORAGE_KEYS.SKILLS, JSON.stringify(skills));
+    return true;
+  } catch (error) {
+    console.error('Error saving skills:', error);
+    return false;
+  }
+};
+
+export const updateSkillProgress = (skillId, progress) => {
+  const skills = getSkills();
+  if (skills[skillId]) {
+    skills[skillId].progress = progress;
+    skills[skillId].lastUpdated = new Date().toISOString();
+    saveSkills(skills);
+  }
+  return skills;
+};
+
+export const getDefaultSkills = () => {
+  return {
+    ui_automator: {
+      id: 'ui_automator',
+      name: 'UI Automator',
+      category: 'Testing',
+      priority: 'high',
+      progress: 0,
+      target: 100,
+      status: 'not-started',
+      resources: ['Android Docs', 'Udemy Course'],
+      lastUpdated: null
+    },
+    espresso_advanced: {
+      id: 'espresso_advanced',
+      name: 'Espresso Advanced',
+      category: 'Testing',
+      priority: 'high',
+      progress: 0,
+      target: 100,
+      status: 'not-started',
+      resources: ['Official Guide'],
+      lastUpdated: null
+    },
+    perfetto: {
+      id: 'perfetto',
+      name: 'Perfetto',
+      category: 'Performance',
+      priority: 'medium',
+      progress: 0,
+      target: 100,
+      status: 'not-started',
+      resources: ['Perfetto Docs'],
+      lastUpdated: null
+    },
+    systrace: {
+      id: 'systrace',
+      name: 'Systrace',
+      category: 'Performance',
+      priority: 'medium',
+      progress: 0,
+      target: 100,
+      status: 'not-started',
+      resources: ['Android Docs'],
+      lastUpdated: null
+    }
+  };
+};
+
+// ============ Achievements Management ============
+
+export const getAchievements = () => {
+  try {
+    const stored = localStorage.getItem(STORAGE_KEYS.ACHIEVEMENTS);
+    return stored ? JSON.parse(stored) : getDefaultAchievements();
+  } catch (error) {
+    console.error('Error getting achievements:', error);
+    return getDefaultAchievements();
+  }
+};
+
+export const saveAchievements = (achievements) => {
+  try {
+    localStorage.setItem(STORAGE_KEYS.ACHIEVEMENTS, JSON.stringify(achievements));
+    return true;
+  } catch (error) {
+    console.error('Error saving achievements:', error);
+    return false;
+  }
+};
+
+export const addAchievement = (achievement) => {
+  const achievements = getAchievements();
+  const newAchievement = {
+    id: Date.now().toString(),
+    ...achievement,
+    date: achievement.date || new Date().toISOString()
+  };
+  achievements.push(newAchievement);
+  saveAchievements(achievements);
+  return achievements;
+};
+
+export const getDefaultAchievements = () => {
+  return [];
+};
+
+// ============ Networking Management ============
+
+export const getNetworking = () => {
+  try {
+    const stored = localStorage.getItem(STORAGE_KEYS.NETWORKING);
+    return stored ? JSON.parse(stored) : getDefaultNetworking();
+  } catch (error) {
+    console.error('Error getting networking:', error);
+    return getDefaultNetworking();
+  }
+};
+
+export const saveNetworking = (networking) => {
+  try {
+    localStorage.setItem(STORAGE_KEYS.NETWORKING, JSON.stringify(networking));
+    return true;
+  } catch (error) {
+    console.error('Error saving networking:', error);
+    return false;
+  }
+};
+
+export const updateNetworkingMetric = (platform, metric, value) => {
+  const networking = getNetworking();
+  if (networking[platform]) {
+    networking[platform][metric] = value;
+    networking[platform].lastUpdated = new Date().toISOString();
+    saveNetworking(networking);
+  }
+  return networking;
+};
+
+export const getDefaultNetworking = () => {
+  return {
+    linkedin: {
+      platform: 'LinkedIn',
+      connections: 0,
+      profileViews: 0,
+      postEngagement: 0,
+      recommendationsReceived: 0,
+      recommendationsGiven: 0,
+      lastUpdated: null
+    },
+    github: {
+      platform: 'GitHub',
+      followers: 0,
+      contributions: 0,
+      stars: 0,
+      repositories: 0,
+      lastUpdated: null
+    }
+  };
+};
+
+// ============ Action Items Management ============
+
+export const getActionItems = () => {
+  try {
+    const stored = localStorage.getItem(STORAGE_KEYS.ACTION_ITEMS);
+    return stored ? JSON.parse(stored) : getDefaultActionItems();
+  } catch (error) {
+    console.error('Error getting action items:', error);
+    return getDefaultActionItems();
+  }
+};
+
+export const saveActionItems = (items) => {
+  try {
+    localStorage.setItem(STORAGE_KEYS.ACTION_ITEMS, JSON.stringify(items));
+    return true;
+  } catch (error) {
+    console.error('Error saving action items:', error);
+    return false;
+  }
+};
+
+export const addActionItem = (item) => {
+  const items = getActionItems();
+  const newItem = {
+    id: Date.now().toString(),
+    ...item,
+    completed: false,
+    createdAt: new Date().toISOString()
+  };
+  items.push(newItem);
+  saveActionItems(items);
+  return items;
+};
+
+export const toggleActionItem = (itemId) => {
+  const items = getActionItems();
+  const item = items.find(i => i.id === itemId);
+  if (item) {
+    item.completed = !item.completed;
+    item.completedAt = item.completed ? new Date().toISOString() : null;
+    saveActionItems(items);
+  }
+  return items;
+};
+
+export const deleteActionItem = (itemId) => {
+  const items = getActionItems();
+  const filtered = items.filter(i => i.id !== itemId);
+  saveActionItems(filtered);
+  return filtered;
+};
+
+export const getDefaultActionItems = () => {
+  return [];
 };
