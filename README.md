@@ -164,4 +164,28 @@ npm run preview
 - **Dependencies**: Uses `gh-pages` for manual deployment
 - **Live URL**: https://amed12.github.io/
 
+---
+
+## 📊 Career Dashboard
+
+**Interactive career management dashboard with 11 modules!**
+
+**Live Dashboard:** https://amed12.github.io/settings
+
+### Features
+- ✅ CV Manager (31 improvement TODOs)
+- ✅ Job Tracker (5 target companies)
+- ✅ Skill Development (progress tracking)
+- ✅ Learning Hub (14+ resources)
+- ✅ Action Items (task management)
+- ✅ Timeline (application events)
+- ✅ Achievements (log wins)
+- ✅ Networking (LinkedIn & GitHub metrics)
+- ✅ Mobile responsive with collapsible sidebar
+
+### Documentation
+- **Complete Guide:** [DASHBOARD_DOCS.md](./DASHBOARD_DOCS.md)
+- **Setup Guide:** [SETUP.md](./SETUP.md)
+- **Future Plans:** [PHASE_3_PLANNING.md](./PHASE_3_PLANNING.md)
+
 </details>
