@@ -1,26 +1,31 @@
 <h1 align="center">Hi 👋, I'm Achmad Fathullah</h1>  
-<h3 align="center">My name is Achmad Fathullah and I'm a software developer/Mobile Developer Android. I'm from Indonesia, living in Malang, East Java and currently working at PT. Vascomm Solusi Teknologi.</h3>  
+<h3 align="center">Mobile Developer (Android & Flutter) | Software Engineer</h3>
+<p align="center">📍 Malang, East Java, Indonesia | 💼 PT. Vascomm Solusi Teknologi</p>
   
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=amed12" alt="amed12" /> </p>  
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=amed12" alt="Profile views" />
+  <a href="http://amed12.github.io/"><img src="https://img.shields.io/badge/Portfolio-Visit-blue" alt="Portfolio" /></a>
+  <a href="https://amed12.github.io/settings"><img src="https://img.shields.io/badge/Career_Dashboard-Live-green" alt="Dashboard" /></a>
+</p>
 
-## :smiley: About Me
+---
 
+## 🚀 Quick Links
 
-- 🔭 I’m currently working on [Envirtups Apps Product](http://amed12.github.io/)  
-  
-- 🌱 I’m currently learning **Android Development with Kotlin, Flutter**  
-  
-- 👯 I’m looking to collaborate on **Android Development with Java or Kotiin, Flutter**  
-  
-- 🤔 I’m looking for help with **Data Structure for tech interview purpose**  
-  
-- 👨‍💻 All of my projects are available at [http://amed12.github.io/](http://amed12.github.io/)
-  
-- 💬 Ask me about **Android Development**  
-  
-- 📫 How to reach me [about.me/achmadfathullah](http://about.me/achmadfathullah)
-  
-- ⚡ Fun fact **I'm always watch Anime after working hours**
+- **Portfolio:** [amed12.github.io](http://amed12.github.io/)
+- **Career Dashboard:** [amed12.github.io/settings](https://amed12.github.io/settings)
+- **Contact:** [about.me/achmadfathullah](http://about.me/achmadfathullah)
+
+---
+
+## 👨‍💻 About Me
+
+- 🔭 Currently working on **Envirtups Apps Product**
+- 🌱 Learning **Android (Kotlin), Flutter, Testing Frameworks**
+- 👯 Open to collaborate on **Android/Flutter projects**
+- 🎯 Seeking opportunities as **Senior Mobile Engineer**
+- 💬 Ask me about **Android Development, Flutter, Mobile Testing**
+- ⚡ Fun fact: **Anime enthusiast after work hours**
 
 ## &#x1f4c8; GitHub Stats
 
@@ -38,154 +43,85 @@
   <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"></code>
   <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/linux/linux.png"></code>
 
-## &#x270d; Blog & Writing
-
-Apart from coding, I also maintain a blog - you can find my articles on my website at [sun3toline](https://martinheinz.dev/) as well as on [DEV.to](https://dev.to/).
-
-<details>
-<summary>More...</summary>
-
-## My Skills Android Documentation
-
-### Always using best practices is a must
-- [From Ice House](https://github.com/Ice-House-Engineering/academy-curriculum)
-- [Kotlin Cheat Sheet](https://simplecheatsheet.com/tag/kotlin-cheat-sheet/)
-- [UI Library](https://github.com/wasabeef/awesome-android-ui)
-- [Another best](https://github.com/futurice/android-best-practices)
-
-### Android Study Documentation
-Study material to get the Google Developer Android Kotlin certificate.
-- [Study guide: Associate Android Developer Certification](https://developers.google.com/certification/associate-android-developer/study-guide/)
-
-### Guide Line
-- [Android core](https://developers.google.com/certification/associate-android-developer/study-guide/android-core)
-- [User interface](https://developers.google.com/certification/associate-android-developer/study-guide/user-interface)
-- [Data management](https://developers.google.com/certification/associate-android-developer/study-guide/data-management)
-- [Debugging](https://developers.google.com/certification/associate-android-developer/study-guide/debugging)
-- [Testing](https://developers.google.com/certification/associate-android-developer/study-guide/testing)
-
-### Topics studied
-Android core
-- [Android Developers -> Toasts](https://developer.android.com/guide/topics/ui/notifiers/toasts) 100%
-- [Android Developers -> Snackbar](https://developer.android.com/reference/android/support/design/widget/Snackbar) 50%
-- [Android Developers -> Localize your app]() 0%
-- [Android Developers -> Application fundamentals]() 0%
-- [Android Developers -> Create a notification]() 0%
-- [Android Developers -> AndroidX overview]() 0%
-- [Android Developers -> Getting started with Jetpack]() 0%
-- [Android Developers -> Android KTX (Kotlin)]() 0%
-- [Codelabs -> Notifications]() 0%
-- [Codelabs -> JobScheduler]() 0%
-- [Codelabs -> WorkManager (Kotlin)]() 0%
-
-User interface
-- [Android Developers -> Build a responsive UI with ConstraintLayout]() 0%
-- [Android Developers -> Create a list with RecyclerView]() 0%
-- [Android Developers -> Create a navigation drawer]() 0%
-- [Android Developers -> Custom view components]() 0%
-- [Android Developers -> Build more accessible custom views]() 0%
-- [Android Developers -> Styles and themes]() 0%
-- [Android Developers -> setContentDescription()]() 0%
-- [Android Developers -> Adding accessibility features to apps for blind and visually-impaired users]() 0%
-- [Android Tool Time - Building interfaces with ConstraintLayout in AS]() 0%
-- [Codelabs -> Activities and intents]() 0%
-- [Codelabs -> Your first interactive UI]() 0%
-- [Codelabs -> Themes and final touches]() 0%
-- [Codelabs -> RecyclerView]() 0%
-- [Codelabs -> Menus and pickers]() 0%
-- [Codelabs -> User navigation]() 0%
-- [Codelabs -> Material Components (Kotlin)]() 0%
-- [Codelabs -> Lifecycles]() 0%
-- [Codelabs -> Add user interactivity]() 0%
-- [Codelabs -> Constraint layout using the Layout Editor]() 0%
-- [Codelabs -> RecyclerView fundamentals (Kotlin)]() 0%
-
-Data management
-- [Android Developers -> Shared preferences]() 0%
-- [Codelabs -> Room, LiveData and ViewModel]() 0%
-- [Codelabs -> Repository]() 0%
-- [Codelabs -> Drawables, styles, and themes]() 0%
-- [Codelabs -> Shared preferences]() 0%
-- [Codelabs -> App settings]() 0%
-- [Codelabs -> ViewModel and ViewModelFactory]() 0%
-- [Codelabs -> Room with a View (Kotlin)]() 0%
-
-Debugging
-- [Android Developers -> Debug your app]() 0%
-- [Android Dev Fundamentals -> Write and view logs with Logcat]() 0%
-- [Codelabs -> Android Studio debugger]() 0%
-- [Codelabs -> Add log statements to your app]() 0%
-
-Testing
-- [Android Developers -> Fundamentals of testing]() 0%
-- [Android Dev Fundamentals -> Automate UI tests]() 0%
-- [Codelabs -> Unit tests]() 0%
-- [Codelabs -> Android Testing -> Unit testing with JUnit and Mockito]() 0%
-- [Codelabs -> Android Testing -> Espresso for UI testing]() 0%
-
-## What I want to learn or improve in the future
-- UI/UX design
-
----
-
-## 🚀 Deployment
-
-This project is configured to deploy to GitHub Pages automatically.
-
-### Automatic Deployment
-- Push to `master` branch triggers automatic deployment via GitHub Actions
-- The site will be available at: `https://amed12.github.io/`
-
-### Manual Deployment
-```bash
-# Install dependencies
-npm install
-
-# Deploy manually
-npm run deploy
-```
-
-### Local Development
-```bash
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
-```
-
-### Deployment Configuration
-- **Base Path**: `/` (root domain - configured in `vite.config.js`)
-- **Build Output**: `dist/` directory
-- **GitHub Actions**: Automatic deployment on push to master branch
-- **Dependencies**: Uses `gh-pages` for manual deployment
-- **Live URL**: https://amed12.github.io/
-
 ---
 
 ## 📊 Career Dashboard
 
-**Interactive career management dashboard with 11 modules!**
+**🎯 Interactive career management system with 11 modules**
 
-**Live Dashboard:** https://amed12.github.io/settings
+**Live:** [amed12.github.io/settings](https://amed12.github.io/settings)
 
-### Features
-- ✅ CV Manager (31 improvement TODOs)
-- ✅ Job Tracker (5 target companies)
-- ✅ Skill Development (progress tracking)
-- ✅ Learning Hub (14+ resources)
-- ✅ Action Items (task management)
-- ✅ Timeline (application events)
-- ✅ Achievements (log wins)
-- ✅ Networking (LinkedIn & GitHub metrics)
-- ✅ Mobile responsive with collapsible sidebar
+### ✨ Features
+- **CV Manager** - 31 improvement TODOs with match score tracking
+- **Job Tracker** - Track 5 target companies (Grab, Tokopedia, Gojek, etc.)
+- **Skill Development** - Progress tracking for UI Automator, Espresso, Perfetto, Systrace
+- **Learning Hub** - 14+ curated resources (Testing, Performance, Architecture, Flutter)
+- **Action Items** - Task management with due dates and priorities
+- **Timeline** - Visual application timeline with upcoming events
+- **Achievements** - Log wins and milestones
+- **Networking** - Track LinkedIn & GitHub metrics
+- **Mobile Responsive** - Collapsible sidebar, works on all devices
 
-### Documentation
-- **Complete Guide:** [DASHBOARD_DOCS.md](./DASHBOARD_DOCS.md)
-- **Setup Guide:** [SETUP.md](./SETUP.md)
-- **Future Plans:** [PHASE_3_PLANNING.md](./PHASE_3_PLANNING.md)
+### 📚 Documentation
+- [Complete Guide](./DASHBOARD_DOCS.md) - Everything about the dashboard
+- [Setup Guide](./SETUP.md) - Development and deployment
+- [Future Plans](./PHASE_3_PLANNING.md) - Phase 3: Job Posting Library
+
+---
+
+## 📖 Learning Resources
+
+<details>
+<summary>Click to expand Android study materials and certifications</summary>
+
+### 🎓 Certifications
+- [Associate Android Developer Certification](https://developers.google.com/certification/associate-android-developer/study-guide/)
+
+### 📚 Best Practices
+- [Ice House Academy Curriculum](https://github.com/Ice-House-Engineering/academy-curriculum)
+- [Kotlin Cheat Sheet](https://simplecheatsheet.com/tag/kotlin-cheat-sheet/)
+- [Awesome Android UI](https://github.com/wasabeef/awesome-android-ui)
+- [Android Best Practices](https://github.com/futurice/android-best-practices)
+
+### 📝 Study Guides
+- [Android Core](https://developers.google.com/certification/associate-android-developer/study-guide/android-core)
+- [User Interface](https://developers.google.com/certification/associate-android-developer/study-guide/user-interface)
+- [Data Management](https://developers.google.com/certification/associate-android-developer/study-guide/data-management)
+- [Debugging](https://developers.google.com/certification/associate-android-developer/study-guide/debugging)
+- [Testing](https://developers.google.com/certification/associate-android-developer/study-guide/testing)
+
+### 🎯 Current Learning Focus
+- **Testing:** UI Automator, Espresso Advanced (High Priority)
+- **Performance:** Perfetto, Systrace (Medium Priority)
+- **Architecture:** Clean Architecture, MVVM patterns
+- **Flutter:** BLoC pattern, Advanced state management
+
+_For detailed study progress, visit the [Career Dashboard](https://amed12.github.io/settings)_
+
+---
+
+## 🚀 Development & Deployment
+
+### Quick Start
+```bash
+npm install          # Install dependencies
+npm run dev          # Start dev server (localhost:5173)
+npm run build        # Build for production
+npm run deploy       # Deploy to GitHub Pages
+```
+
+### Tech Stack
+- **Frontend:** React 18 + Vite
+- **Styling:** Tailwind CSS
+- **Icons:** Lucide React
+- **Routing:** React Router DOM
+- **Storage:** Local Storage API
+- **Deployment:** GitHub Pages (automatic on push to master)
+
+### URLs
+- **Portfolio:** https://amed12.github.io/
+- **Dashboard:** https://amed12.github.io/settings
+
+_For detailed setup instructions, see [SETUP.md](./SETUP.md)_
 
 </details>
