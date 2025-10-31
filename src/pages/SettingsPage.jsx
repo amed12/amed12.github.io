@@ -12,7 +12,9 @@ import {
   Github,
   Linkedin,
   MessageSquare,
-  Settings as SettingsIcon
+  Settings as SettingsIcon,
+  Menu,
+  X
 } from 'lucide-react';
 
 // Import dashboard components
@@ -30,6 +32,7 @@ import PortfolioSettings from '../components/Settings/PortfolioSettings';
 
 const SettingsPage = ({ data }) => {
   const [activeTab, setActiveTab] = useState('dashboard');
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const menuItems = [
     {
@@ -131,11 +134,50 @@ const SettingsPage = ({ data }) => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="flex">
+      {/* Mobile Header */}
+      <div className="lg:hidden fixed top-0 left-0 right-0 bg-white border-b border-gray-200 z-40">
+        <div className="flex items-center justify-between p-4">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center">
+              <LayoutDashboard className="w-5 h-5 text-white" />
+            </div>
+            <div>
+              <h1 className="text-lg font-bold text-gray-900">Career Hub</h1>
+              <p className="text-xs text-gray-500">
+                {menuItems.find(item => item.id === activeTab)?.label}
+              </p>
+            </div>
+          </div>
+          <button
+            onClick={() => setSidebarOpen(!sidebarOpen)}
+            className="p-2 rounded-lg hover:bg-gray-100 transition-colors"
+          >
+            {sidebarOpen ? (
+              <X className="w-6 h-6 text-gray-600" />
+            ) : (
+              <Menu className="w-6 h-6 text-gray-600" />
+            )}
+          </button>
+        </div>
+      </div>
+
+      {/* Overlay for mobile */}
+      {sidebarOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"
+          onClick={() => setSidebarOpen(false)}
+        />
+      )}
+
+      <div className="flex pt-16 lg:pt-0">
         {/* Sidebar */}
-        <aside className="w-72 bg-white border-r border-gray-200 min-h-screen fixed left-0 top-0 overflow-y-auto">
-          {/* Header */}
-          <div className="p-6 border-b border-gray-200">
+        <aside className={`
+          w-72 bg-white border-r border-gray-200 min-h-screen overflow-y-auto z-50
+          fixed left-0 top-0 lg:top-0 transition-transform duration-300 ease-in-out
+          ${sidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
+        `}>
+          {/* Header - Desktop only */}
+          <div className="hidden lg:block p-6 border-b border-gray-200">
             <div className="flex items-center gap-3">
               <div className="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center">
                 <LayoutDashboard className="w-6 h-6 text-white" />
@@ -143,6 +185,19 @@ const SettingsPage = ({ data }) => {
               <div>
                 <h1 className="text-xl font-bold text-gray-900">Career Hub</h1>
                 <p className="text-sm text-gray-500">Job Seeking Dashboard</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Mobile Header inside sidebar */}
+          <div className="lg:hidden p-4 border-b border-gray-200 mt-16">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center">
+                <LayoutDashboard className="w-5 h-5 text-white" />
+              </div>
+              <div>
+                <h1 className="text-lg font-bold text-gray-900">Career Hub</h1>
+                <p className="text-xs text-gray-500">Job Seeking Dashboard</p>
               </div>
             </div>
           </div>
@@ -157,7 +212,10 @@ const SettingsPage = ({ data }) => {
                 return (
                   <button
                     key={item.id}
-                    onClick={() => setActiveTab(item.id)}
+                    onClick={() => {
+                      setActiveTab(item.id);
+                      setSidebarOpen(false); // Close sidebar on mobile after selection
+                    }}
                     className={`w-full flex items-start gap-3 px-4 py-3 rounded-lg transition-all ${
                       isActive
                         ? 'bg-primary-50 text-primary-700 border border-primary-200'
@@ -208,7 +266,7 @@ const SettingsPage = ({ data }) => {
         </aside>
 
         {/* Main Content */}
-        <main className="ml-72 flex-1 p-8">
+        <main className="w-full lg:ml-72 p-4 sm:p-6 lg:p-8">
           {renderContent()}
         </main>
       </div>
