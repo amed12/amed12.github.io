@@ -695,12 +695,12 @@
     {
       "id": "proj30",
       "title": "Qiscus Meet IT - Video Meeting Platform",
-      "category": "cross-platform",
+      "category": "mobile",
       "description": "Video conferencing and meeting platform built with cross-platform technologies. Supports real-time video calls, screen sharing, and meeting management.",
       "image": "/projects/qiscus-meet.png",
       "link": "",
       "technologies": [
-        "Cross-platform",
+        "React Native",
         "WebRTC",
         "Video Conferencing"
       ]
