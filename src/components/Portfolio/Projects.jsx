@@ -8,8 +8,52 @@ const Projects = ({ projects }) => {
 
   if (!projects || projects.length === 0) return null;
 
-  const categories = ['all', ...new Set(projects.map((p) => p.category))];
-  const filteredProjects = filter === 'all' ? projects : projects.filter((p) => p.category === filter);
+  // Helper function to detect mobile subcategory
+  const getMobileSubcategory = (project) => {
+    if (project.category !== 'mobile') return project.category;
+    
+    const techString = project.technologies?.join(' ').toLowerCase() || '';
+    const title = project.title.toLowerCase();
+    const description = project.description.toLowerCase();
+    const combined = `${techString} ${title} ${description}`;
+    
+    if (combined.includes('flutter') || combined.includes('dart')) return 'flutter';
+    if (combined.includes('react native') || combined.includes('react-native')) return 'react-native';
+    if (combined.includes('swift') || combined.includes('ios') || combined.includes('swiftui')) return 'ios';
+    if (combined.includes('kotlin') || combined.includes('android') && !combined.includes('react native')) return 'android';
+    
+    return 'mobile'; // fallback
+  };
+
+  // Add subcategory to each project
+  const projectsWithSubcategory = projects.map(project => ({
+    ...project,
+    subcategory: getMobileSubcategory(project)
+  }));
+
+  // Define category order and labels
+  const categoryConfig = {
+    'all': 'All',
+    'android': 'Android',
+    'ios': 'iOS',
+    'flutter': 'Flutter',
+    'react-native': 'React Native',
+    'web': 'Web',
+    'cross-platform': 'Cross-platform'
+  };
+
+  // Get unique categories from projects
+  const uniqueCategories = ['all', ...new Set(projectsWithSubcategory.map((p) => p.subcategory))];
+  
+  // Sort categories based on our preferred order
+  const categories = uniqueCategories.sort((a, b) => {
+    const order = Object.keys(categoryConfig);
+    return order.indexOf(a) - order.indexOf(b);
+  });
+
+  const filteredProjects = filter === 'all' 
+    ? projectsWithSubcategory 
+    : projectsWithSubcategory.filter((p) => p.subcategory === filter);
 
   // Reset to page 1 when filter changes
   useEffect(() => {
@@ -25,8 +69,11 @@ const Projects = ({ projects }) => {
   // Pagination handlers
   const goToPage = (page) => {
     setCurrentPage(page);
-    // Smooth scroll to top of projects section
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // Smooth scroll to projects section
+    const projectsSection = document.getElementById('projects-section');
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   };
 
   const nextPage = () => {
@@ -72,7 +119,7 @@ const Projects = ({ projects }) => {
   };
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section id="projects-section" className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 text-center">Projects</h2>
 
@@ -88,7 +135,7 @@ const Projects = ({ projects }) => {
                   : 'bg-white text-gray-700 hover:bg-gray-100'
               }`}
             >
-              {category.charAt(0).toUpperCase() + category.slice(1)}
+              {categoryConfig[category] || category.charAt(0).toUpperCase() + category.slice(1)}
             </button>
           ))}
         </div>
@@ -114,7 +161,7 @@ const Projects = ({ projects }) => {
                   alt={project.title}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   onError={(e) => {
-                    e.target.src = 'https://via.placeholder.com/400x300/0ea5e9/ffffff?text=Project';
+                    e.target.src = 'https://placehold.co/400x300/0ea5e9/ffffff?text=' + project.title;
                   }}
                 />
               </div>

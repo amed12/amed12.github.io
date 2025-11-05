@@ -15,7 +15,7 @@ const Header = ({ profile }) => {
               alt={profile.name}
               className="w-full h-full object-cover"
               onError={(e) => {
-                e.target.src = 'https://via.placeholder.com/200x200/0ea5e9/ffffff?text=' + profile.name.charAt(0);
+                e.target.src = 'https://placehold.co/200x200/0ea5e9/ffffff?text=' + profile.name.charAt(0);
               }}
             />
           </div>
