@@ -205,6 +205,7 @@
       "description": "Focus on development new feature 'DEPOSITO'",
       "image": "/projects/mandiri-taspen.png",
       "link": "https://www.bankmantap.co.id/home/tnc",
+      "learningProject": false,
       "technologies": [
         "Android MVP Architecture",
         "Content Provider",
@@ -224,6 +225,7 @@
       "description": "Kelola perangkat IoT kamu cukup dengan sentuhan tombol atau menggunakan suara, kami memberikan pendekatan yang mudah dan praktis namun detail untuk kebutuhan pemakaian perangkat IoT sehari-hari",
       "image": "/projects/sitamoto.png",
       "link": "https://sitamoto.id/id",
+      "learningProject": false,
       "technologies": [
         "MVP Architecture",
         "Material Design",
@@ -246,6 +248,7 @@
       "description": "CEKLOK merupakan platform HRIS yang ikut berkembang dengan perusahaan. Features: Authentication with AI face Recognition, Absence & Leave, Overtime, etc",
       "image": "/projects/ceklok.png",
       "link": "https://ceklok.id/id",
+      "learningProject": false,
       "technologies": [
         "MVP Architecture",
         "Material Design",
@@ -266,6 +269,7 @@
       "description": "COMMJUNCTION memberikan platform komunitas yang dapat dipersonalisasikan dengan kebutuhan sebuah komunitas untuk mencapai tujuan bersama",
       "image": "/projects/commjunction.png",
       "link": "https://commjunction.id/id",
+      "learningProject": false,
       "technologies": [
         "MVP Architecture",
         "Material Design",
@@ -285,6 +289,7 @@
       "description": "Web app page for Mobile Banking to record and manage all transaction on Mobile Banking Mandiri Taspen. Backoffice merupakan aplikasi berbasis web yang berfungsi untuk mencatat aktifitas yang dilakukan mobile banking, pengelola user mobile banking (Lupa password, Pendaftaran User baru, Block user, etc), Pencatat log error dan transaksi, Pembukaan deposito special rate dan lain lain.",
       "image": "/projects/backoffice.png",
       "link": "https://www.bankmantap.co.id/home/tnc",
+      "learningProject": false,
       "technologies": [
         "HTML5",
         "CSS3",
@@ -304,6 +309,7 @@
       "description": "Sistem Informasi Beasiswa (SIBEA) merupakan sistem manajemen penerimaan dan pendaftaran beasiswa lingkup Universitas Islam Negeri Maulana Malik Ibrahim Malang",
       "image": "/projects/sibea.png",
       "link": "http://kemahasiswaan.uin-malang.ac.id/beasiswa/",
+      "learningProject": false,
       "technologies": [
         "HTML5",
         "CSS3",
@@ -321,6 +327,7 @@
       "description": "Reminder information systems (management system for foreign students who will continue their studies at the university or who will take time off, manage their personal data then give warnings / reminders to e-mails of foreign students when there is important information that must be immediately followed up)",
       "image": "/projects/reminder.png",
       "link": "http://isa.uin-malang.ac.id/reminder/Login",
+      "learningProject": false,
       "technologies": [
         "HTML5",
         "CSS3",
@@ -338,6 +345,7 @@
       "description": "This is my version of Udacity's Popular Movie project. In this project implementing The Movie DB API of popular movies, top rated movies, movie's trailers and reviews. It also has endless scroll on movies list. It is also implementing Model View Presenter (MVP) architecture. I build this as part of Udacity Associate Android Developer Fast Track program.",
       "image": "/projects/popular-movies.png",
       "link": "https://github.com/amed12/PopularMovies2",
+      "learningProject": true,
       "technologies": [
         "Android MVP Architecture",
         "Content Provider",
@@ -357,6 +365,7 @@
       "description": "A comprehensive career management system built as a single-page application. Features an interactive portfolio showcase and career dashboard with 11 modules including CV Manager, Job Tracker for top tech companies (Grab, Tokopedia, Gojek), Skill Development tracking, Learning Hub, Timeline visualization, and mobile responsive design. Helps track progress toward senior mobile engineer positions.",
       "image": "/projects/portfolio-dashboard.png",
       "link": "https://amed12.github.io/",
+      "learningProject": false,
       "technologies": [
         "React 18",
         "Vite",
@@ -375,6 +384,7 @@
       "description": "An Instagram-inspired portfolio template designed specifically for mobile developers to showcase their app projects in a familiar, engaging interface. Features responsive grid layout, interactive hover effects, profile section with stats, and modern UI perfect for displaying app screenshots.",
       "image": "/projects/instagram-showcase.png",
       "link": "https://github.com/amed12/instagram-showcase",
+      "learningProject": false,
       "technologies": [
         "React 19",
         "Vite 7",
@@ -390,6 +400,7 @@
       "description": "A comprehensive personal care management app that helps users maintain health routines, track medications, skincare regimens, and other personal care tasks. Built with clean architecture featuring category-based organization, smart reminders, progress monitoring, growth tracker, warranty tracker, and mileage tracker. Uses category-first approach where each category functions as a mini-app.",
       "image": "/projects/kepoin.png",
       "link": "https://github.com/amed12/care_minder",
+      "learningProject": false,
       "technologies": [
         "Flutter",
         "Dart",
@@ -408,6 +419,7 @@
       "description": "Full-featured e-commerce mobile app with product browsing, shopping cart, checkout, and order tracking. Implements real-time updates, push notifications, and offline support. Features include user authentication, product search, wishlist, order history, and Firebase analytics.",
       "image": "/projects/ecomart.png",
       "link": "https://github.com/amed12/ecomart-mobile",
+      "learningProject": false,
       "technologies": [
         "React Native 0.62",
         "TypeScript",
@@ -427,6 +439,7 @@
       "description": "Mobile app for discovering and purchasing deals with real-time updates. Features include deal browsing, search functionality, user authentication, push notifications via OneSignal, real-time chat support with Socket.io, video content, and social sharing capabilities.",
       "image": "/projects/dealaja.png",
       "link": "https://github.com/amed12/dealaja-rn",
+      "learningProject": false,
       "technologies": [
         "React Native 0.65",
         "TypeScript",
@@ -445,6 +458,7 @@
       "description": "Enterprise-grade chat SDK providing real-time messaging capabilities for Android applications. Core SDK implementation with features including real-time messaging, file sharing, typing indicators, read receipts, and offline message queue.",
       "image": "/projects/qiscus-android.png",
       "link": "https://github.com/qiscus/qiscus-sdk-android",
+      "learningProject": false,
       "technologies": [
         "Kotlin",
         "Android SDK",
@@ -463,6 +477,7 @@
       "description": "iOS implementation of Qiscus chat platform providing seamless real-time messaging for iOS applications. Features include message synchronization, media handling, push notifications, and offline support.",
       "image": "/projects/qiscus-ios.png",
       "link": "https://github.com/qiscus/QiscusCore-iOS",
+      "learningProject": false,
       "technologies": [
         "Swift",
         "iOS SDK",
@@ -480,6 +495,7 @@
       "description": "Flutter implementation of Qiscus chat platform enabling cross-platform real-time messaging. Provides unified API for both iOS and Android with native performance and platform-specific optimizations.",
       "image": "/projects/qiscus-flutter.png",
       "link": "https://github.com/qiscus/qiscus-chat-sdk-flutter",
+      "learningProject": false,
       "technologies": [
         "Flutter",
         "Dart",
@@ -496,6 +512,7 @@
       "description": "Customer support widget enabling multi-channel communication for Android apps. Supports live chat, ticket management, agent assignment, and customer satisfaction ratings. Easy integration with existing Android applications.",
       "image": "/projects/qiscus-multichannel-android.png",
       "link": "https://github.com/qiscus/qiscus-multichannel-widget-android",
+      "learningProject": false,
       "technologies": [
         "Kotlin",
         "Android SDK",
@@ -512,6 +529,7 @@
       "description": "iOS customer support widget for multi-channel communication. Provides seamless integration with iOS apps for customer service, live chat, and support ticket management.",
       "image": "/projects/qiscus-multichannel-ios.png",
       "link": "https://github.com/qiscus/qiscus-multichannel-widget-ios",
+      "learningProject": false,
       "technologies": [
         "Swift",
         "iOS SDK",
@@ -528,6 +546,7 @@
       "description": "Educational project exploring GitHub API integration and modern Android architecture. Features user search, profile viewing, repository listing, and favorites management. Demonstrates MVVM pattern, Room database, and Retrofit implementation.",
       "image": "/projects/github-user.png",
       "link": "https://github.com/amed12/GithubUser",
+      "learningProject": true,
       "technologies": [
         "Kotlin",
         "Android SDK",
@@ -546,6 +565,7 @@
       "description": "Movie browsing app demonstrating clean architecture principles. Features movie discovery, detailed information, trailers, reviews, and favorites management. Implements TMDB API integration with offline caching.",
       "image": "/projects/movielover.png",
       "link": "https://github.com/amed12/MovieLover",
+      "learningProject": true,
       "technologies": [
         "Kotlin",
         "Android SDK",
@@ -563,6 +583,7 @@
       "description": "Personal project developed at Apple Developer Academy using SwiftUI. Demonstrates modern iOS development practices and Challenge Based Learning methodology.",
       "image": "/projects/sibu.png",
       "link": "https://github.com/amed12/nc1-sibu",
+      "learningProject": true,
       "technologies": [
         "Swift",
         "SwiftUI",
@@ -578,6 +599,7 @@
       "description": "Aviation industry mobile solution for Garuda Indonesia. Enterprise application for flight booking, check-in, and passenger services.",
       "image": "/projects/garuda-android.png",
       "link": "",
+      "learningProject": false,
       "technologies": [
         "Kotlin",
         "Android SDK",
@@ -593,6 +615,7 @@
       "description": "iOS version of Garuda Indonesia's mobile solution providing flight booking, check-in, and passenger management features.",
       "image": "/projects/garuda-ios.png",
       "link": "",
+      "learningProject": false,
       "technologies": [
         "Swift",
         "iOS SDK",
@@ -608,6 +631,7 @@
       "description": "Learning project demonstrating BLoC pattern with clean architecture in Flutter. Shows separation of concerns, dependency injection, and testable code structure.",
       "image": "/projects/flutter-bloc.png",
       "link": "https://github.com/amed12/Flutter-Bloc-Clean-Architecture",
+      "learningProject": true,
       "technologies": [
         "Flutter",
         "Dart",
@@ -624,6 +648,7 @@
       "description": "Test-driven development approach to building e-commerce apps in Flutter. Demonstrates comprehensive testing strategy including unit tests, widget tests, and integration tests with clean architecture.",
       "image": "/projects/flutter-tdd.png",
       "link": "https://github.com/amed12/Flutter-TDD-Clean-Architecture-E-Commerce-App",
+      "learningProject": true,
       "technologies": [
         "Flutter",
         "Dart",
@@ -640,6 +665,7 @@
       "description": "Modern state management with Riverpod demonstrating clean architecture principles. Shows how to use Riverpod for dependency injection and state management in a scalable Flutter app.",
       "image": "/projects/flutter-riverpod.png",
       "link": "https://github.com/amed12/flutter-clean-architecture-riverpod",
+      "learningProject": true,
       "technologies": [
         "Flutter",
         "Dart",
@@ -656,6 +682,7 @@
       "description": "Advanced navigation patterns with GoRouter in Flutter. Demonstrates declarative routing, deep linking, route guards, and nested navigation.",
       "image": "/projects/flutter-gorouter.png",
       "link": "https://github.com/amed12/flutter-go-router-example",
+      "learningProject": true,
       "technologies": [
         "Flutter",
         "Dart",
@@ -670,6 +697,7 @@
       "description": "Banking applications for BTPN with multichannel support. Provides secure banking features including account management, transfers, and customer support integration.",
       "image": "/projects/btpn-rn.png",
       "link": "",
+      "learningProject": false,
       "technologies": [
         "React Native",
         "TypeScript",
@@ -685,6 +713,7 @@
       "description": "Video conferencing integration using Jitsi Meet SDK for React Native. Provides real-time video calling, screen sharing, and chat features.",
       "image": "/projects/jitsi-meet.png",
       "link": "https://github.com/amed12/jitsi-meet",
+      "learningProject": false,
       "technologies": [
         "React Native",
         "Jitsi SDK",
@@ -699,6 +728,7 @@
       "description": "Video conferencing and meeting platform built with cross-platform technologies. Supports real-time video calls, screen sharing, and meeting management.",
       "image": "/projects/qiscus-meet.png",
       "link": "",
+      "learningProject": false,
       "technologies": [
         "React Native",
         "WebRTC",
@@ -712,6 +742,7 @@
       "description": "Automotive industry application for Honda dealerships and customers. Features include vehicle information, service booking, and customer management.",
       "image": "/projects/ahm-honda.png",
       "link": "",
+      "learningProject": false,
       "technologies": [
         "Kotlin",
         "Android SDK",
@@ -726,6 +757,7 @@
       "description": "Banking sector POC demonstrating secure mobile banking features including authentication, transactions, and account management with security best practices.",
       "image": "/projects/mybb-poc.png",
       "link": "",
+      "learningProject": false,
       "technologies": [
         "Kotlin",
         "Android SDK",
@@ -740,6 +772,7 @@
       "description": "Advanced Android development certification project demonstrating clean architecture, modularization, dependency injection, and comprehensive testing strategies.",
       "image": "/projects/dicoding-android-expert.png",
       "link": "https://github.com/amed12/a165-android-expert-project",
+      "learningProject": true,
       "technologies": [
         "Kotlin",
         "Android SDK",
@@ -757,6 +790,7 @@
       "description": "iOS expert certification project demonstrating advanced iOS development with clean architecture, Combine framework, and comprehensive testing.",
       "image": "/projects/dicoding-ios-expert.png",
       "link": "https://github.com/amed12/a209-ios-expert-project",
+      "learningProject": true,
       "technologies": [
         "Swift",
         "iOS SDK",
@@ -773,6 +807,7 @@
       "description": "Real-time voice/video calling feature for gaming platform using WebRTC. Enables gamers to communicate during gameplay with low latency.",
       "image": "/projects/dg-call.png",
       "link": "",
+      "learningProject": false,
       "technologies": [
         "Kotlin",
         "Android SDK",
@@ -787,6 +822,7 @@
       "description": "Custom chat implementation for Mekari's enterprise platform. Provides secure business communication with file sharing, group chat, and admin controls.",
       "image": "/projects/mekari-chat.png",
       "link": "",
+      "learningProject": false,
       "technologies": [
         "Kotlin",
         "Android SDK",
@@ -801,6 +837,7 @@
       "description": "Professional chat application for enterprise use built with Flutter. Features include team messaging, file sharing, and integration with business tools.",
       "image": "/projects/everpro-chat.png",
       "link": "",
+      "learningProject": false,
       "technologies": [
         "Flutter",
         "Dart",
@@ -813,6 +850,7 @@
       "title": "Dealaja Flutter - Deal Platform",
       "category": "mobile",
       "description": "E-commerce platform for deals and discounts built with Flutter. Cross-platform app with BLoC pattern for state management.",
+      "learningProject": false,
       "image": "/projects/dealaja-flutter.png",
       "link": "",
       "technologies": [
@@ -830,6 +868,7 @@
       "description": "POI (Point of Interest) management application using MapKit. Helps users manage and allocate points of interest with location-based features.",
       "image": "/projects/quadrant-poi.png",
       "link": "",
+      "learningProject": false,
       "technologies": [
         "Swift",
         "iOS SDK",
@@ -844,6 +883,7 @@
       "description": "Social and communication application for iOS with modern UI and real-time features.",
       "image": "/projects/tezzbuzz.png",
       "link": "",
+      "learningProject": false,
       "technologies": [
         "Swift",
         "iOS SDK",
@@ -858,6 +898,7 @@
       "description": "Collection of beautiful wedding invitation websites including our-love-story (interactive timeline), wedding-invite (elegant template), weddingfathulririn (custom site), and felaundangan (invitation platform). Features responsive design, photo galleries, and RSVP management.",
       "image": "/projects/wedding-sites.png",
       "link": "",
+      "learningProject": false,
       "technologies": [
         "React",
         "Vite",
@@ -874,6 +915,7 @@
       "description": "Sample implementation of Qiscus chat SDK for web applications. Demonstrates real-time messaging integration for web platforms.",
       "image": "/projects/qiscus-js.png",
       "link": "https://github.com/amed12/qiscus-chat-sdk-js-sample",
+      "learningProject": false,
       "technologies": [
         "JavaScript",
         "Qiscus SDK",
@@ -889,6 +931,7 @@
       "description": "Collection of vanilla JavaScript examples and patterns demonstrating core JavaScript concepts without frameworks. Educational resource for learning JavaScript fundamentals.",
       "image": "/projects/vanilla-js.png",
       "link": "https://github.com/amed12/vanilla-js-examples",
+      "learningProject": true,
       "technologies": [
         "JavaScript",
         "HTML5",
@@ -903,6 +946,7 @@
       "description": "Banking API integration sample for Flutter demonstrating secure banking operations and API communication.",
       "image": "/projects/bankraya.png",
       "link": "",
+      "learningProject": false,
       "technologies": [
         "Flutter",
         "Dart",
@@ -917,6 +961,7 @@
       "description": "Flutter app demonstrating internationalization and localization implementation. Shows how to support multiple languages and regions.",
       "image": "/projects/rewigo.png",
       "link": "",
+      "learningProject": true,
       "technologies": [
         "Flutter",
         "Dart",
@@ -931,6 +976,7 @@
       "description": "Game development with Flutter using Flame engine. Collection of game examples demonstrating game loops, sprites, and physics.",
       "image": "/projects/flutter-games.png",
       "link": "",
+      "learningProject": true,
       "technologies": [
         "Flutter",
         "Dart",
