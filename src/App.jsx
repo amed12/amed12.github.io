@@ -5,19 +5,24 @@ import PortfolioPage from './pages/PortfolioPage';
 import CVPage from './pages/CVPage';
 import SettingsPage from './pages/SettingsPage';
 import AdminPanel from './components/Admin/AdminPanel';
+import AdminGate, { isAdminUnlocked } from './components/Admin/AdminGate';
 import UnpublishedBanner from './components/Admin/UnpublishedBanner';
 import { getData, hasUnpublishedChanges, resetData } from './utils/dataManager';
 
 function AppContent({ data, showAdmin, setShowAdmin, handleDataChange, hasDraft, onDiscardDraft }) {
   const location = useLocation();
   const isAdminPath = location.pathname === '/admin';
+  const [unlocked, setUnlocked] = useState(isAdminUnlocked());
 
   return (
     <div className="relative">
       {hasDraft && <UnpublishedBanner onDiscard={onDiscardDraft} />}
 
-      {/* Admin Button - Only show on /admin path */}
-      {isAdminPath && (
+      {/* Admin Passphrase Gate - Only show on /admin path until unlocked */}
+      {isAdminPath && !unlocked && <AdminGate onUnlock={() => setUnlocked(true)} />}
+
+      {/* Admin Button - Only show on /admin path once unlocked */}
+      {isAdminPath && unlocked && (
         <button
           onClick={() => setShowAdmin(true)}
           className="fixed bottom-6 right-6 z-40 bg-primary-600 hover:bg-primary-700 text-white p-4 rounded-full shadow-lg transition-all hover:scale-110"
@@ -36,7 +41,7 @@ function AppContent({ data, showAdmin, setShowAdmin, handleDataChange, hasDraft,
       </Routes>
 
       {/* Admin Panel Modal */}
-      {showAdmin && (
+      {showAdmin && unlocked && (
         <AdminPanel
           data={data}
           onDataChange={handleDataChange}

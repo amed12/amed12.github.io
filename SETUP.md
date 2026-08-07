@@ -116,7 +116,17 @@ The admin panel has 7 tabs:
 - The token is entered in a password field and kept only in the browser's memory for the current session — it is never saved to localStorage, a file, or sent anywhere except GitHub's API.
 - It disappears when you close the admin panel or reload the page; you'll need to re-enter it next time you publish.
 - Don't use it on a shared or public computer, and don't share the token with anyone.
-- `/admin` currently has no login of its own — anyone with the URL can open the publish form. Don't rely on this token flow while the admin panel is exposed on a machine others can access.
+- `/admin` is gated by a passphrase prompt (see below) before the publish form appears, but this is a deterrent, not real authentication — don't rely on it while the admin panel is exposed on a machine others can access.
+
+### Admin Passphrase Gate
+
+Visiting `/admin` now shows a passphrase prompt before the gear button/publish form appear.
+
+1. Copy `.env.example` to `.env` and set `VITE_ADMIN_PASSPHRASE` to a value only you know.
+2. For the deployed site, add the same value as a GitHub Actions repository secret named `VITE_ADMIN_PASSPHRASE` (Settings → Secrets and variables → Actions) — the deploy workflow bakes it into the build.
+3. Unlocking is remembered for the browser tab session (`sessionStorage`) — closing the tab requires re-entering the passphrase.
+
+⚠️ This site is static (GitHub Pages, no backend), so the passphrase is bundled into the client JavaScript like any other build-time value — anyone can extract it by reading the deployed bundle. Treat it as a way to keep casual visitors out, not as access control against a motivated attacker.
 
 ⚠️ **Images:**
 - Place images in the `public` folder
