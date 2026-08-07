@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { ArrowLeft, Briefcase, Copy, Check, FileText } from 'lucide-react';
+import { ArrowLeft, Briefcase, Copy, Check, FileText, Printer } from 'lucide-react';
 import { POSITION_OPTIONS } from '../config/positions';
 import { filterProjectsByPositions } from '../utils/cvScoring';
 import { sortSkillsByRelevance } from '../utils/cvTemplateHelpers';
@@ -57,6 +57,10 @@ const SharePage = ({ data }) => {
     }
   };
 
+  const handlePrint = () => {
+    window.print();
+  };
+
   const handleCopyLink = async () => {
     try {
       await navigator.clipboard.writeText(window.location.href);
@@ -80,7 +84,7 @@ const SharePage = ({ data }) => {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      <div className="bg-white shadow-md sticky top-0 z-10">
+      <div className="bg-white shadow-md sticky top-0 z-10 print:hidden">
         <div className="container mx-auto px-4 py-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <button
             onClick={() => navigate('/')}
@@ -95,6 +99,12 @@ const SharePage = ({ data }) => {
               <FileText className="w-4 h-4" />
               View CV
             </button>
+            {selectedPositions.length > 0 && (
+              <button onClick={handlePrint} className="btn-secondary flex items-center gap-2">
+                <Printer className="w-4 h-4" />
+                Print
+              </button>
+            )}
             <button onClick={handleCopyLink} className="btn-primary flex items-center gap-2">
               {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
               {copied ? 'Copied!' : 'Copy Link'}
@@ -103,9 +113,9 @@ const SharePage = ({ data }) => {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-8 max-w-4xl">
+      <div className="container mx-auto px-4 py-8 max-w-4xl print:p-0 print:max-w-none">
         {/* Builder: position picker, always visible so selection can be adjusted */}
-        <div className="bg-white rounded-lg shadow p-6 mb-6">
+        <div className="bg-white rounded-lg shadow p-6 mb-6 print:hidden">
           <h2 className="font-bold text-gray-900 mb-1 flex items-center gap-2">
             <Briefcase className="w-5 h-5 text-primary-600" />
             Select positions to share
@@ -134,11 +144,11 @@ const SharePage = ({ data }) => {
         </div>
 
         {selectedPositions.length === 0 ? (
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 text-blue-900 text-sm">
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 text-blue-900 text-sm print:hidden">
             Select at least one position above to preview the curated portfolio and get a shareable link.
           </div>
         ) : (
-          <div className="bg-white rounded-lg shadow p-6 space-y-8">
+          <div className="bg-white rounded-lg shadow p-6 space-y-8 print:shadow-none">
             {/* Header */}
             <div>
               <div className="flex flex-wrap gap-2 mb-3">
@@ -194,6 +204,19 @@ const SharePage = ({ data }) => {
           </div>
         )}
       </div>
+
+      <style>{`
+        @media print {
+          body {
+            margin: 0;
+            padding: 0;
+          }
+          @page {
+            margin: 0.5in;
+            size: a4;
+          }
+        }
+      `}</style>
     </div>
   );
 };
