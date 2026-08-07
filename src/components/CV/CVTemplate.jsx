@@ -1,5 +1,11 @@
 import { forwardRef } from 'react';
 import PropTypes from 'prop-types';
+import {
+  getBioForPosition,
+  sortSkillsByRelevance,
+  filterCertifications,
+  groupSkillsByCategory,
+} from '../../utils/cvTemplateHelpers';
 
 // ATS-Friendly CV Template following FAANG standards
 const CVTemplate = forwardRef(({ data, targetPosition = 'all' }, ref) => {
@@ -7,77 +13,10 @@ const CVTemplate = forwardRef(({ data, targetPosition = 'all' }, ref) => {
 
   const { profile, skills, languages, experience, projects, education, certifications, honors } = data;
 
-  // Get position-specific summary from data.json, or fall back to the general bio
-  const customBio = targetPosition !== 'all' && profile?.positionSummaries?.[targetPosition]
-    ? profile.positionSummaries[targetPosition]
-    : profile?.bio;
-
-  // Position-specific skill priorities
-  const skillPriorities = {
-    'flutter': ['flutter', 'dart', 'riverpod', 'bloc', 'provider', 'firebase', 'rest api'],
-    'android': ['kotlin', 'android', 'java', 'jetpack', 'compose', 'mvvm', 'room', 'retrofit'],
-    'ios': ['swift', 'ios', 'swiftui', 'uikit', 'combine', 'core data', 'xcode'],
-    'react-native': ['react native', 'typescript', 'javascript', 'redux', 'react', 'expo'],
-    'mobile': ['kotlin', 'swift', 'flutter', 'react native', 'android', 'ios', 'mobile'],
-    'web': ['react', 'typescript', 'javascript', 'html', 'css', 'tailwind', 'vite', 'node'],
-  };
-
-  // Sort skills by relevance to target position
-  const sortSkillsByRelevance = (skillsList) => {
-    if (!skillsList || targetPosition === 'all') return skillsList;
-
-    const priorities = skillPriorities[targetPosition] || [];
-    return [...skillsList].sort((a, b) => {
-      const aName = a.name.toLowerCase();
-      const bName = b.name.toLowerCase();
-
-      const aScore = priorities.findIndex(p => aName.includes(p));
-      const bScore = priorities.findIndex(p => bName.includes(p));
-
-      if (aScore === -1 && bScore === -1) return 0;
-      if (aScore === -1) return 1;
-      if (bScore === -1) return -1;
-      return aScore - bScore;
-    });
-  };
-
-  // Filter certifications by relevance
-  const filterCertifications = (certs) => {
-    if (!certs || targetPosition === 'all') return certs;
-
-    const relevantKeywords = skillPriorities[targetPosition] || [];
-    const scored = certs.map(cert => {
-      const combined = `${cert.title} ${cert.issuer}`.toLowerCase();
-      const score = relevantKeywords.filter(kw => combined.includes(kw)).length;
-      return { ...cert, score };
-    });
-
-    return scored
-      .sort((a, b) => b.score - a.score)
-      .slice(0, 5); // Top 5 most relevant
-  };
-
-  // Group skills by category with sorting
-  const sortedSkills = sortSkillsByRelevance(skills);
-  const groupedSkills = {
-    languages: sortedSkills?.filter(s =>
-      ['java', 'kotlin', 'javascript', 'python', 'dart', 'php', 'swift', 'typescript'].some(lang =>
-        s.name.toLowerCase().includes(lang)
-      )
-    ) || [],
-    frameworks: sortedSkills?.filter(s =>
-      ['react', 'flutter', 'laravel', 'codeigniter', 'bootstrap', 'jquery', 'android', 'swiftui', 'compose'].some(fw =>
-        s.name.toLowerCase().includes(fw)
-      )
-    ) || [],
-    tools: sortedSkills?.filter(s =>
-      ['git', 'docker', 'firebase', 'aws', 'xcode', 'android studio'].some(tool =>
-        s.name.toLowerCase().includes(tool)
-      )
-    ) || [],
-  };
-
-  const filteredCertifications = filterCertifications(certifications);
+  const customBio = getBioForPosition(profile, targetPosition);
+  const sortedSkills = sortSkillsByRelevance(skills, targetPosition);
+  const groupedSkills = groupSkillsByCategory(sortedSkills);
+  const filteredCertifications = filterCertifications(certifications, targetPosition);
 
   // Filter out learning projects from CV
   const productionProjects = projects?.filter(project => !project.learningProject) || [];

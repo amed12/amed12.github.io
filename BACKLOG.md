@@ -3,7 +3,7 @@
 > Sumber acuan tunggal untuk perbaikan portfolio/CV site.
 > **Aturan:** setiap kali ada pekerjaan dari backlog ini dikerjakan/selesai, update status di file ini (checkbox + kolom status sprint).
 >
-> Dibuat: 2026-08-07 (hasil review total project). Terakhir diupdate: 2026-08-07 (Sprint 3 selesai).
+> Dibuat: 2026-08-07 (hasil review total project). Terakhir diupdate: 2026-08-07 (Sprint 4 selesai).
 
 ## Hasil Review (Ringkasan)
 
@@ -42,10 +42,10 @@
 - [x] **B8.** Update SETUP.md/README: alur update konten end-to-end yang benar; satu deploy path saja (hapus `deploy.sh`, pakai GH Actions).
 
 ### P2 — Clean architecture & long-term
-- [ ] **B9.** Ekstrak config posisi/keyword/skill-priority ke satu module bersama (`src/config/positions.js`), dipakai CVPage + CVTemplate.
-- [ ] **B10.** Pisahkan data pribadi hardcoded dari `storageManager.js` → default datasets ke JSON; pecah `CVTemplate.jsx` (layout vs logic filtering).
-- [ ] **B11.** Tambah vitest + test untuk relevance scoring/filtering CV & dataManager.
-- [ ] **B12.** Housekeeping: hapus `src/job posting.txt`, kompres avatar (<100 KB), rapikan `cv_markdown.md`/artefak tak terpakai, putuskan nasib Settings dashboard (data layer sama atau arsipkan).
+- [x] **B9.** Ekstrak config posisi/keyword/skill-priority ke satu module bersama (`src/config/positions.js`), dipakai CVPage + CVTemplate.
+- [x] **B10.** Ekstrak logic filtering/scoring CV ke `src/utils/cvScoring.js` & `src/utils/cvTemplateHelpers.js`; `CVTemplate.jsx` kini layout-only. *(Bagian "pisahkan data pribadi dari storageManager.js" gugur — Settings dashboard diarsipkan, lihat B12.)*
+- [x] **B11.** Tambah vitest + test untuk relevance scoring/filtering CV (`cvScoring.test.js`) & dataManager (`dataManager.test.js`).
+- [x] **B12.** Housekeeping: hapus `src/job posting.txt`, hapus `avatar.jpg` (1MB, tidak dipakai — `avatar.jpeg` 53KB yang dipakai sudah di bawah target), hapus `cv_markdown.md` tak terpakai. Settings dashboard (`src/components/Settings/`, `SettingsPage.jsx`, `storageManager.js`) **diarsipkan** (dihapus dari app aktif, tetap ada di git history) karena tidak pernah di-link dari nav dan punya data layer terpisah — keputusan pemilik project.
 
 ## Sprint Plan (~1 minggu per sprint)
 
@@ -54,7 +54,7 @@
 | 1 | "CV yang bisa dikirim" | B1, B3, B4, B2 (bio + experience Qiscus) | ✅ Done | Export PDF text-based, tanpa TODO, tanpa blok AI notes, summary human-written |
 | 2 | "Update tanpa sakit kepala" | B5, B6, B8 | ✅ Done | Edit di admin → live di site ≤ 2 langkah, terdokumentasi. *(B7 auth admin belum — dijadwalkan tetap di Sprint 3 sesuai plan awal; risiko token-tanpa-auth didokumentasikan di SETUP.md.)* |
 | 3 | "Konten & keamanan" | B2 (sisa deskripsi proyek), B7 | ✅ Done | Seluruh konten publik lolos "human read test" |
-| 4 | "Long-term health" | B9, B10, B11, B12 | 🔲 Not started | Config posisi single-source, test hijau, repo bersih |
+| 4 | "Long-term health" | B9, B10, B11, B12 | ✅ Done | Config posisi single-source, test hijau, repo bersih |
 
 Status legend: 🔲 Not started · 🔶 In progress · ✅ Done
 
