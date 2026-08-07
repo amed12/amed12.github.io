@@ -3,7 +3,7 @@
 > Sumber acuan tunggal untuk perbaikan portfolio/CV site.
 > **Aturan:** setiap kali ada pekerjaan dari backlog ini dikerjakan/selesai, update status di file ini (checkbox + kolom status sprint).
 >
-> Dibuat: 2026-08-07 (hasil review total project). Terakhir diupdate: 2026-08-07.
+> Dibuat: 2026-08-07 (hasil review total project). Terakhir diupdate: 2026-08-07 (Sprint 1 selesai).
 
 ## Hasil Review (Ringkasan)
 
@@ -30,10 +30,10 @@
 ## Backlog
 
 ### P0 — Kredibilitas & data hygiene
-- [ ] **B1.** Bersihkan `data.json`: hapus semua string `TODO:` (skills + experience), hapus seluruh blok `cv_improvement_notes`.
-- [ ] **B2.** Rewrite konten AI-boilerplate → human voice: bio profil, deskripsi experience (dengan metrik nyata), deskripsi proyek Qiscus SDK yang templated. Acuan tone: entri lama yang otentik (freelance/PLN, Sitamoto, Ceklok, SIBEA).
-- [ ] **B3.** Fix klaim ATS: ganti PDF raster dengan text-based PDF (print-to-PDF via `@media print` rapi, atau jsPDF text/react-pdf); samakan ukuran kertas A4 vs letter.
-- [ ] **B4.** Hapus/fix `bioTemplates` hardcoded: pindah per-position summary (human-written) ke `data.json`; tambah field `yearsOfExperience`.
+- [x] **B1.** Bersihkan `data.json`: hapus semua string `TODO:` (skills + experience), hapus seluruh blok `cv_improvement_notes`.
+- [x] **B2.** Rewrite konten AI-boilerplate → human voice: bio profil, deskripsi experience (dengan metrik nyata), deskripsi proyek Qiscus SDK yang templated. Acuan tone: entri lama yang otentik (freelance/PLN, Sitamoto, Ceklok, SIBEA). *(Bio profil + 5 deskripsi proyek Qiscus SDK selesai; sisa deskripsi proyek non-SDK lain dilanjutkan di sprint 3.)*
+- [x] **B3.** Fix klaim ATS: ganti PDF raster dengan text-based PDF (print-to-PDF via `@media print` rapi, atau jsPDF text/react-pdf); samakan ukuran kertas A4 vs letter.
+- [x] **B4.** Hapus/fix `bioTemplates` hardcoded: pindah per-position summary (human-written) ke `data.json`; tambah field `yearsOfExperience`.
 
 ### P1 — Publish flow (akar masalah "susah di-manage")
 - [ ] **B5.** Publish 1-klik: Admin "Save" → commit langsung ke repo via GitHub Contents API (PAT), atau minimal export bernama `data.json` + panduan jelas. Rekomendasi: GitHub API commit.
@@ -51,7 +51,7 @@
 
 | Sprint | Fokus | Item | Status | Definition of Done |
 |---|---|---|---|---|
-| 1 | "CV yang bisa dikirim" | B1, B3, B4, B2 (bio + experience Qiscus) | 🔲 Not started | Export PDF text-based, tanpa TODO, tanpa blok AI notes, summary human-written |
+| 1 | "CV yang bisa dikirim" | B1, B3, B4, B2 (bio + experience Qiscus) | ✅ Done | Export PDF text-based, tanpa TODO, tanpa blok AI notes, summary human-written |
 | 2 | "Update tanpa sakit kepala" | B5, B6, B8 | 🔲 Not started | Edit di admin → live di site ≤ 2 langkah, terdokumentasi |
 | 3 | "Konten & keamanan" | B2 (sisa deskripsi proyek), B7 | 🔲 Not started | Seluruh konten publik lolos "human read test" |
 | 4 | "Long-term health" | B9, B10, B11, B12 | 🔲 Not started | Config posisi single-source, test hijau, repo bersih |
