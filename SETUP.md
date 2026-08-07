@@ -206,7 +206,7 @@ theme: {
 ### Images not showing
 
 - Make sure images are in the `public` folder
-- Use paths like `/avatar.jpg` (not `./avatar.jpg`)
+- Use paths like `/avatar.jpeg` (not `./avatar.jpeg`)
 - Or use full URLs: `https://example.com/image.jpg`
 
 ### Changes not saving
