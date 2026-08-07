@@ -6,8 +6,17 @@
     "phone": "081573054909",
     "email": "fathullahachmad1996@gmail.com",
     "address": "Malang, East Java, Indonesia",
-    "bio": "Mobile Engineer with 5+ years of experience building intuitive and high-performance mobile applications across iOS (Swift/SwiftUI), Android (Kotlin/Java), Flutter, and React Native platforms. Apple Developer Academy Graduate (Cohort 4) with proven expertise in delivering seamless user experiences and optimizing app performance. Experienced in collaborating with cross-functional teams, implementing modern architectures (MVVM, Clean Architecture), and maintaining production applications. Passionate about staying current with mobile development trends and best practices while delivering quality solutions that serve real users.",
+    "bio": "Mobile Engineer with 5+ years of experience building mobile applications across iOS (Swift/SwiftUI), Android (Kotlin/Java), Flutter, and React Native. Apple Developer Academy Graduate (Cohort 4), currently working on Qiscus' customer engagement platform where I maintain and optimize production mobile apps used by enterprise clients. Comfortable working cross-functionally with backend engineers, product managers, and designers in Agile/SCRUM teams, and have applied MVVM and Clean Architecture across multiple codebases. Interested in performance tuning, developer tooling, and keeping up with new mobile platform releases.",
     "avatar": "/avatar.jpeg",
+    "yearsOfExperience": "5+",
+    "positionSummaries": {
+      "flutter": "Mobile Developer with hands-on experience in Flutter and Dart, working on the Qiscus SDK's Flutter implementation alongside native Android and iOS builds. Comfortable with BLoC and Provider for state management, and used to keeping a single Flutter codebase in sync with platform-specific behavior on iOS and Android.",
+      "android": "Android Developer with 5+ years writing Kotlin and Java, from client-facing apps at Vascomm to Qiscus' Android SDK and customer engagement app. Applies MVVM with Android Architecture Components (ViewModel, LiveData, Room), Retrofit for networking, and profiles apps with Android Studio Profiler and LeakCanary to track down performance issues.",
+      "ios": "iOS Developer trained at Apple Developer Academy (Cohort 4) and now building iOS features for Qiscus' chat SDK. Works in Swift and SwiftUI, has used UIKit, Combine, and Core Data on earlier projects, and follows Apple's Human Interface Guidelines for UI work.",
+      "react-native": "Mobile Developer who has shipped React Native features alongside native iOS/Android/Flutter work at Qiscus. Comfortable moving between JavaScript/TypeScript and native codebases, and familiar with the tradeoffs of cross-platform development from working all four stacks side by side.",
+      "mobile": "Mobile Engineer covering iOS, Android, Flutter, and React Native, currently maintaining production apps at Qiscus' customer engagement platform. Works across the full lifecycle - feature development, debugging, performance profiling, and CI/CD - and collaborates directly with backend, product, and design in an Agile/SCRUM setup.",
+      "web": "Full-stack background from freelance and contract work (Laravel Lumen, Zend Framework, CodeIgniter, PostgreSQL/MySQL) prior to specializing in mobile. Comfortable with REST API design and backend integration, which carries over into building web-facing tools and admin panels."
+    },
     "cvLink": "https://1drv.ms/b/s!AtI7s8jKZxi3gdIwCTV0Uz-xGil3FA?e=cxQieY",
     "social": {
       "github": "https://github.com/amed12",
@@ -34,10 +43,10 @@
     { "name": "Unit Testing (JUnit, Mockito)", "level": 75 },
     { "name": "Performance Optimization", "level": 80 },
     { "name": "Agile & SCRUM", "level": 85 },
-    { "name": "TODO: Jetpack Compose", "level": 60, "note": "Learning - modern Android UI" },
-    { "name": "TODO: Dependency Injection (Hilt/Dagger)", "level": 65, "note": "Used but need deeper knowledge" },
-    { "name": "TODO: UI Automator & Appium", "level": 50, "note": "Need to learn for automated testing" },
-    { "name": "TODO: Advanced Security Practices", "level": 60, "note": "Certificate pinning, encryption, OWASP" }
+    { "name": "Jetpack Compose", "level": 60, "note": "Learning - modern Android UI" },
+    { "name": "Dependency Injection (Hilt/Dagger)", "level": 65, "note": "Used but need deeper knowledge" },
+    { "name": "UI Automator & Appium", "level": 50, "note": "Need to learn for automated testing" },
+    { "name": "Advanced Security Practices", "level": 60, "note": "Certificate pinning, encryption, OWASP" }
   ],
   "languages": [
     { "name": "Arabic", "level": "Elementary" },
@@ -53,7 +62,7 @@
       "startDate": "January 2023",
       "endDate": "Present",
       "duration": "2 years 10 months",
-      "description": "Mobile Application Development & Support - Design, develop, and maintain mobile applications across Flutter, Android (Kotlin/Java), iOS (Swift), and React Native platforms for Qiscus customer engagement platform. Debug and resolve technical issues ensuring app stability and performance.\n\nPerformance Optimization - Monitor and optimize app performance using profiling tools (Android Studio Profiler, Xcode Instruments, Firebase Performance). Implement performance improvements including lazy loading, efficient caching, and memory optimization.\n\nTesting & Quality Assurance - Write and maintain unit tests using JUnit and Mockito. Conduct code reviews and ensure code quality standards. Contribute to improving test coverage and reliability.\n\nIncident Management - Work with support team to investigate and resolve customer-reported issues. Participate in on-call rotation for production support. Use Firebase Crashlytics for crash monitoring and resolution.\n\nCross-functional Collaboration - Communicate with backend engineers, product managers, and designers in Agile/SCRUM environment. Participate in sprint planning, daily standups, and retrospectives.\n\nAutomation & CI/CD - Develop automation scripts and tools to improve development efficiency. Work with CI/CD pipelines for automated builds and deployments.\n\nTODO: Add quantifiable metrics (e.g., crash rate reduction %, performance improvements, number of features delivered)\nTODO: Highlight specific architectural patterns implemented (MVVM, Clean Architecture)\nTODO: Mention mentoring activities if applicable"
+      "description": "Mobile Application Development & Support - Design, develop, and maintain mobile applications across Flutter, Android (Kotlin/Java), iOS (Swift), and React Native platforms for Qiscus customer engagement platform. Debug and resolve technical issues ensuring app stability and performance.\n\nPerformance Optimization - Monitor and optimize app performance using profiling tools (Android Studio Profiler, Xcode Instruments, Firebase Performance). Implement performance improvements including lazy loading, efficient caching, and memory optimization.\n\nTesting & Quality Assurance - Write and maintain unit tests using JUnit and Mockito. Conduct code reviews and ensure code quality standards. Contribute to improving test coverage and reliability.\n\nIncident Management - Work with support team to investigate and resolve customer-reported issues. Participate in on-call rotation for production support. Use Firebase Crashlytics for crash monitoring and resolution.\n\nCross-functional Collaboration - Communicate with backend engineers, product managers, and designers in Agile/SCRUM environment. Participate in sprint planning, daily standups, and retrospectives.\n\nAutomation & CI/CD - Develop automation scripts and tools to improve development efficiency. Work with CI/CD pipelines for automated builds and deployments."
     },
     {
       "id": "exp2",
@@ -63,7 +72,7 @@
       "startDate": "October 2020",
       "endDate": "December 2022",
       "duration": "2 years 3 months",
-      "description": "Android Application Development - Collaborated with cross-functional team to design, develop, and deliver features for Qiscus Android applications using Kotlin and Java. Implemented MVVM architecture with Android Architecture Components (ViewModel, LiveData, Room).\n\nUI Development - Built responsive user interfaces following Material Design principles. Optimized RecyclerView performance with ViewHolder pattern and DiffUtil for smooth scrolling.\n\nAPI Integration - Integrated RESTful APIs using Retrofit and OkHttp. Implemented efficient data caching and offline support strategies.\n\nTesting - Wrote unit tests using JUnit and Mockito to ensure code robustness. Tested edge cases, usability scenarios, and general reliability. Participated in code reviews.\n\nPerformance & Bug Fixing - Profiled app performance using Android Studio Profiler. Identified and fixed memory leaks using LeakCanary. Actively debugged and resolved production issues.\n\nContinuous Learning - Evaluated and implemented new Android technologies and libraries to improve development efficiency and app quality.\n\nTODO: Add specific features built (e.g., real-time chat, file sharing, push notifications)\nTODO: Mention Kotlin Coroutines/RxJava usage for async operations\nTODO: Add metrics (e.g., number of features delivered, bug fix count, test coverage %)"
+      "description": "Android Application Development - Collaborated with cross-functional team to design, develop, and deliver features for Qiscus Android applications using Kotlin and Java. Implemented MVVM architecture with Android Architecture Components (ViewModel, LiveData, Room).\n\nUI Development - Built responsive user interfaces following Material Design principles. Optimized RecyclerView performance with ViewHolder pattern and DiffUtil for smooth scrolling.\n\nAPI Integration - Integrated RESTful APIs using Retrofit and OkHttp. Implemented efficient data caching and offline support strategies.\n\nTesting - Wrote unit tests using JUnit and Mockito to ensure code robustness. Tested edge cases, usability scenarios, and general reliability. Participated in code reviews.\n\nPerformance & Bug Fixing - Profiled app performance using Android Studio Profiler. Identified and fixed memory leaks using LeakCanary. Actively debugged and resolved production issues.\n\nContinuous Learning - Evaluated and implemented new Android technologies and libraries to improve development efficiency and app quality."
     },
     {
       "id": "exp3",
@@ -73,7 +82,7 @@
       "startDate": "February 2021",
       "endDate": "December 2021",
       "duration": "11 months",
-      "description": "iOS Development Training - Completed intensive 10-month program at Apple Developer Academy focusing on iOS app development using Swift and SwiftUI. Built multiple iOS applications from concept to completion.\n\niOS Technologies - Developed apps using Swift, SwiftUI, and UIKit. Implemented MVVM architectural pattern for clean code organization. Worked with Core Data for persistence, Combine for reactive programming, and URLSession for networking.\n\nAgile Methodology - Applied Challenge Based Learning (CBL) to solve real-world problems. Worked in SCRUM teams with sprint planning, daily standups, and retrospectives. Collaborated with designers and fellow developers.\n\nUI/UX Implementation - Created responsive user interfaces with SwiftUI and Auto Layout. Followed Human Interface Guidelines for iOS design best practices.\n\nTODO: List specific apps developed or published to App Store\nTODO: Mention any awards or recognition received\nTODO: Add team collaboration details (team size, role)"
+      "description": "iOS Development Training - Completed intensive 10-month program at Apple Developer Academy focusing on iOS app development using Swift and SwiftUI. Built multiple iOS applications from concept to completion.\n\niOS Technologies - Developed apps using Swift, SwiftUI, and UIKit. Implemented MVVM architectural pattern for clean code organization. Worked with Core Data for persistence, Combine for reactive programming, and URLSession for networking.\n\nAgile Methodology - Applied Challenge Based Learning (CBL) to solve real-world problems. Worked in SCRUM teams with sprint planning, daily standups, and retrospectives. Collaborated with designers and fellow developers.\n\nUI/UX Implementation - Created responsive user interfaces with SwiftUI and Auto Layout. Followed Human Interface Guidelines for iOS design best practices."
     },
     {
       "id": "exp4",
@@ -83,7 +92,7 @@
       "startDate": "January 2020",
       "endDate": "September 2020",
       "duration": "9 months",
-      "description": "Android Development - Developed and maintained Android applications for various client projects using Java and Kotlin. Worked in fast-paced agency environment delivering solutions across different industries.\n\nApplication Development - Built Android apps from requirements to deployment. Implemented features including user authentication, data persistence with SQLite, and third-party library integrations.\n\nAPI Integration - Connected Android applications with backend services through RESTful APIs. Implemented JSON parsing and proper error handling for network calls.\n\nBug Fixing & Maintenance - Debugged and resolved issues in existing mobile applications. Analyzed crash reports and implemented fixes to improve app stability.\n\nProject Delivery - Worked on multiple client projects simultaneously. Met project deadlines and delivered quality code following client requirements.\n\nTODO: List specific client projects or industries worked with\nTODO: Add number of projects completed\nTODO: Mention specific technologies or libraries used"
+      "description": "Android Development - Developed and maintained Android applications for various client projects using Java and Kotlin. Worked in fast-paced agency environment delivering solutions across different industries.\n\nApplication Development - Built Android apps from requirements to deployment. Implemented features including user authentication, data persistence with SQLite, and third-party library integrations.\n\nAPI Integration - Connected Android applications with backend services through RESTful APIs. Implemented JSON parsing and proper error handling for network calls.\n\nBug Fixing & Maintenance - Debugged and resolved issues in existing mobile applications. Analyzed crash reports and implemented fixes to improve app stability.\n\nProject Delivery - Worked on multiple client projects simultaneously. Met project deadlines and delivered quality code following client requirements."
     },
     {
       "id": "exp5",
@@ -93,7 +102,7 @@
       "startDate": "March 2019",
       "endDate": "August 2019",
       "duration": "6 months",
-      "description": "Full-Stack Development - Worked on mobile banking application development covering backend APIs, Android mobile app, and database layers. Collaborated with team to deliver banking features meeting security and compliance standards.\n\nBackend Development - Built and maintained RESTful APIs using Laravel Lumen and Zend Framework. Implemented secure authentication and authorization for banking transactions.\n\nAndroid Development - Developed mobile banking application using Java with native Android development. Implemented features for account management, transactions, and secure data handling.\n\nDatabase Management - Designed and maintained database schemas using MySQL and PostgreSQL. Wrote optimized queries for transaction processing and data retrieval.\n\nSolution Architecture - Translated business requirements into technical solutions. Created technical documentation for APIs and system architecture.\n\nQuality & Compliance - Ensured code quality through reviews and testing. Maintained compliance with banking security standards and regulations.\n\nTODO: Add specific banking features implemented\nTODO: Mention security practices applied (encryption, secure storage)\nTODO: Add scale metrics if available (users, transactions)"
+      "description": "Full-Stack Development - Worked on mobile banking application development covering backend APIs, Android mobile app, and database layers. Collaborated with team to deliver banking features meeting security and compliance standards.\n\nBackend Development - Built and maintained RESTful APIs using Laravel Lumen and Zend Framework. Implemented secure authentication and authorization for banking transactions.\n\nAndroid Development - Developed mobile banking application using Java with native Android development. Implemented features for account management, transactions, and secure data handling.\n\nDatabase Management - Designed and maintained database schemas using MySQL and PostgreSQL. Wrote optimized queries for transaction processing and data retrieval.\n\nSolution Architecture - Translated business requirements into technical solutions. Created technical documentation for APIs and system architecture.\n\nQuality & Compliance - Ensured code quality through reviews and testing. Maintained compliance with banking security standards and regulations."
     },
     {
       "id": "exp6",
@@ -455,7 +464,7 @@
       "id": "proj14",
       "title": "Qiscus Chat SDK - Android",
       "category": "mobile",
-      "description": "Enterprise-grade chat SDK providing real-time messaging capabilities for Android applications. Core SDK implementation with features including real-time messaging, file sharing, typing indicators, read receipts, and offline message queue.",
+      "description": "Android SDK for Qiscus' chat platform, used by client apps to add real-time messaging without building the transport layer themselves. Handles WebSocket/MQTT connections, file sharing, typing indicators, read receipts, and queues messages locally with Room when the device is offline.",
       "image": "/projects/qiscus-android.png",
       "link": "https://github.com/qiscus/qiscus-sdk-android",
       "learningProject": false,
@@ -474,7 +483,7 @@
       "id": "proj15",
       "title": "Qiscus Chat SDK - iOS",
       "category": "mobile",
-      "description": "iOS implementation of Qiscus chat platform providing seamless real-time messaging for iOS applications. Features include message synchronization, media handling, push notifications, and offline support.",
+      "description": "iOS counterpart to the Qiscus chat SDK, built with Swift and Combine. Keeps message state in sync across devices, handles media uploads/downloads, wires up APNS push notifications, and caches conversations with Core Data for offline reading.",
       "image": "/projects/qiscus-ios.png",
       "link": "https://github.com/qiscus/QiscusCore-iOS",
       "learningProject": false,
@@ -492,7 +501,7 @@
       "id": "proj16",
       "title": "Qiscus Chat SDK - Flutter",
       "category": "mobile",
-      "description": "Flutter implementation of Qiscus chat platform enabling cross-platform real-time messaging. Provides unified API for both iOS and Android with native performance and platform-specific optimizations.",
+      "description": "Flutter wrapper over the native Qiscus Android and iOS SDKs, exposed through a single Dart API via platform channels so app teams don't have to write chat logic twice. Uses Sqflite for local message storage and Provider for state management.",
       "image": "/projects/qiscus-flutter.png",
       "link": "https://github.com/qiscus/qiscus-chat-sdk-flutter",
       "learningProject": false,
@@ -509,7 +518,7 @@
       "id": "proj17",
       "title": "Qiscus Multichannel Widget - Android",
       "category": "mobile",
-      "description": "Customer support widget enabling multi-channel communication for Android apps. Supports live chat, ticket management, agent assignment, and customer satisfaction ratings. Easy integration with existing Android applications.",
+      "description": "Drop-in Android widget for the Qiscus Multichannel product, letting host apps offer live chat, support tickets, and agent handoff without building a support UI from scratch. Includes CSAT ratings after each resolved conversation.",
       "image": "/projects/qiscus-multichannel-android.png",
       "link": "https://github.com/qiscus/qiscus-multichannel-widget-android",
       "learningProject": false,
@@ -526,7 +535,7 @@
       "id": "proj18",
       "title": "Qiscus Multichannel Widget - iOS",
       "category": "mobile",
-      "description": "iOS customer support widget for multi-channel communication. Provides seamless integration with iOS apps for customer service, live chat, and support ticket management.",
+      "description": "iOS build of the Qiscus Multichannel widget, built with UIKit and Combine so client apps can embed live chat and ticket-based support without a separate support screen from scratch each time.",
       "image": "/projects/qiscus-multichannel-ios.png",
       "link": "https://github.com/qiscus/qiscus-multichannel-widget-ios",
       "learningProject": false,
@@ -1008,91 +1017,5 @@
       "project": "",
       "message": "Achmad is Good Personal, Hard work, fast learning, funny, and have innovative good in current project."
     }
-  ],
-  "cv_improvement_notes": {
-    "status": "Enhanced with realistic improvements + TODO suggestions",
-    "current_strengths": [
-      "5+ years mobile development experience",
-      "Multi-platform expertise (Flutter, Android, iOS, React Native)",
-      "Apple Developer Academy graduate",
-      "Production app experience",
-      "Cross-functional collaboration skills"
-    ],
-    "areas_to_strengthen": {
-      "immediate_actions": [
-        "TODO: Add quantifiable metrics to all experience entries (crash rate %, performance improvements, features delivered)",
-        "TODO: Create 2 showcase projects on GitHub (Flutter BLoC + Android Jetpack Compose)",
-        "TODO: Write 2 technical blog posts (Performance optimization, Architecture patterns)",
-        "TODO: Update GitHub profile with professional README and pinned repositories",
-        "TODO: Request 2-3 LinkedIn recommendations from colleagues/managers"
-      ],
-      "technical_skills_to_learn": [
-        "TODO: Jetpack Compose - Modern Android UI (2 weeks learning)",
-        "TODO: UI Automator & Appium - Automated testing frameworks (1-2 weeks)",
-        "TODO: Advanced Security - Certificate pinning, encryption, OWASP Mobile (2 weeks)",
-        "TODO: Perfetto/Systrace - Advanced performance profiling (1 week)",
-        "TODO: Deeper Dependency Injection - Hilt/Dagger mastery (1 week)"
-      ],
-      "experience_enhancements": [
-        "TODO: Add specific features built at Qiscus (real-time chat, file sharing, notifications)",
-        "TODO: List iOS apps developed at Apple Academy (with App Store links if available)",
-        "TODO: Quantify Vascomm projects (number of clients, industries, technologies)",
-        "TODO: Detail Bank Mandiri banking features (account management, transfers, security)",
-        "TODO: Add mentoring examples (number of juniors mentored, impact)"
-      ],
-      "portfolio_improvements": [
-        "TODO: Showcase Project 1: Flutter app with BLoC pattern + Clean Architecture + 70% test coverage",
-        "TODO: Showcase Project 2: Android app with Jetpack Compose + MVVM + Hilt DI",
-        "TODO: Update all GitHub repo READMEs with screenshots, architecture diagrams, tech stack",
-        "TODO: Publish technical articles on Notion blog about real problems solved",
-        "TODO: Add App Store/Play Store links to published apps (if any)"
-      ],
-      "soft_skills_documentation": [
-        "TODO: Document cross-functional collaboration examples (PM, designers, backend)",
-        "TODO: Add code review and mentoring activities",
-        "TODO: Highlight technical decision-making examples",
-        "TODO: Include any tech talks, presentations, or knowledge sharing sessions"
-      ]
-    },
-    "job_application_strategy": {
-      "recommended_approach": "Apply to all 5 companies while learning gaps in parallel",
-      "timeline": "Week 1: Apply + fill metrics | Week 2-3: Learn gaps + create projects | Week 4+: Interview prep",
-      "match_scores": {
-        "grab_grabkios_flutter": "85% - Need more Flutter project examples with BLoC",
-        "permatabank_mobile": "90% - Strong match, emphasize React Native + TypeScript",
-        "astro_senior_mobile": "80% - Need Perfetto/Systrace profiling tool knowledge",
-        "kredivo_android": "85% - Need more security implementation examples",
-        "grab_android_senior": "90% - Strong match, add automated testing details"
-      },
-      "confidence_boosters": [
-        "You have 5+ years experience (meets all requirements)",
-        "You have multi-platform skills (rare and valuable)",
-        "You have Apple Academy credential (strong signal)",
-        "86% average match is ABOVE industry standard",
-        "Gaps are learnable in 2-4 weeks",
-        "Companies hire for potential, not perfection"
-      ]
-    },
-    "next_steps_priority": {
-      "week_1_critical": [
-        "1. Fill TODO metrics in experience descriptions (2-3 hours)",
-        "2. Update LinkedIn with enhanced bio and skills (1 hour)",
-        "3. Update GitHub profile README (1 hour)",
-        "4. Apply to PermataBank and Grab Android (highest match) (2 hours)",
-        "5. Request 2 LinkedIn recommendations (30 minutes)"
-      ],
-      "week_2_high": [
-        "1. Start learning UI Automator basics (for Grab Android)",
-        "2. Begin Flutter BLoC showcase project",
-        "3. Apply to remaining 3 companies",
-        "4. Write first blog post draft"
-      ],
-      "week_3_medium": [
-        "1. Complete showcase projects",
-        "2. Study Perfetto for ASTRO position",
-        "3. Research security best practices",
-        "4. Prepare for interviews"
-      ]
-    }
-  }
+  ]
 }
