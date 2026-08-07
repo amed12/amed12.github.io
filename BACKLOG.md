@@ -3,7 +3,7 @@
 > Sumber acuan tunggal untuk perbaikan portfolio/CV site.
 > **Aturan:** setiap kali ada pekerjaan dari backlog ini dikerjakan/selesai, update status di file ini (checkbox + kolom status sprint).
 >
-> Dibuat: 2026-08-07 (hasil review total project). Terakhir diupdate: 2026-08-07 (Sprint 4 selesai).
+> Dibuat: 2026-08-07 (hasil review total project). Terakhir diupdate: 2026-08-07 (Sprint 5 selesai: fitur share multi-posisi B13–B16).
 
 ## Hasil Review (Ringkasan)
 
@@ -47,6 +47,15 @@
 - [x] **B11.** Tambah vitest + test untuk relevance scoring/filtering CV (`cvScoring.test.js`) & dataManager (`dataManager.test.js`).
 - [x] **B12.** Housekeeping: hapus `src/job posting.txt`, hapus `avatar.jpg` (1MB, tidak dipakai — `avatar.jpeg` 53KB yang dipakai sudah di bawah target), hapus `cv_markdown.md` tak terpakai. Settings dashboard (`src/components/Settings/`, `SettingsPage.jsx`, `storageManager.js`) **diarsipkan** (dihapus dari app aktif, tetap ada di git history) karena tidak pernah di-link dari nav dan punya data layer terpisah — keputusan pemilik project.
 
+### P3 — Fitur: share portofolio multi-posisi (`/share`)
+
+> Latar: pemilihan posisi saat ini hanya di `/cv`, single-select, state lokal (tidak masuk URL) → tidak bisa dibagikan ke recruiter. Tujuan: route khusus `/share` yang menampilkan portofolio ter-kurasi untuk **beberapa posisi terpilih**, shareable via URL (`/share?positions=android,flutter`). Detail rancangan: plan 2026-08-07.
+
+- [x] **B13.** Fix shim redirect GitHub Pages di `src/main.jsx`: saat ini hanya merestore `p=` dan **membuang `q=`** dari `public/404.html` (spa-github-pages) → query string hilang pada deep-link. Ganti dengan decoder standar (rekonstruksi `path + '?' + q.replace(/~and~/g,'&') + hash` via `history.replaceState`). Prasyarat semua deep-link ber-query.
+- [x] **B14.** Utility multi-posisi: `filterProjectsByPositions(projects, positionValues[])` di `src/utils/cvScoring.js` — union keywords (dedup) dari `getPositionKeywords()` per posisi, score via `scoreProject`, drop skor 0, sort desc, fallback ke daftar penuh bila tak ada match; posisi tak dikenal/`all` diabaikan. + unit test di `cvScoring.test.js`.
+- [x] **B15.** Halaman `src/pages/SharePage.jsx` + route `/share` di `App.jsx`: baca `?positions=` via `useSearchParams` (validasi terhadap `POSITION_OPTIONS`); tanpa param → mode builder (checkbox multi-select posisi + tombol Copy Link, pilihan sinkron ke URL via `setSearchParams`); tampilan kurasi read-only: header profil + bio dari `positionSummaries`, badge posisi terpilih, skills via `sortSkillsByRelevance` (union keywords), projects via `filterProjectsByPositions` (tanpa cap 3), link ke `/` dan `/cv`.
+- [x] **B16.** Entry point & polish: link "Share portofolio" di `CVPage.jsx` dekat selector posisi; update SETUP.md/README singkat soal format URL share.
+
 ## Sprint Plan (~1 minggu per sprint)
 
 | Sprint | Fokus | Item | Status | Definition of Done |
@@ -55,6 +64,7 @@
 | 2 | "Update tanpa sakit kepala" | B5, B6, B8 | ✅ Done | Edit di admin → live di site ≤ 2 langkah, terdokumentasi. *(B7 auth admin belum — dijadwalkan tetap di Sprint 3 sesuai plan awal; risiko token-tanpa-auth didokumentasikan di SETUP.md.)* |
 | 3 | "Konten & keamanan" | B2 (sisa deskripsi proyek), B7 | ✅ Done | Seluruh konten publik lolos "human read test" |
 | 4 | "Long-term health" | B9, B10, B11, B12 | ✅ Done | Config posisi single-source, test hijau, repo bersih |
+| 5 | "Share portofolio multi-posisi" | B13, B14, B15, B16 | ✅ Done | `/share?positions=a,b` bisa dibuka langsung di GH Pages (query utuh), builder + Copy Link jalan, konten terfilter union keywords, test cvScoring hijau, lint & build lolos |
 
 Status legend: 🔲 Not started · 🔶 In progress · ✅ Done
 

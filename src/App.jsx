@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { Settings } from 'lucide-react';
 import PortfolioPage from './pages/PortfolioPage';
 import CVPage from './pages/CVPage';
+import SharePage from './pages/SharePage';
 import AdminPanel from './components/Admin/AdminPanel';
 import AdminGate, { isAdminUnlocked } from './components/Admin/AdminGate';
 import UnpublishedBanner from './components/Admin/UnpublishedBanner';
@@ -35,6 +36,7 @@ function AppContent({ data, showAdmin, setShowAdmin, handleDataChange, hasDraft,
       <Routes>
         <Route path="/" element={<PortfolioPage data={data} />} />
         <Route path="/cv" element={<CVPage data={data} />} />
+        <Route path="/share" element={<SharePage data={data} />} />
         <Route path="/admin" element={<PortfolioPage data={data} />} />
       </Routes>
 

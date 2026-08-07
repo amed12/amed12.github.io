@@ -152,6 +152,19 @@ You can also edit `public/data.json` directly with a text editor:
 
 After editing, refresh the browser to see changes.
 
+## 🔗 Sharing a Curated Portfolio
+
+The `/share` route lets you build a shareable link curated for one or more positions, e.g.:
+
+```
+https://your-domain/share?positions=android,flutter
+```
+
+- Visit `/share` without a query to open the builder: toggle positions, then use **Copy Link**.
+- The `positions` value is a comma-separated list of position keys from `src/config/positions.js` (e.g. `flutter`, `android`, `ios`, `react-native`, `mobile`, `web`).
+- The linked page shows a bio (from `profile.positionSummaries`), skills sorted by relevance, and projects filtered by the union of the selected positions' keywords — no login required.
+- This works with GitHub Pages' SPA redirect (`public/404.html` + `src/main.jsx`), so a deep link with a query string opens directly, even on first load.
+
 ## 🎯 Deployment
 
 ### GitHub Pages

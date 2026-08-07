@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { scoreProject, filterProjectsByPosition } from './cvScoring';
+import { scoreProject, filterProjectsByPosition, filterProjectsByPositions } from './cvScoring';
 
 const flutterProject = {
   title: 'Ceklok Attendance App',
@@ -11,6 +11,12 @@ const webProject = {
   title: 'Portfolio Site',
   description: 'A personal site built with React and Tailwind.',
   technologies: ['React', 'Vite', 'Tailwind'],
+};
+
+const androidProject = {
+  title: 'SIBEA Field App',
+  description: 'Android app built with Kotlin and Jetpack Compose.',
+  technologies: ['Kotlin', 'Android', 'Jetpack Compose'],
 };
 
 describe('scoreProject', () => {
@@ -41,5 +47,37 @@ describe('filterProjectsByPosition', () => {
   it('falls back to all projects when nothing matches', () => {
     const result = filterProjectsByPosition(projects, 'ios');
     expect(result).toEqual(projects);
+  });
+});
+
+describe('filterProjectsByPositions', () => {
+  const projects = [flutterProject, webProject, androidProject];
+
+  it('returns projects unchanged when no positions given', () => {
+    expect(filterProjectsByPositions(projects, [])).toBe(projects);
+    expect(filterProjectsByPositions(projects, undefined)).toBe(projects);
+  });
+
+  it('unions keywords across multiple positions and dedups matches', () => {
+    const result = filterProjectsByPositions(projects, ['flutter', 'android']);
+    expect(result).toHaveLength(2);
+    expect(result.map((p) => p.title).sort()).toEqual(
+      ['Ceklok Attendance App', 'SIBEA Field App'].sort()
+    );
+  });
+
+  it('ignores unknown positions and "all"', () => {
+    const result = filterProjectsByPositions(projects, ['all', 'not-a-real-position', 'flutter']);
+    expect(result).toHaveLength(1);
+    expect(result[0].title).toBe('Ceklok Attendance App');
+  });
+
+  it('falls back to all projects when nothing matches', () => {
+    const result = filterProjectsByPositions(projects, ['ios']);
+    expect(result).toEqual(projects);
+  });
+
+  it('returns projects unchanged when only invalid positions given', () => {
+    expect(filterProjectsByPositions(projects, ['all', 'nope'])).toBe(projects);
   });
 });

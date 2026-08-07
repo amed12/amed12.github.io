@@ -1,7 +1,7 @@
 import { useRef, useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { Download, ArrowLeft, Printer, Briefcase } from 'lucide-react';
+import { Download, ArrowLeft, Printer, Briefcase, Share2 } from 'lucide-react';
 import CVTemplate from '../components/CV/CVTemplate';
 import jsPDF from 'jspdf';
 import { POSITION_OPTIONS } from '../config/positions';
@@ -242,6 +242,13 @@ const CVPage = ({ data }) => {
             </div>
 
             <div className="flex gap-3">
+              <button
+                onClick={() => navigate('/share')}
+                className="btn-secondary flex items-center gap-2"
+              >
+                <Share2 className="w-4 h-4" />
+                Share
+              </button>
               <button
                 onClick={handlePrint}
                 className="btn-secondary flex items-center gap-2"
