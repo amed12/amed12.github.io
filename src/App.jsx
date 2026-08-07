@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Settings } from 'lucide-react';
 import PortfolioPage from './pages/PortfolioPage';
 import CVPage from './pages/CVPage';
-import SettingsPage from './pages/SettingsPage';
 import AdminPanel from './components/Admin/AdminPanel';
 import AdminGate, { isAdminUnlocked } from './components/Admin/AdminGate';
 import UnpublishedBanner from './components/Admin/UnpublishedBanner';
@@ -36,7 +35,6 @@ function AppContent({ data, showAdmin, setShowAdmin, handleDataChange, hasDraft,
       <Routes>
         <Route path="/" element={<PortfolioPage data={data} />} />
         <Route path="/cv" element={<CVPage data={data} />} />
-        <Route path="/settings" element={<SettingsPage data={data} />} />
         <Route path="/admin" element={<PortfolioPage data={data} />} />
       </Routes>
 

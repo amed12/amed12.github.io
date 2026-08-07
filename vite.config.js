@@ -6,4 +6,7 @@ export default defineConfig({
   plugins: [react()],
   // Use '/' for both dev and production since site is at root domain
   base: '/',
+  test: {
+    environment: 'jsdom',
+  },
 })

@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import { Download, ArrowLeft, Printer, Briefcase } from 'lucide-react';
 import CVTemplate from '../components/CV/CVTemplate';
 import jsPDF from 'jspdf';
+import { POSITION_OPTIONS } from '../config/positions';
+import { filterProjectsByPosition } from '../utils/cvScoring';
 
 const PAGE_WIDTH = 210; // A4, mm
 const MARGIN = 15;
@@ -187,54 +189,14 @@ const CVPage = ({ data }) => {
     window.print();
   };
 
-  // Position options with their relevant technologies
-  const positionOptions = [
-    { value: 'all', label: 'All Projects (General)', keywords: [] },
-    { value: 'flutter', label: 'Flutter Developer', keywords: ['flutter', 'dart', 'riverpod', 'bloc'] },
-    { value: 'android', label: 'Android Developer', keywords: ['kotlin', 'android', 'java', 'jetpack'] },
-    { value: 'ios', label: 'iOS Developer', keywords: ['swift', 'ios', 'swiftui', 'uikit', 'combine'] },
-    { value: 'react-native', label: 'React Native Developer', keywords: ['react native', 'react-native', 'typescript', 'redux'] },
-    { value: 'mobile', label: 'Mobile Developer (General)', keywords: ['mobile', 'kotlin', 'swift', 'flutter', 'react native'] },
-    { value: 'web', label: 'Web Developer', keywords: ['react', 'javascript', 'typescript', 'web', 'vite', 'tailwind'] },
-  ];
-
   // Filter and sort projects based on target position
   const filteredData = useMemo(() => {
     if (!data) return null;
     if (targetPosition === 'all') return data;
 
-    const selectedPosition = positionOptions.find(p => p.value === targetPosition);
-    if (!selectedPosition) return data;
-
-    // Filter projects based on relevance
-    const scoredProjects = data.projects?.map(project => {
-      const techString = project.technologies?.join(' ').toLowerCase() || '';
-      const title = project.title.toLowerCase();
-      const description = project.description.toLowerCase();
-      const combined = `${techString} ${title} ${description}`;
-
-      // Calculate relevance score
-      let score = 0;
-      selectedPosition.keywords.forEach(keyword => {
-        if (combined.includes(keyword.toLowerCase())) {
-          score += 1;
-        }
-      });
-
-      return { ...project, relevanceScore: score };
-    }) || [];
-
-    // Sort by relevance and take top projects
-    const sortedProjects = scoredProjects
-      .filter(p => p.relevanceScore > 0)
-      .sort((a, b) => b.relevanceScore - a.relevanceScore);
-
-    // If no relevant projects found, show all
-    const finalProjects = sortedProjects.length > 0 ? sortedProjects : data.projects;
-
     return {
       ...data,
-      projects: finalProjects
+      projects: filterProjectsByPosition(data.projects, targetPosition),
     };
   }, [data, targetPosition]);
 
@@ -271,7 +233,7 @@ const CVPage = ({ data }) => {
                 onChange={(e) => setTargetPosition(e.target.value)}
                 className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent text-sm"
               >
-                {positionOptions.map(option => (
+                {POSITION_OPTIONS.map(option => (
                   <option key={option.value} value={option.value}>
                     {option.label}
                   </option>
@@ -309,7 +271,7 @@ const CVPage = ({ data }) => {
               <Briefcase className="w-5 h-5 text-primary-600 mt-0.5 flex-shrink-0" />
               <div>
                 <h3 className="font-semibold text-primary-900 mb-1">
-                  CV Optimized for: {positionOptions.find(p => p.value === targetPosition)?.label}
+                  CV Optimized for: {POSITION_OPTIONS.find(p => p.value === targetPosition)?.label}
                 </h3>
                 <p className="text-sm text-primary-800 mb-2">
                   Your CV has been automatically customized for this position:
