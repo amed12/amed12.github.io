@@ -63,3 +63,8 @@ export const resetData = async () => {
   localStorage.removeItem('portfolioData');
   return await loadData();
 };
+
+// Whether there's a local draft that hasn't been published to data.json yet
+export const hasUnpublishedChanges = () => {
+  return localStorage.getItem('portfolioData') !== null;
+};

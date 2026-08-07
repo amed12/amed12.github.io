@@ -5,14 +5,17 @@ import PortfolioPage from './pages/PortfolioPage';
 import CVPage from './pages/CVPage';
 import SettingsPage from './pages/SettingsPage';
 import AdminPanel from './components/Admin/AdminPanel';
-import { getData } from './utils/dataManager';
+import UnpublishedBanner from './components/Admin/UnpublishedBanner';
+import { getData, hasUnpublishedChanges, resetData } from './utils/dataManager';
 
-function AppContent({ data, showAdmin, setShowAdmin, handleDataChange }) {
+function AppContent({ data, showAdmin, setShowAdmin, handleDataChange, hasDraft, onDiscardDraft }) {
   const location = useLocation();
   const isAdminPath = location.pathname === '/admin';
 
   return (
     <div className="relative">
+      {hasDraft && <UnpublishedBanner onDiscard={onDiscardDraft} />}
+
       {/* Admin Button - Only show on /admin path */}
       {isAdminPath && (
         <button
@@ -48,6 +51,7 @@ function App() {
   const [data, setData] = useState(null);
   const [showAdmin, setShowAdmin] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [hasDraft, setHasDraft] = useState(false);
 
   useEffect(() => {
     loadPortfolioData();
@@ -57,11 +61,19 @@ function App() {
     setLoading(true);
     const portfolioData = await getData();
     setData(portfolioData);
+    setHasDraft(hasUnpublishedChanges());
     setLoading(false);
   };
 
   const handleDataChange = (newData) => {
     setData(newData);
+    setHasDraft(hasUnpublishedChanges());
+  };
+
+  const handleDiscardDraft = async () => {
+    const originalData = await resetData();
+    setData(originalData);
+    setHasDraft(false);
   };
 
   if (loading) {
@@ -77,11 +89,13 @@ function App() {
 
   return (
     <Router basename={import.meta.env.BASE_URL}>
-      <AppContent 
-        data={data} 
+      <AppContent
+        data={data}
         showAdmin={showAdmin}
         setShowAdmin={setShowAdmin}
         handleDataChange={handleDataChange}
+        hasDraft={hasDraft}
+        onDiscardDraft={handleDiscardDraft}
       />
     </Router>
   );

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Save, Download, RotateCcw, X } from 'lucide-react';
+import { Save, Download, RotateCcw, X, UploadCloud } from 'lucide-react';
 import ProfileEditor from './ProfileEditor';
 import SkillsEditor from './SkillsEditor';
 import ExperienceEditor from './ExperienceEditor';
@@ -8,11 +8,16 @@ import EducationEditor from './EducationEditor';
 import CertificationsEditor from './CertificationsEditor';
 import TestimonialsEditor from './TestimonialsEditor';
 import { saveData, downloadData, resetData } from '../../utils/dataManager';
+import { publishToGitHub } from '../../utils/githubPublish';
 
 const AdminPanel = ({ data, onDataChange, onClose }) => {
   const [activeTab, setActiveTab] = useState('profile');
   const [localData, setLocalData] = useState(data);
   const [saveStatus, setSaveStatus] = useState('');
+  const [showPublishForm, setShowPublishForm] = useState(false);
+  const [githubToken, setGithubToken] = useState('');
+  const [isPublishing, setIsPublishing] = useState(false);
+  const [publishError, setPublishError] = useState('');
 
   const tabs = [
     { id: 'profile', label: 'Profile' },
@@ -54,6 +59,24 @@ const AdminPanel = ({ data, onDataChange, onClose }) => {
     }
   };
 
+  const handlePublish = async () => {
+    setPublishError('');
+    setIsPublishing(true);
+    try {
+      await publishToGitHub({ token: githubToken, data: localData });
+      setGithubToken('');
+      setShowPublishForm(false);
+      onDataChange(localData);
+      await resetData();
+      setSaveStatus('Published! GitHub Actions sedang deploy...');
+      setTimeout(() => setSaveStatus(''), 5000);
+    } catch (error) {
+      setPublishError(error.message);
+    } finally {
+      setIsPublishing(false);
+    }
+  };
+
   const updateData = (section, value) => {
     setLocalData((prev) => ({
       ...prev,
@@ -88,6 +111,13 @@ const AdminPanel = ({ data, onDataChange, onClose }) => {
                 Download JSON
               </button>
               <button
+                onClick={() => setShowPublishForm((prev) => !prev)}
+                className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors flex items-center gap-2"
+              >
+                <UploadCloud className="w-4 h-4" />
+                Publish to GitHub
+              </button>
+              <button
                 onClick={handleReset}
                 className="bg-red-100 hover:bg-red-200 text-red-700 font-semibold py-2 px-4 rounded-lg transition-colors flex items-center gap-2"
               >
@@ -100,6 +130,36 @@ const AdminPanel = ({ data, onDataChange, onClose }) => {
                 </div>
               )}
             </div>
+
+            {showPublishForm && (
+              <div className="mt-4 p-4 bg-gray-50 border border-gray-200 rounded-lg max-w-xl">
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  GitHub Personal Access Token
+                </label>
+                <input
+                  type="password"
+                  value={githubToken}
+                  onChange={(e) => setGithubToken(e.target.value)}
+                  placeholder="ghp_..."
+                  className="w-full border border-gray-300 rounded-lg px-3 py-2 mb-2"
+                  autoComplete="off"
+                />
+                <p className="text-xs text-gray-500 mb-3">
+                  Token hanya dipakai di browser Anda saat ini, tidak disimpan. Jangan gunakan di komputer/browser bersama.
+                </p>
+                {publishError && (
+                  <p className="text-sm text-red-600 mb-2">{publishError}</p>
+                )}
+                <button
+                  onClick={handlePublish}
+                  disabled={isPublishing || !githubToken}
+                  className="btn-primary flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  <UploadCloud className="w-4 h-4" />
+                  {isPublishing ? 'Publishing...' : 'Confirm Publish'}
+                </button>
+              </div>
+            )}
           </div>
 
           {/* Tabs */}
