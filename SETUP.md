@@ -101,16 +101,22 @@ The admin panel has 7 tabs:
 
 ### Saving Changes
 
-- **Save Changes** - Saves to browser localStorage (persists across sessions)
-- **Download JSON** - Downloads your data as a JSON file for backup
-- **Reset to Original** - Restores the original data from `public/data.json`
+- **Save Changes** - Saves a draft to browser localStorage only. This is **not published** — the live site is unaffected, and a yellow "unpublished changes" banner appears on the site until you publish or discard.
+- **Publish to GitHub** - Enter a GitHub Personal Access Token and click Confirm Publish. This commits your changes directly to `public/data.json` on `master` via the GitHub Contents API, which triggers GitHub Actions to build and deploy automatically. This is the only way changes reach the live site.
+- **Download JSON** - Downloads your data as a JSON file for manual backup.
+- **Reset to Original** - Discards the local draft and restores data from `public/data.json`.
 
-### Important Notes
+### Creating a GitHub Personal Access Token
 
-⚠️ **Data Storage:**
-- Changes are saved to **browser localStorage** by default
-- This means your edits persist even after closing the browser
-- To make permanent changes, download the JSON and replace `public/data.json`
+1. Go to GitHub → Settings → Developer settings → Personal access tokens.
+2. Create a **fine-grained token** scoped to this repository only, with **Contents: Read and write** permission (or a classic token with the `repo` scope if fine-grained isn't available).
+3. Set a short expiration — the token is only needed while you're publishing.
+
+⚠️ **Security notes:**
+- The token is entered in a password field and kept only in the browser's memory for the current session — it is never saved to localStorage, a file, or sent anywhere except GitHub's API.
+- It disappears when you close the admin panel or reload the page; you'll need to re-enter it next time you publish.
+- Don't use it on a shared or public computer, and don't share the token with anyone.
+- `/admin` currently has no login of its own — anyone with the URL can open the publish form. Don't rely on this token flow while the admin panel is exposed on a machine others can access.
 
 ⚠️ **Images:**
 - Place images in the `public` folder

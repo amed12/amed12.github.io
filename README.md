@@ -107,16 +107,17 @@ _For detailed study progress, visit the [Career Dashboard](https://amed12.github
 npm install          # Install dependencies
 npm run dev          # Start dev server (localhost:5173)
 npm run build        # Build for production
-npm run deploy       # Deploy to GitHub Pages
 ```
+
+Deployment is automatic: pushing to `master` triggers `.github/workflows/deploy.yml`, which builds and publishes to GitHub Pages. There is no manual deploy command — editing content and publishing is done through the admin panel (see [SETUP.md](./SETUP.md)).
 
 ### Tech Stack
 - **Frontend:** React 18 + Vite
 - **Styling:** Tailwind CSS
 - **Icons:** Lucide React
 - **Routing:** React Router DOM
-- **Storage:** Local Storage API
-- **Deployment:** GitHub Pages (automatic on push to master)
+- **Storage:** Local Storage API (drafts) + GitHub Contents API (publish)
+- **Deployment:** GitHub Pages via GitHub Actions (automatic on push to master)
 
 ### URLs
 - **Portfolio:** https://amed12.github.io/

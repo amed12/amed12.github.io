@@ -3,7 +3,7 @@
 > Sumber acuan tunggal untuk perbaikan portfolio/CV site.
 > **Aturan:** setiap kali ada pekerjaan dari backlog ini dikerjakan/selesai, update status di file ini (checkbox + kolom status sprint).
 >
-> Dibuat: 2026-08-07 (hasil review total project). Terakhir diupdate: 2026-08-07 (Sprint 1 selesai).
+> Dibuat: 2026-08-07 (hasil review total project). Terakhir diupdate: 2026-08-07 (Sprint 2 selesai).
 
 ## Hasil Review (Ringkasan)
 
@@ -36,10 +36,10 @@
 - [x] **B4.** Hapus/fix `bioTemplates` hardcoded: pindah per-position summary (human-written) ke `data.json`; tambah field `yearsOfExperience`.
 
 ### P1 — Publish flow (akar masalah "susah di-manage")
-- [ ] **B5.** Publish 1-klik: Admin "Save" → commit langsung ke repo via GitHub Contents API (PAT), atau minimal export bernama `data.json` + panduan jelas. Rekomendasi: GitHub API commit.
-- [ ] **B6.** Hilangkan jebakan localStorage-shadowing: banner "unpublished changes" bila localStorage ≠ data.json + tombol discard/publish.
+- [x] **B5.** Publish 1-klik: Admin "Save" → commit langsung ke repo via GitHub Contents API (PAT). *(Token diminta di field password per-session, tidak disimpan; lihat `src/utils/githubPublish.js` + `AdminPanel.jsx`.)*
+- [x] **B6.** Hilangkan jebakan localStorage-shadowing: banner "unpublished changes" bila localStorage ≠ data.json + tombol discard/publish.
 - [ ] **B7.** Auth sederhana untuk `/admin` (passphrase, atau admin hanya aktif di dev build — didokumentasikan).
-- [ ] **B8.** Update SETUP.md/README: alur update konten end-to-end yang benar; satu deploy path saja (hapus `deploy.sh`, pakai GH Actions).
+- [x] **B8.** Update SETUP.md/README: alur update konten end-to-end yang benar; satu deploy path saja (hapus `deploy.sh`, pakai GH Actions).
 
 ### P2 — Clean architecture & long-term
 - [ ] **B9.** Ekstrak config posisi/keyword/skill-priority ke satu module bersama (`src/config/positions.js`), dipakai CVPage + CVTemplate.
@@ -52,7 +52,7 @@
 | Sprint | Fokus | Item | Status | Definition of Done |
 |---|---|---|---|---|
 | 1 | "CV yang bisa dikirim" | B1, B3, B4, B2 (bio + experience Qiscus) | ✅ Done | Export PDF text-based, tanpa TODO, tanpa blok AI notes, summary human-written |
-| 2 | "Update tanpa sakit kepala" | B5, B6, B8 | 🔲 Not started | Edit di admin → live di site ≤ 2 langkah, terdokumentasi |
+| 2 | "Update tanpa sakit kepala" | B5, B6, B8 | ✅ Done | Edit di admin → live di site ≤ 2 langkah, terdokumentasi. *(B7 auth admin belum — dijadwalkan tetap di Sprint 3 sesuai plan awal; risiko token-tanpa-auth didokumentasikan di SETUP.md.)* |
 | 3 | "Konten & keamanan" | B2 (sisa deskripsi proyek), B7 | 🔲 Not started | Seluruh konten publik lolos "human read test" |
 | 4 | "Long-term health" | B9, B10, B11, B12 | 🔲 Not started | Config posisi single-source, test hijau, repo bersih |
 
