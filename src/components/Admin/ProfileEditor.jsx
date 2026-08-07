@@ -78,7 +78,7 @@ const ProfileEditor = ({ profile, onChange }) => {
             value={profile.avatar}
             onChange={(e) => handleChange('avatar', e.target.value)}
             className="input-field"
-            placeholder="/avatar.jpg"
+            placeholder="/avatar.jpeg"
           />
         </div>
 

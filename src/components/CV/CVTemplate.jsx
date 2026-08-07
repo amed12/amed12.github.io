@@ -7,19 +7,9 @@ const CVTemplate = forwardRef(({ data, targetPosition = 'all' }, ref) => {
 
   const { profile, skills, languages, experience, projects, education, certifications, honors } = data;
 
-  // Position-specific bio templates
-  const bioTemplates = {
-    'flutter': `Experienced Mobile Developer specializing in Flutter and Dart with ${profile?.yearsOfExperience || '5+'} years of experience. Proven track record in building cross-platform mobile applications with clean architecture, state management (Riverpod, BLoC), and modern UI/UX practices. Passionate about creating performant, scalable mobile solutions.`,
-    'android': `Senior Android Developer with ${profile?.yearsOfExperience || '5+'} years of expertise in native Android development using Kotlin and Java. Specialized in modern Android architecture (MVVM, Clean Architecture), Jetpack Compose, and building high-performance applications. Strong focus on Material Design and user experience.`,
-    'ios': `Skilled iOS Developer with ${profile?.yearsOfExperience || '5+'} years of experience in Swift and iOS ecosystem. Expert in SwiftUI, UIKit, and modern iOS development patterns. Committed to delivering polished, user-friendly applications following Apple's Human Interface Guidelines and best practices.`,
-    'react-native': `Versatile Mobile Developer specializing in React Native with ${profile?.yearsOfExperience || '5+'} years of experience. Proficient in building cross-platform mobile applications using TypeScript, Redux, and modern React patterns. Strong background in JavaScript ecosystem and mobile app optimization.`,
-    'mobile': `Full-Stack Mobile Developer with ${profile?.yearsOfExperience || '5+'} years of experience across multiple platforms (iOS, Android, Flutter, React Native). Versatile in native and cross-platform development, with strong problem-solving skills and commitment to code quality.`,
-    'web': `Full-Stack Web Developer with ${profile?.yearsOfExperience || '5+'} years of experience building modern web applications. Expert in React, TypeScript, and modern frontend frameworks. Strong understanding of responsive design, performance optimization, and web accessibility standards.`,
-  };
-
-  // Get customized bio or use original
-  const customBio = targetPosition !== 'all' && bioTemplates[targetPosition]
-    ? bioTemplates[targetPosition]
+  // Get position-specific summary from data.json, or fall back to the general bio
+  const customBio = targetPosition !== 'all' && profile?.positionSummaries?.[targetPosition]
+    ? profile.positionSummaries[targetPosition]
     : profile?.bio;
 
   // Position-specific skill priorities
@@ -326,6 +316,7 @@ CVTemplate.propTypes = {
       email: PropTypes.string,
       bio: PropTypes.string,
       yearsOfExperience: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+      positionSummaries: PropTypes.objectOf(PropTypes.string),
       social: PropTypes.shape({
         linkedin: PropTypes.string,
         github: PropTypes.string,

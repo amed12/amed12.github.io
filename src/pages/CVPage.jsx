@@ -1,9 +1,14 @@
 import { useRef, useState, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { Download, ArrowLeft, Printer, Briefcase } from 'lucide-react';
 import CVTemplate from '../components/CV/CVTemplate';
 import jsPDF from 'jspdf';
-import html2canvas from 'html2canvas';
+
+const PAGE_WIDTH = 210; // A4, mm
+const MARGIN = 15;
+const CONTENT_WIDTH = PAGE_WIDTH - MARGIN * 2;
+const PAGE_HEIGHT = 297; // A4, mm
 
 const CVPage = ({ data }) => {
   const cvRef = useRef();
@@ -11,43 +16,163 @@ const CVPage = ({ data }) => {
   const [targetPosition, setTargetPosition] = useState('all');
 
   const handleDownloadPDF = async () => {
-    if (!cvRef.current) return;
+    if (!data) return;
 
     try {
-      // Show loading state
       const button = document.getElementById('download-btn');
       if (button) {
         button.disabled = true;
         button.textContent = 'Generating PDF...';
       }
 
-      // Capture the CV as canvas
-      const canvas = await html2canvas(cvRef.current, {
-        scale: 2,
-        useCORS: true,
-        logging: false,
-        backgroundColor: '#ffffff',
-      });
+      const pdf = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+      let y = MARGIN;
 
-      // Calculate dimensions for Letter size (8.5 x 11 inches)
-      const imgWidth = 210; // A4 width in mm (close to Letter)
-      const imgHeight = (canvas.height * imgWidth) / canvas.width;
+      const ensureSpace = (needed) => {
+        if (y + needed > PAGE_HEIGHT - MARGIN) {
+          pdf.addPage();
+          y = MARGIN;
+        }
+      };
 
-      // Create PDF
-      const pdf = new jsPDF({
-        orientation: 'portrait',
-        unit: 'mm',
-        format: 'a4',
-      });
+      const addHeading = (text) => {
+        ensureSpace(10);
+        pdf.setFont('helvetica', 'bold');
+        pdf.setFontSize(11);
+        pdf.text(text, MARGIN, y);
+        y += 1.5;
+        pdf.setLineWidth(0.2);
+        pdf.line(MARGIN, y, MARGIN + CONTENT_WIDTH, y);
+        y += 5;
+        pdf.setFont('helvetica', 'normal');
+      };
 
-      const imgData = canvas.toDataURL('image/png');
-      pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
+      const addParagraph = (text, { fontSize = 10, bold = false, italic = false } = {}) => {
+        pdf.setFont('helvetica', bold ? 'bold' : italic ? 'italic' : 'normal');
+        pdf.setFontSize(fontSize);
+        const lines = pdf.splitTextToSize(text, CONTENT_WIDTH);
+        lines.forEach((line) => {
+          ensureSpace(5);
+          pdf.text(line, MARGIN, y);
+          y += 5;
+        });
+      };
 
-      // Download
-      const fileName = `${data?.profile?.name?.replace(/\s+/g, '_') || 'CV'}_Resume.pdf`;
+      const addBullets = (items) => {
+        pdf.setFont('helvetica', 'normal');
+        pdf.setFontSize(10);
+        items.forEach((item) => {
+          const trimmed = item.trim();
+          if (!trimmed) return;
+          const cleaned = trimmed.replace(/^\d+\.\s*/, '').replace(/^-\s*/, '');
+          const lines = pdf.splitTextToSize(`• ${cleaned}`, CONTENT_WIDTH - 4);
+          lines.forEach((line) => {
+            ensureSpace(5);
+            pdf.text(line, MARGIN + 4, y);
+            y += 5;
+          });
+        });
+        y += 1;
+      };
+
+      const { profile, skills, languages, experience, projects, education, certifications, honors } = data;
+
+      // Header
+      pdf.setFont('helvetica', 'bold');
+      pdf.setFontSize(18);
+      pdf.text(profile?.name?.toUpperCase() || '', MARGIN, y);
+      y += 7;
+      const contactLine = [
+        profile?.phone,
+        profile?.email,
+        profile?.social?.linkedin?.replace(/^https?:\/\//, ''),
+        profile?.social?.github?.replace(/^https?:\/\//, ''),
+      ].filter(Boolean).join('  |  ');
+      addParagraph(contactLine, { fontSize: 9.5 });
+      y += 1;
+      pdf.setLineWidth(0.4);
+      pdf.line(MARGIN, y, MARGIN + CONTENT_WIDTH, y);
+      y += 6;
+
+      // Professional summary
+      const bio = (targetPosition !== 'all' && profile?.positionSummaries?.[targetPosition])
+        || profile?.bio;
+      if (bio) {
+        addHeading('PROFESSIONAL SUMMARY');
+        addParagraph(bio);
+        y += 3;
+      }
+
+      // Skills
+      if (skills?.length) {
+        addHeading('TECHNICAL SKILLS');
+        addParagraph(skills.map((s) => s.name).join(', '));
+        y += 3;
+      }
+
+      // Experience
+      if (experience?.length) {
+        addHeading('PROFESSIONAL EXPERIENCE');
+        experience.forEach((exp) => {
+          ensureSpace(10);
+          addParagraph(`${exp.company}${exp.location ? `, ${exp.location}` : ''}  (${exp.startDate} - ${exp.endDate})`, { bold: true });
+          addParagraph(exp.title, { italic: true });
+          addBullets(exp.description.split('\n'));
+        });
+        y += 2;
+      }
+
+      // Projects (top 3, matching on-screen CVTemplate behavior)
+      const productionProjects = (projects || []).filter((p) => !p.learningProject);
+      if (productionProjects.length) {
+        addHeading('KEY PROJECTS');
+        productionProjects.slice(0, 3).forEach((project) => {
+          addParagraph(project.title, { bold: true });
+          addParagraph(project.description);
+          if (project.technologies?.length) {
+            addParagraph(`Technologies: ${project.technologies.slice(0, 5).join(', ')}`, { fontSize: 9 });
+          }
+          y += 2;
+        });
+      }
+
+      // Education
+      if (education?.length) {
+        addHeading('EDUCATION');
+        education.forEach((edu) => {
+          addParagraph(`${edu.school}${edu.description ? `, ${edu.description}` : ''}  (${edu.startDate} - ${edu.endDate})`, { bold: true });
+          addParagraph(`${edu.degree}${edu.gpa ? ` | GPA: ${edu.gpa}` : ''}`);
+        });
+        y += 2;
+      }
+
+      // Certifications
+      if (certifications?.length) {
+        addHeading('CERTIFICATIONS');
+        certifications.forEach((cert) => {
+          addParagraph(`${cert.title} | ${cert.issuer} | ${cert.date}`);
+        });
+        y += 2;
+      }
+
+      // Honors
+      if (honors?.length) {
+        addHeading('HONORS & AWARDS');
+        honors.forEach((honor) => {
+          addParagraph(`${honor.title} | ${honor.issuer} | ${honor.date}`);
+        });
+        y += 2;
+      }
+
+      // Languages
+      if (languages?.length) {
+        addHeading('LANGUAGES');
+        addParagraph(languages.map((l) => `${l.name} (${l.level})`).join('  |  '));
+      }
+
+      const fileName = `${profile?.name?.replace(/\s+/g, '_') || 'CV'}_Resume.pdf`;
       pdf.save(fileName);
 
-      // Reset button
       if (button) {
         button.disabled = false;
         button.textContent = 'Download PDF';
@@ -252,12 +377,67 @@ const CVPage = ({ data }) => {
           }
           @page {
             margin: 0.5in;
-            size: letter;
+            size: a4;
           }
         }
       `}</style>
     </div>
   );
+};
+
+CVPage.propTypes = {
+  data: PropTypes.shape({
+    profile: PropTypes.shape({
+      name: PropTypes.string,
+      phone: PropTypes.string,
+      email: PropTypes.string,
+      bio: PropTypes.string,
+      positionSummaries: PropTypes.objectOf(PropTypes.string),
+      social: PropTypes.shape({
+        linkedin: PropTypes.string,
+        github: PropTypes.string,
+      }),
+    }),
+    skills: PropTypes.arrayOf(PropTypes.shape({ name: PropTypes.string })),
+    languages: PropTypes.arrayOf(PropTypes.shape({ name: PropTypes.string, level: PropTypes.string })),
+    experience: PropTypes.arrayOf(PropTypes.shape({
+      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+      company: PropTypes.string,
+      location: PropTypes.string,
+      title: PropTypes.string,
+      startDate: PropTypes.string,
+      endDate: PropTypes.string,
+      description: PropTypes.string,
+    })),
+    projects: PropTypes.arrayOf(PropTypes.shape({
+      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+      title: PropTypes.string,
+      description: PropTypes.string,
+      technologies: PropTypes.arrayOf(PropTypes.string),
+      learningProject: PropTypes.bool,
+    })),
+    education: PropTypes.arrayOf(PropTypes.shape({
+      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+      school: PropTypes.string,
+      description: PropTypes.string,
+      degree: PropTypes.string,
+      gpa: PropTypes.string,
+      startDate: PropTypes.string,
+      endDate: PropTypes.string,
+    })),
+    certifications: PropTypes.arrayOf(PropTypes.shape({
+      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+      title: PropTypes.string,
+      issuer: PropTypes.string,
+      date: PropTypes.string,
+    })),
+    honors: PropTypes.arrayOf(PropTypes.shape({
+      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+      title: PropTypes.string,
+      issuer: PropTypes.string,
+      date: PropTypes.string,
+    })),
+  }),
 };
 
 export default CVPage;
