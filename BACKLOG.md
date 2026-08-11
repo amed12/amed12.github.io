@@ -56,6 +56,9 @@
 - [x] **B15.** Halaman `src/pages/SharePage.jsx` + route `/share` di `App.jsx`: baca `?positions=` via `useSearchParams` (validasi terhadap `POSITION_OPTIONS`); tanpa param → mode builder (checkbox multi-select posisi + tombol Copy Link, pilihan sinkron ke URL via `setSearchParams`); tampilan kurasi read-only: header profil + bio dari `positionSummaries`, badge posisi terpilih, skills via `sortSkillsByRelevance` (union keywords), projects via `filterProjectsByPositions` (tanpa cap 3), link ke `/` dan `/cv`.
 - [x] **B16.** Entry point & polish: link "Share portofolio" di `CVPage.jsx` dekat selector posisi; update SETUP.md/README singkat soal format URL share.
 
+### P4 — Career Dump Automation
+- [x] **B17.** Career Dump Scanner skill: scan any folder for git repos, extract project metadata from config files, dedup against existing projects, and update `data.json`. Portable — no hardcoded paths. (`.agents/skills/career-dump-scanner/`)
+
 ## Sprint Plan (~1 minggu per sprint)
 
 | Sprint | Fokus | Item | Status | Definition of Done |
