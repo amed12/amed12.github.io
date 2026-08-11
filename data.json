@@ -993,6 +993,470 @@
         "Game Development"
       ]
     }
+  ,
+    {
+      "title": "Chat History Service",
+      "category": "web",
+      "description": "A robust, enterprise-grade backend service written in Go (Golang) using **Clean Architecture** principles. This service acts as a middleware that consumes Qiscus Omnichannel webhooks (incoming/outgoing messages, ticket resolved status) and replicates them into an independent PostgreSQL database.",
+      "image": "",
+      "link": "",
+      "learningProject": false,
+      "technologies": [
+        "Docker",
+        "GORM",
+        "Gin Framework",
+        "Go"
+      ],
+      "id": "proj47"
+    },
+    {
+      "title": "Sun3Dev Autive Flutter",
+      "category": "mobile",
+      "description": "A mobile app for first-time vehicle owners to manage vehicles, track service history, and log energy usage.",
+      "image": "",
+      "link": "https://github.com/amed12/sun3dev-autive-flutter",
+      "learningProject": false,
+      "technologies": [
+        "Dart",
+        "Dartz (FP)",
+        "Equatable",
+        "Flutter",
+        "HTTP Client",
+        "Hive DB",
+        "Shared Preferences"
+      ],
+      "id": "proj48"
+    },
+    {
+      "title": "Kepoin",
+      "category": "mobile",
+      "description": "Kepoin - Your Pocket Toolbox monorepo workspace",
+      "image": "",
+      "link": "",
+      "learningProject": false,
+      "technologies": [
+        "Dart",
+        "Flutter"
+      ],
+      "id": "proj49"
+    },
+    {
+      "title": "Learnwithfath.Github.Io",
+      "category": "other",
+      "description": "Interactive learning platform using Google Codelabs",
+      "image": "",
+      "link": "",
+      "learningProject": true,
+      "technologies": [],
+      "id": "proj50"
+    },
+    {
+      "title": "Yugioh Masterdeck",
+      "category": "web",
+      "description": "An interactive, static-first, and data-driven Yu-Gi-Oh combo visualizer and practice cockpit built to prevent user misplays under complex branching conditions (Success paths vs. Negated paths).",
+      "image": "",
+      "link": "https://github.com/amed12/ygh-ilustrator",
+      "learningProject": false,
+      "technologies": [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "TypeScript",
+        "Vite"
+      ],
+      "id": "proj51"
+    },
+    {
+      "title": "Support Multichannel Widget Embed Version",
+      "category": "other",
+      "description": "A lightweight, production-ready customer support chat widget built with vanilla JavaScript following SOLID principles.",
+      "image": "",
+      "link": "",
+      "learningProject": false,
+      "technologies": [],
+      "id": "proj52"
+    },
+    {
+      "title": "Qismo Tencent",
+      "category": "web",
+      "description": "You can find the documentation for this application [here](/docs/README.md)",
+      "image": "",
+      "link": "",
+      "learningProject": false,
+      "technologies": [
+        "Docker",
+        "GORM",
+        "Go"
+      ],
+      "id": "proj53"
+    },
+    {
+      "title": "Mwt Bot",
+      "category": "other",
+      "description": "Chat bot for supervise/support agent activity.",
+      "image": "",
+      "link": "",
+      "learningProject": false,
+      "technologies": [
+        "Docker",
+        "Webpack",
+        "jQuery"
+      ],
+      "id": "proj54"
+    },
+    {
+      "title": "Tencent Video",
+      "category": "web",
+      "description": "This template should help get you started developing with Vue 3 in Vite.",
+      "image": "",
+      "link": "",
+      "learningProject": false,
+      "technologies": [
+        "Axios",
+        "Docker",
+        "TypeScript",
+        "Vite",
+        "Vue.js"
+      ],
+      "id": "proj55"
+    },
+    {
+      "title": "Demo Melawai",
+      "category": "other",
+      "description": "Qiscus Omnichannel custom channel menu widget + customization showcase dashboard — Demo Melawai",
+      "image": "",
+      "link": "https://github.com/Qiscus-Integration/custom-live-widget-example",
+      "learningProject": true,
+      "technologies": [],
+      "id": "proj56"
+    },
+    {
+      "title": "Important Cert",
+      "category": "other",
+      "description": "run ./gradlew signingReport",
+      "image": "",
+      "link": "https://github.com/amed12/important-cert",
+      "learningProject": false,
+      "technologies": [],
+      "id": "proj57"
+    },
+    {
+      "title": "Gbr Channel Fe",
+      "category": "web",
+      "description": "This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.",
+      "image": "",
+      "link": "",
+      "learningProject": false,
+      "technologies": [
+        "Axios",
+        "Docker",
+        "Express.js",
+        "Tailwind CSS",
+        "TypeScript",
+        "Vite",
+        "Vue.js"
+      ],
+      "id": "proj58"
+    },
+    {
+      "title": "Demo Istri",
+      "category": "other",
+      "description": "Aplikasi web sederhana (tanpa backend/database) untuk mencatat utang keluarga, melihat riwayat cicilan per bulan, dan mendapat proyeksi keuangan otomatis. Dibuat dengan HTML + [Alpine.js](https://alpinejs.dev/) + CSS murni, di-deploy sebagai static site di Cloudflare Pages dengan proteksi Basic Auth",
+      "image": "",
+      "link": "",
+      "learningProject": true,
+      "technologies": [],
+      "id": "proj59"
+    },
+    {
+      "title": ".Node Build",
+      "category": "other",
+      "description": "A tool to download, compile, and install Node on Unix-like systems.",
+      "image": "",
+      "link": "https://github.com/nodenv/node-build",
+      "learningProject": false,
+      "technologies": [],
+      "id": "proj60"
+    },
+    {
+      "title": "Nodejs",
+      "category": "other",
+      "description": "Node.js plugin for [asdf](https://github.com/asdf-vm/asdf) version manager",
+      "image": "",
+      "link": "https://github.com/asdf-vm/asdf-nodejs",
+      "learningProject": false,
+      "technologies": [],
+      "id": "proj61"
+    },
+    {
+      "title": "Pyenv",
+      "category": "other",
+      "description": "[![Join the chat at https://gitter.im/yyuu/pyenv](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/yyuu/pyenv?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)",
+      "image": "",
+      "link": "https://github.com/pyenv/pyenv",
+      "learningProject": false,
+      "technologies": [
+        "Docker"
+      ],
+      "id": "proj62"
+    },
+    {
+      "title": "Python",
+      "category": "other",
+      "description": "[![Build Status](https://travis-ci.org/danhper/asdf-python.svg?branch=master)](https://travis-ci.org/danhper/asdf-python)",
+      "image": "",
+      "link": "https://github.com/danhper/asdf-python",
+      "learningProject": false,
+      "technologies": [],
+      "id": "proj63"
+    },
+    {
+      "title": "Golang",
+      "category": "other",
+      "description": "[![CI](https://github.com/asdf-community/asdf-golang/actions/workflows/main.yml/badge.svg)](https://github.com/asdf-community/asdf-golang/actions/workflows/main.yml)",
+      "image": "",
+      "link": "https://github.com/asdf-community/asdf-golang",
+      "learningProject": false,
+      "technologies": [],
+      "id": "proj64"
+    },
+    {
+      "title": "Flutter",
+      "category": "other",
+      "description": "[Flutter](https://flutter.dev/) plugin for the [asdf version manager](https://github.com/asdf-vm/asdf). This includes both **flutter** and **dart**.",
+      "image": "",
+      "link": "https://github.com/oae/asdf-flutter",
+      "learningProject": false,
+      "technologies": [],
+      "id": "proj65"
+    },
+    {
+      "title": "Dicoding Chalenge",
+      "category": "other",
+      "description": "TODO: Add description",
+      "image": "",
+      "link": "",
+      "learningProject": true,
+      "technologies": [],
+      "id": "proj66"
+    },
+    {
+      "title": "Sun3Dev.Github.Io",
+      "category": "other",
+      "description": "This is the web deployment of CareMinderApp, a comprehensive digital companion for personal care management.",
+      "image": "",
+      "link": "https://github.com/sun3dev/sun3dev.github.io",
+      "learningProject": false,
+      "technologies": [],
+      "id": "proj67"
+    },
+    {
+      "title": "Kepoin Flutter",
+      "category": "mobile",
+      "description": "KepoIn - Track and manage your items efficiently.",
+      "image": "",
+      "link": "https://github.com/amed12/kepoin-flutter",
+      "learningProject": false,
+      "technologies": [
+        "Cloud Firestore",
+        "Dart",
+        "Firebase",
+        "Firebase Auth",
+        "Flutter",
+        "Riverpod",
+        "Shared Preferences"
+      ],
+      "id": "proj68"
+    },
+    {
+      "title": "Aturen Your Budget",
+      "category": "web",
+      "description": "Aplikasi pencatatan keuangan keluarga yang sangat simpel, berfokus pada kecepatan input (di bawah 5 detik) dan alokasi *Reserved Budget* (Dana Wajib).",
+      "image": "",
+      "link": "https://github.com/amed12/aturen-your-budget",
+      "learningProject": false,
+      "technologies": [
+        "Lucide Icons",
+        "Next.js",
+        "Prisma",
+        "React",
+        "Tailwind CSS",
+        "TypeScript"
+      ],
+      "id": "proj69"
+    },
+    {
+      "title": "Backend Roadmap",
+      "category": "other",
+      "description": "This roadmap is designed for beginners to effectively master backend development with a focus on LLM (Large Language Model) integration. It's specifically tailored for the Go ecosystem used at Qiscus.",
+      "image": "",
+      "link": "https://github.com/amed12/backend-roadmap",
+      "learningProject": false,
+      "technologies": [],
+      "id": "proj70"
+    },
+    {
+      "title": "Swe Progress",
+      "category": "other",
+      "description": "TODO: Add description",
+      "image": "",
+      "link": "",
+      "learningProject": false,
+      "technologies": [],
+      "id": "proj71"
+    },
+    {
+      "title": "Amed12.Github.Io",
+      "category": "web",
+      "description": "<h3 align=\"center\">My name is Achmad Fathullah and I'm a software developer/Mobile Developer Android. I'm from Indonesia, living in Malang, East Java and currently working at PT. Vascomm Solusi Teknologi.</h3>",
+      "image": "",
+      "link": "",
+      "learningProject": false,
+      "technologies": [
+        "Lucide Icons",
+        "React",
+        "Tailwind CSS",
+        "Vite",
+        "jsPDF"
+      ],
+      "id": "proj72"
+    },
+    {
+      "title": "Codebase To Course",
+      "category": "other",
+      "description": "A Claude Code skill that turns any codebase into a beautiful, interactive single-page HTML course.",
+      "image": "",
+      "link": "https://github.com/zarazhangrui/codebase-to-course",
+      "learningProject": false,
+      "technologies": [],
+      "id": "proj73"
+    },
+    {
+      "title": "Resilient Noether",
+      "category": "other",
+      "description": "OBA Helper workflow automation tool",
+      "image": "",
+      "link": "",
+      "learningProject": false,
+      "technologies": [
+        "TypeScript",
+        "Vite"
+      ],
+      "id": "proj74"
+    },
+    {
+      "title": "Zsh Autosuggestions",
+      "category": "other",
+      "description": "_[Fish](http://fishshell.com/)-like fast/unobtrusive autosuggestions for zsh._",
+      "image": "",
+      "link": "https://github.com/zsh-users/zsh-autosuggestions",
+      "learningProject": false,
+      "technologies": [
+        "Docker"
+      ],
+      "id": "proj75"
+    },
+    {
+      "title": "Zsh Syntax Highlighting",
+      "category": "other",
+      "description": "=======================",
+      "image": "",
+      "link": "https://github.com/zsh-users/zsh-syntax-highlighting",
+      "learningProject": false,
+      "technologies": [],
+      "id": "proj76"
+    },
+    {
+      "title": "Oba Helper",
+      "category": "other",
+      "description": "TODO: Add description",
+      "image": "",
+      "link": "https://github.com/fathullahqiscus/support-oba-helper",
+      "learningProject": false,
+      "technologies": [],
+      "id": "proj77"
+    },
+    {
+      "title": "Intent Based Engine Agentlabs",
+      "category": "web",
+      "description": "Backend integration (Custom API / Fulfillment webhook) for Qiscus Intent-based Engine - AgentLabs",
+      "image": "",
+      "link": "",
+      "learningProject": false,
+      "technologies": [
+        "Axios",
+        "Express.js",
+        "Jest"
+      ],
+      "id": "proj78"
+    },
+    {
+      "title": "Astra Insurance",
+      "category": "web",
+      "description": "Astra Insurance is a webhook handler service built with Go to manage integrations between WhatsApp Flow and Agent Labs. This service processes webhook events from WhatsApp Flow form submissions and Agent Labs interactions, enabling seamless communication and data flow between these platforms.",
+      "image": "",
+      "link": "",
+      "learningProject": false,
+      "technologies": [
+        "Docker",
+        "GORM",
+        "Go"
+      ],
+      "id": "proj79"
+    },
+    {
+      "title": "Custom Sessional Widget",
+      "category": "web",
+      "description": "Layanan Golang mandiri (standalone) ini berfungsi untuk mengarsipkan pesan ruang obrolan Qiscus dan menyajikannya ke aplikasi klien (misal: Flutter) saat *sessional mode* token telah kedaluwarsa.",
+      "image": "",
+      "link": "",
+      "learningProject": false,
+      "technologies": [
+        "Docker",
+        "Go"
+      ],
+      "id": "proj80"
+    },
+    {
+      "title": "Qiscus Support Claude Skills",
+      "category": "other",
+      "description": "Kumpulan skill Claude Code untuk kebutuhan support & debugging tim Solution and Support.",
+      "image": "",
+      "link": "",
+      "learningProject": false,
+      "technologies": [],
+      "id": "proj81"
+    },
+    {
+      "title": "Iami Bot",
+      "category": "web",
+      "description": "Service for Custom bot routing",
+      "image": "",
+      "link": "",
+      "learningProject": false,
+      "technologies": [
+        "Docker",
+        "Echo Framework",
+        "GORM",
+        "Go"
+      ],
+      "id": "proj82"
+    },
+    {
+      "title": "Panorama Jtb Chatbot",
+      "category": "web",
+      "description": "Intermediary Service for Handling Bot Fulfillments and Webhooks between Qiscus Multichannel and Dialogflow.",
+      "image": "",
+      "link": "",
+      "learningProject": false,
+      "technologies": [
+        "Docker",
+        "GORM",
+        "Gin Framework",
+        "Go"
+      ],
+      "id": "proj83"
+    }
   ],
   "testimonials": [
     {
