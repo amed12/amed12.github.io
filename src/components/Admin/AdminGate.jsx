@@ -1,11 +1,6 @@
 import { useState } from 'react';
 import { Lock } from 'lucide-react';
-
-const SESSION_KEY = 'adminUnlocked';
-
-export function isAdminUnlocked() {
-  return sessionStorage.getItem(SESSION_KEY) === 'true';
-}
+import { markAdminUnlocked } from '../../utils/adminSession';
 
 export default function AdminGate({ onUnlock }) {
   const [passphrase, setPassphrase] = useState('');
@@ -19,7 +14,7 @@ export default function AdminGate({ onUnlock }) {
       return;
     }
     if (passphrase === expected) {
-      sessionStorage.setItem(SESSION_KEY, 'true');
+      markAdminUnlocked();
       setError('');
       onUnlock();
     } else {

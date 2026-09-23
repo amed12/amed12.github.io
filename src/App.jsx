@@ -5,7 +5,8 @@ import PortfolioPage from './pages/PortfolioPage';
 import CVPage from './pages/CVPage';
 import SharePage from './pages/SharePage';
 import AdminPanel from './components/Admin/AdminPanel';
-import AdminGate, { isAdminUnlocked } from './components/Admin/AdminGate';
+import AdminGate from './components/Admin/AdminGate';
+import { isAdminUnlocked } from './utils/adminSession';
 import UnpublishedBanner from './components/Admin/UnpublishedBanner';
 import { getData, hasUnpublishedChanges, resetData } from './utils/dataManager';
 

@@ -32,7 +32,7 @@ const Testimonials = ({ testimonials }) => {
               <div key={testimonial.id} className="card hover:shadow-lg transition-shadow relative">
                 <Quote className="w-10 h-10 text-primary-200 absolute top-4 right-4" />
                 <div className="relative z-10">
-                  <p className="text-gray-700 italic mb-6">"{testimonial.message}"</p>
+                  <p className="text-gray-700 italic mb-6">&ldquo;{testimonial.message}&rdquo;</p>
                   <div>
                     <p className="font-bold text-gray-900">{testimonial.name}</p>
                     <p className="text-sm text-primary-600">{testimonial.position}</p>
