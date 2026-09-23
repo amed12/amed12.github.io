@@ -53,15 +53,29 @@ bash .agents/skills/career-dump-scanner/scripts/scan-repos.sh /Users/john/person
 
 ## After running
 
+`public/data.json` is **public** (GitHub Pages) and feeds the exported CV. The
+scanner does not judge what is safe or relevant to publish, so review every
+added entry with the user before anything is committed:
+
 1. Show the user the printed summary (new projects added, skipped, etc.)
-2. Suggest the user review changes: `git diff public/data.json`
-3. Point out any projects with `"TODO: Add description"` that need manual editing
+2. Walk through `git diff public/data.json` and flag, for the user to decide:
+   - **Client / employer work** — repos named after a client or containing
+     internal service names (e.g. Qiscus client integrations). These disclose
+     client relationships and usually must not be published. Remove them, or
+     rewrite them generically only with the user's explicit approval.
+   - **Third-party repos** — tools cloned or installed locally (asdf plugins,
+     pyenv, zsh plugins, other people's open-source projects). Not the user's
+     work; remove them.
+   - **Personal / private** repos the user would not show a recruiter.
+3. Every `"TODO: Add description"` must be written or the entry removed —
+   `npm test` (`src/data.test.js`) fails on any `TODO:` in `data.json`.
 4. Suggest adding screenshots to `public/projects/` for new projects
-5. The user can commit and push when satisfied
+5. The user commits when satisfied; CI runs the same checks before deploy.
 
 ## Important notes
 
 - **Re-runnable**: Running multiple times on the same folder is safe — dedup prevents duplicates
 - **Portable**: No hardcoded paths. Works on macOS, Linux, and WSL
 - **Non-destructive**: Only appends new projects. Never modifies or deletes existing projects
+- **Not a publishing filter**: it appends everything it finds; the review step above is what keeps client and third-party work out of the public site
 - **Static analysis only**: Reads config files (package.json, pubspec.yaml, build.gradle, Podfile, etc.) — does not execute any project code
