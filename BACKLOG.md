@@ -3,7 +3,7 @@
 > Sumber acuan tunggal untuk perbaikan portfolio/CV site.
 > **Aturan:** setiap kali ada pekerjaan dari backlog ini dikerjakan/selesai, update status di file ini (checkbox + kolom status sprint).
 >
-> Dibuat: 2026-08-07 (hasil review total project). Terakhir diupdate: 2026-08-07 (Sprint 5 selesai: fitur share multi-posisi B13–B16).
+> Dibuat: 2026-08-07 (hasil review total project). Terakhir diupdate: 2026-09-23 (Sprint 6: production readiness & kolaborasi B18–B22).
 
 ## Hasil Review (Ringkasan)
 
@@ -59,6 +59,15 @@
 ### P4 — Career Dump Automation
 - [x] **B17.** Career Dump Scanner skill: scan any folder for git repos, extract project metadata from config files, dedup against existing projects, and update `data.json`. Portable — no hardcoded paths. (`.agents/skills/career-dump-scanner/`)
 
+### P5 — Production readiness & kolaborasi
+- [x] **B18.** Lint hijau (`--max-warnings 0`): fix `useEffect` kondisional di `Projects.jsx` (rules-of-hooks), escape entity JSX, helper sesi admin dipindah ke `src/utils/adminSession.js`, `react/prop-types` dimatikan.
+- [x] **B19.** Dependency: `prop-types` jadi dependency eksplisit, lockfile di-regenerate → `npm audit` 0 vulnerability. Route `/cv`, `/share`, admin di-lazy-load (bundle utama 656 kB → 206 kB). Layar retry saat `data.json` gagal dimuat.
+- [x] **B20.** Data hygiene: hapus 12 proyek hasil career-dump yang bukan karya sendiri (asdf/pyenv/zsh/node-build/codebase-to-course) atau masih `TODO`; `src/data.test.js` menjaga `data.json`; skill scanner wajib review kerahasiaan.
+- [x] **B21.** CI: job `verify` (guard internal/, lint, test, build) di setiap PR/push; `deploy` hanya di `master` setelah verify lolos. Node 22 via `.nvmrc`, dependabot, CODEOWNERS.
+- [x] **B22.** Kolaborasi: CONTRIBUTING.md, template PR & issue, README/SETUP/CLAUDE.md diperbarui, dokumen dashboard lama diarsipkan ke `docs/archive/`. Folder lokal `internal/` di-gitignore + diblokir pre-commit hook & CI.
+- [ ] **B23.** *(Keputusan pemilik)* Review proyek client Qiscus di `data.json` (Astra Insurance, Iami Bot, Panorama JTB, Demo Melawai, Bank Raya, Intent Based Engine AgentLabs, Qismo/Tencent, MWT Bot, Gbr Channel, Custom Sessional Widget, Chat History Service, Qiscus Support Claude Skills, dll.) — hapus atau tulis generik; plus entri pribadi/kurang relevan (Demo Istri, Important Cert, Amed12.Github.Io, Resilient Noether) dan deskripsi hasil copy README.
+- [ ] **B24.** *(Pengaturan GitHub, pemilik)* Aktifkan branch protection `master`: wajib PR + status check `verify` hijau.
+
 ## Sprint Plan (~1 minggu per sprint)
 
 | Sprint | Fokus | Item | Status | Definition of Done |
@@ -68,6 +77,7 @@
 | 3 | "Konten & keamanan" | B2 (sisa deskripsi proyek), B7 | ✅ Done | Seluruh konten publik lolos "human read test" |
 | 4 | "Long-term health" | B9, B10, B11, B12 | ✅ Done | Config posisi single-source, test hijau, repo bersih |
 | 5 | "Share portofolio multi-posisi" | B13, B14, B15, B16 | ✅ Done | `/share?positions=a,b` bisa dibuka langsung di GH Pages (query utuh), builder + Copy Link jalan, konten terfilter union keywords, test cvScoring hijau, lint & build lolos |
+| 6 | "Production ready & kolaborasi" | B18–B22 (B23, B24 menunggu pemilik) | 🔶 In progress | Lint/test/build hijau di CI, audit 0, deploy tergating, dokumen kolaborasi lengkap, data.json bebas TODO & repo pihak ketiga |
 
 Status legend: 🔲 Not started · 🔶 In progress · ✅ Done
 

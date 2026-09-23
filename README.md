@@ -1,128 +1,57 @@
-<h1 align="center">Hi 👋, I'm Achmad Fathullah</h1>  
-<h3 align="center">Mobile Developer (Android & Flutter) | Software Engineer</h3>
-<p align="center">📍 Malang, East Java, Indonesia | 💼 PT. Vascomm Solusi Teknologi</p>
-  
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=amed12" alt="Profile views" />
-  <a href="http://amed12.github.io/"><img src="https://img.shields.io/badge/Portfolio-Visit-blue" alt="Portfolio" /></a>
-  <a href="https://amed12.github.io/settings"><img src="https://img.shields.io/badge/Career_Dashboard-Live-green" alt="Dashboard" /></a>
-</p>
+# amed12.github.io
 
----
+Portfolio and CV site of **Achmad Fathullah**, Mobile Engineer (iOS, Android,
+Flutter, React Native) at Qiscus. Live at **https://amed12.github.io/**.
 
-## 🚀 Quick Links
+| Route | What it is |
+|---|---|
+| `/` | Public portfolio |
+| `/cv` | Position-tailored CV with text-based PDF export and print |
+| `/share?positions=android,flutter` | Curated portfolio for one or more positions, shareable by URL |
+| `/admin` | Content editor behind a passphrase; publishes `data.json` to GitHub |
 
-- **Portfolio:** [amed12.github.io](http://amed12.github.io/)
-- **Career Dashboard:** [amed12.github.io/settings](https://amed12.github.io/settings)
-- **Contact:** [about.me/achmadfathullah](http://about.me/achmadfathullah)
+All content lives in [`public/data.json`](public/data.json). It is public and
+feeds the exported CV.
 
----
+## Quick start
 
-## 👨‍💻 About Me
-
-- 🔭 Currently working on **Envirtups Apps Product**
-- 🌱 Learning **Android (Kotlin), Flutter, Testing Frameworks**
-- 👯 Open to collaborate on **Android/Flutter projects**
-- 🎯 Seeking opportunities as **Senior Mobile Engineer**
-- 💬 Ask me about **Android Development, Flutter, Mobile Testing**
-- ⚡ Fun fact: **Anime enthusiast after work hours**
-
-## &#x1f4c8; GitHub Stats
-
-
-<a href="https://github.com/amed12/amed12">
-  <img align="center" src="https://github-readme-stats.vercel.app/api?username=amed12&show_icons=true&line_height=27&count_private=true&title_color=ffffff&text_color=c9cacc&icon_color=2bbc8a&bg_color=1d1f21" alt="Achmad's GitHub Stats" />
-</a>
-
-  ## 👨🏻‍💻 Languages and Tools <br />
-  <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/kotlin/kotlin.png"></code>
-  <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png"></code>
-    <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/dart/dart.png"></code>
-  <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/android/android.png"></code>
-    <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/flutter/flutter.png"></code>
-  <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png"></code>
-  <code><img height="40" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/linux/linux.png"></code>
-
----
-
-## 📊 Career Dashboard
-
-**🎯 Interactive career management system with 11 modules**
-
-**Live:** [amed12.github.io/settings](https://amed12.github.io/settings)
-
-### ✨ Features
-- **CV Manager** - 31 improvement TODOs with match score tracking
-- **Job Tracker** - Track 5 target companies (Grab, Tokopedia, Gojek, etc.)
-- **Skill Development** - Progress tracking for UI Automator, Espresso, Perfetto, Systrace
-- **Learning Hub** - 14+ curated resources (Testing, Performance, Architecture, Flutter)
-- **Action Items** - Task management with due dates and priorities
-- **Timeline** - Visual application timeline with upcoming events
-- **Achievements** - Log wins and milestones
-- **Networking** - Track LinkedIn & GitHub metrics
-- **Mobile Responsive** - Collapsible sidebar, works on all devices
-
-### 📚 Documentation
-- [Complete Guide](./DASHBOARD_DOCS.md) - Everything about the dashboard
-- [Setup Guide](./SETUP.md) - Development and deployment
-- [Future Plans](./PHASE_3_PLANNING.md) - Phase 3: Job Posting Library
-
----
-
-## 📖 Learning Resources
-
-<details>
-<summary>Click to expand Android study materials and certifications</summary>
-
-### 🎓 Certifications
-- [Associate Android Developer Certification](https://developers.google.com/certification/associate-android-developer/study-guide/)
-
-### 📚 Best Practices
-- [Ice House Academy Curriculum](https://github.com/Ice-House-Engineering/academy-curriculum)
-- [Kotlin Cheat Sheet](https://simplecheatsheet.com/tag/kotlin-cheat-sheet/)
-- [Awesome Android UI](https://github.com/wasabeef/awesome-android-ui)
-- [Android Best Practices](https://github.com/futurice/android-best-practices)
-
-### 📝 Study Guides
-- [Android Core](https://developers.google.com/certification/associate-android-developer/study-guide/android-core)
-- [User Interface](https://developers.google.com/certification/associate-android-developer/study-guide/user-interface)
-- [Data Management](https://developers.google.com/certification/associate-android-developer/study-guide/data-management)
-- [Debugging](https://developers.google.com/certification/associate-android-developer/study-guide/debugging)
-- [Testing](https://developers.google.com/certification/associate-android-developer/study-guide/testing)
-
-### 🎯 Current Learning Focus
-- **Testing:** UI Automator, Espresso Advanced (High Priority)
-- **Performance:** Perfetto, Systrace (Medium Priority)
-- **Architecture:** Clean Architecture, MVVM patterns
-- **Flutter:** BLoC pattern, Advanced state management
-
-_For detailed study progress, visit the [Career Dashboard](https://amed12.github.io/settings)_
-
----
-
-## 🚀 Development & Deployment
-
-### Quick Start
 ```bash
-npm install          # Install dependencies
-npm run dev          # Start dev server (localhost:5173)
-npm run build        # Build for production
+nvm use            # Node 22, from .nvmrc
+npm install        # also installs the git pre-commit hook
+cp .env.example .env   # set VITE_ADMIN_PASSPHRASE
+npm run dev        # http://localhost:5173
+npm run check      # lint + test + build: the same gates as CI
 ```
 
-Deployment is automatic: pushing to `master` triggers `.github/workflows/deploy.yml`, which builds and publishes to GitHub Pages. There is no manual deploy command — editing content and publishing is done through the admin panel (see [SETUP.md](./SETUP.md)).
+## How changes reach the site
 
-### Tech Stack
-- **Frontend:** React 18 + Vite
-- **Styling:** Tailwind CSS
-- **Icons:** Lucide React
-- **Routing:** React Router DOM
-- **Storage:** Local Storage API (drafts) + GitHub Contents API (publish)
-- **Deployment:** GitHub Pages via GitHub Actions (automatic on push to master)
+Every PR and every push to `master` runs **lint, test and build** in
+[`.github/workflows/deploy.yml`](.github/workflows/deploy.yml). Deploy to
+GitHub Pages runs only on `master`, and only after those pass. There is no
+manual deploy.
 
-### URLs
-- **Portfolio:** https://amed12.github.io/
-- **Dashboard:** https://amed12.github.io/settings
+Content can be changed in two ways:
+- **Admin panel** (`/admin`): Publish to GitHub commits `data.json` directly.
+- **A PR** that edits `public/data.json`. `npm test` rejects `TODO:` markers,
+  internal notes, duplicate ids and incomplete projects.
 
-_For detailed setup instructions, see [SETUP.md](./SETUP.md)_
+## Stack
 
-</details>
+React 18, Vite, Tailwind CSS 3, React Router, jsPDF, Vitest, ESLint, GitHub
+Actions and GitHub Pages (served from the `gh-pages` branch).
+
+## Docs
+
+| File | For |
+|---|---|
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Workflow, branch/commit conventions, what may and may not be published |
+| [SETUP.md](SETUP.md) | Setup, admin panel, publish token, passphrase, `/share` |
+| [PANDUAN-CLIENT.md](PANDUAN-CLIENT.md) | Handover guide for the owner (Bahasa Indonesia) |
+| [CAREER_DUMP_GUIDE.md](CAREER_DUMP_GUIDE.md) | Importing projects from local repos with the scanner skill |
+| [BACKLOG.md](BACKLOG.md) | Planned and completed work |
+| [CLAUDE.md](CLAUDE.md) | Architecture notes for AI-assisted maintenance |
+| [docs/archive/](docs/archive/) | Docs for removed features |
+
+## License
+
+© Achmad Fathullah. All Rights Reserved.
