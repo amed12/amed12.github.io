@@ -19,7 +19,7 @@ jobs:
   verify:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Guard — nothing from internal/ is tracked
         run: bash scripts/check-no-internal.sh
