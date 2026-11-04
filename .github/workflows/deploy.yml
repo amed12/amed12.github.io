@@ -52,7 +52,7 @@ jobs:
     permissions:
       contents: write # peaceiris pushes the build to the gh-pages branch
     steps:
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: dist
           path: dist
