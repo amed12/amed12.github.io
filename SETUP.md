@@ -6,8 +6,8 @@ This is your new portfolio website with a built-in admin panel for easy content 
 
 ### Prerequisites
 
-- Node.js (v16 or higher)
-- npm or yarn
+- Node.js 22 (see `.nvmrc`; `nvm use` picks it up)
+- npm (the lockfile is npm's — don't mix in yarn/pnpm)
 
 ### Installation
 
@@ -23,7 +23,11 @@ This is your new portfolio website with a built-in admin panel for easy content 
 
 3. **Open your browser:**
    - Portfolio: `http://localhost:5173`
-   - Click the ⚙️ button (bottom-right) to open Admin Panel
+   - Admin: `http://localhost:5173/admin` → enter the passphrase from `.env` → click the ⚙️ button (bottom-right)
+
+`npm install` also points git at `.githooks/` (via the `prepare` script) so the
+pre-commit guard for `internal/` is active. Before opening a PR run
+`npm run check` (lint + test + build — the same gates CI runs).
 
 ### Build for Production
 
@@ -42,50 +46,33 @@ npm run preview
 ## 📁 Project Structure
 
 ```
-portfolio-cms/
 ├── public/
-│   └── data.json          # Your portfolio data
+│   ├── data.json            # ALL site content (public, feeds the CV)
+│   ├── projects/            # project screenshots
+│   └── 404.html             # GitHub Pages SPA redirect
 ├── src/
 │   ├── components/
-│   │   ├── Admin/         # Admin panel components
-│   │   │   ├── AdminPanel.jsx
-│   │   │   ├── ProfileEditor.jsx
-│   │   │   ├── SkillsEditor.jsx
-│   │   │   ├── ExperienceEditor.jsx
-│   │   │   ├── ProjectsEditor.jsx
-│   │   │   ├── EducationEditor.jsx
-│   │   │   ├── CertificationsEditor.jsx
-│   │   │   └── TestimonialsEditor.jsx
-│   │   └── Portfolio/     # Public-facing components
-│   │       ├── Header.jsx
-│   │       ├── About.jsx
-│   │       ├── Skills.jsx
-│   │       ├── Experience.jsx
-│   │       ├── Projects.jsx
-│   │       ├── Education.jsx
-│   │       ├── Certifications.jsx
-│   │       ├── Testimonials.jsx
-│   │       └── Footer.jsx
-│   ├── pages/
-│   │   └── PortfolioPage.jsx
-│   ├── utils/
-│   │   └── dataManager.js  # Data loading/saving utilities
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-├── backup-old-site/        # Your old HTML site (backup)
-├── package.json
-├── vite.config.js
-├── tailwind.config.js
-└── README.md
+│   │   ├── Admin/           # admin panel, passphrase gate, editors
+│   │   ├── CV/              # CV template (layout only)
+│   │   └── Portfolio/       # public site sections
+│   ├── config/positions.js  # position keywords + skill priorities (single source)
+│   ├── pages/               # PortfolioPage, CVPage (/cv), SharePage (/share)
+│   ├── utils/               # dataManager, cvScoring, githubPublish, adminSession
+│   ├── App.jsx              # routes; CV/Share/Admin are lazy-loaded
+│   └── *.test.js(x)         # vitest (incl. data.json hygiene checks)
+├── scripts/                 # repo guards used by hooks and CI
+├── .githooks/               # pre-commit (installed by npm install)
+├── .agents/skills/          # career-dump-scanner agent skill
+├── .github/                 # CI/deploy workflow, templates, dependabot
+└── internal/                # LOCAL ONLY, gitignored — private notes, never committed
 ```
 
 ## 🎨 How to Use the Admin Panel
 
 ### Accessing the Admin Panel
 
-1. Click the **⚙️ Settings** button in the bottom-right corner
-2. The admin panel will open as a modal overlay
+1. Open `/admin` and enter the passphrase (see "Admin Passphrase Gate" below)
+2. Click the **⚙️** button in the bottom-right corner — the admin panel opens as a modal overlay
 
 ### Editing Content
 
@@ -150,7 +137,9 @@ You can also edit `public/data.json` directly with a text editor:
 }
 ```
 
-After editing, refresh the browser to see changes.
+After editing, run `npm test` — `src/data.test.js` rejects `TODO:` markers,
+internal notes, duplicate ids and incomplete projects. Then commit via a PR.
+If the admin panel has a local draft, it shadows the file until you discard it.
 
 ## 🔗 Sharing a Curated Portfolio
 
@@ -167,27 +156,15 @@ https://your-domain/share?positions=android,flutter
 
 ## 🎯 Deployment
 
-### GitHub Pages
+Deployment is automatic. `.github/workflows/deploy.yml` runs on every PR and
+push to `master`:
 
-1. Update `vite.config.js` base path:
-   ```js
-   export default defineConfig({
-     plugins: [react()],
-     base: '/your-repo-name/',  // Change this
-   })
-   ```
+1. **verify** — internal/ guard, `npm ci`, lint, test, build
+2. **deploy** — only on `master`, only if verify passed; publishes the verified
+   `dist/` to the `gh-pages` branch, which GitHub Pages serves
 
-2. Build and deploy:
-   ```bash
-   npm run build
-   # Deploy the 'dist' folder to GitHub Pages
-   ```
-
-### Netlify / Vercel
-
-1. Build command: `npm run build`
-2. Publish directory: `dist`
-3. Deploy!
+There is no manual deploy step. The site is at the root domain, so
+`vite.config.js` keeps `base: '/'`.
 
 ## 🔧 Customization
 
@@ -247,16 +224,8 @@ theme: {
 ### Admin panel not opening
 
 - Check browser console for JavaScript errors
-- Make sure you clicked the ⚙️ button
+- The ⚙️ button only appears on `/admin` after the passphrase is accepted
 - Try refreshing the page
-
-## 📦 Old Site Backup
-
-Your old HTML site is backed up in `backup-old-site/` folder. You can:
-
-1. View it by opening `backup-old-site/index.html` in a browser
-2. Restore it by copying files back to the root
-3. Delete it once you're happy with the new site
 
 ## 🆘 Need Help?
 

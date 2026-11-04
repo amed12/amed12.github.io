@@ -1,0 +1,25 @@
+name: Content update
+description: Add or change portfolio/CV content (profile, experience, projects, …)
+labels: [content]
+body:
+  - type: dropdown
+    id: section
+    attributes:
+      label: Section
+      options: [profile, skills, experience, projects, education, certifications, testimonials, other]
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: What should change?
+    validations:
+      required: true
+  - type: checkboxes
+    id: public
+    attributes:
+      label: Public-safety check
+      description: This site is public and the content is exported into the CV.
+      options:
+        - label: Contains no client names, internal services, or confidential details
+          required: true

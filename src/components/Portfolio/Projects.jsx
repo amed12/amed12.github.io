@@ -6,6 +6,12 @@ const Projects = ({ projects }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const projectsPerPage = 8;
 
+  // Reset to page 1 when filter changes. Must run before the early return
+  // below so hooks are called in the same order on every render.
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [filter]);
+
   if (!projects || projects.length === 0) return null;
 
   // Helper function to detect mobile subcategory
@@ -54,11 +60,6 @@ const Projects = ({ projects }) => {
   const filteredProjects = filter === 'all' 
     ? projectsWithSubcategory 
     : projectsWithSubcategory.filter((p) => p.subcategory === filter);
-
-  // Reset to page 1 when filter changes
-  useEffect(() => {
-    setCurrentPage(1);
-  }, [filter]);
 
   // Calculate pagination
   const totalPages = Math.ceil(filteredProjects.length / projectsPerPage);

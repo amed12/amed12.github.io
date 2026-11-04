@@ -295,7 +295,7 @@
       "id": "proj5",
       "title": "Bank Mandiri Taspen Backoffice",
       "category": "web",
-      "description": "Web app page for Mobile Banking to record and manage all transaction on Mobile Banking Mandiri Taspen. Backoffice merupakan aplikasi berbasis web yang berfungsi untuk mencatat aktifitas yang dilakukan mobile banking, pengelola user mobile banking (Lupa password, Pendaftaran User baru, Block user, etc), Pencatat log error dan transaksi, Pembukaan deposito special rate dan lain lain.",
+      "description": "A web-based backoffice for managing mobile banking users and monitoring transactions.",
       "image": "/projects/backoffice.png",
       "link": "https://www.bankmantap.co.id/home/tnc",
       "learningProject": false,
@@ -518,7 +518,7 @@
       "id": "proj17",
       "title": "Qiscus Multichannel Widget - Android",
       "category": "mobile",
-      "description": "Drop-in Android widget for the Qiscus Multichannel product, letting host apps offer live chat, support tickets, and agent handoff without building a support UI from scratch. Includes CSAT ratings after each resolved conversation.",
+      "description": "An Android widget for embedding Qiscus Multichannel customer support in mobile apps.",
       "image": "/projects/qiscus-multichannel-android.png",
       "link": "https://github.com/qiscus/qiscus-multichannel-widget-android",
       "learningProject": false,
@@ -535,7 +535,7 @@
       "id": "proj18",
       "title": "Qiscus Multichannel Widget - iOS",
       "category": "mobile",
-      "description": "iOS build of the Qiscus Multichannel widget, built with UIKit and Combine so client apps can embed live chat and ticket-based support without a separate support screen from scratch each time.",
+      "description": "An iOS widget for embedding Qiscus Multichannel customer support in mobile apps.",
       "image": "/projects/qiscus-multichannel-ios.png",
       "link": "https://github.com/qiscus/qiscus-multichannel-widget-ios",
       "learningProject": false,
@@ -1169,78 +1169,6 @@
       "id": "proj59"
     },
     {
-      "title": ".Node Build",
-      "category": "other",
-      "description": "A tool to download, compile, and install Node on Unix-like systems.",
-      "image": "",
-      "link": "https://github.com/nodenv/node-build",
-      "learningProject": false,
-      "technologies": [],
-      "id": "proj60"
-    },
-    {
-      "title": "Nodejs",
-      "category": "other",
-      "description": "Node.js plugin for [asdf](https://github.com/asdf-vm/asdf) version manager",
-      "image": "",
-      "link": "https://github.com/asdf-vm/asdf-nodejs",
-      "learningProject": false,
-      "technologies": [],
-      "id": "proj61"
-    },
-    {
-      "title": "Pyenv",
-      "category": "other",
-      "description": "[![Join the chat at https://gitter.im/yyuu/pyenv](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/yyuu/pyenv?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)",
-      "image": "",
-      "link": "https://github.com/pyenv/pyenv",
-      "learningProject": false,
-      "technologies": [
-        "Docker"
-      ],
-      "id": "proj62"
-    },
-    {
-      "title": "Python",
-      "category": "other",
-      "description": "[![Build Status](https://travis-ci.org/danhper/asdf-python.svg?branch=master)](https://travis-ci.org/danhper/asdf-python)",
-      "image": "",
-      "link": "https://github.com/danhper/asdf-python",
-      "learningProject": false,
-      "technologies": [],
-      "id": "proj63"
-    },
-    {
-      "title": "Golang",
-      "category": "other",
-      "description": "[![CI](https://github.com/asdf-community/asdf-golang/actions/workflows/main.yml/badge.svg)](https://github.com/asdf-community/asdf-golang/actions/workflows/main.yml)",
-      "image": "",
-      "link": "https://github.com/asdf-community/asdf-golang",
-      "learningProject": false,
-      "technologies": [],
-      "id": "proj64"
-    },
-    {
-      "title": "Flutter",
-      "category": "other",
-      "description": "[Flutter](https://flutter.dev/) plugin for the [asdf version manager](https://github.com/asdf-vm/asdf). This includes both **flutter** and **dart**.",
-      "image": "",
-      "link": "https://github.com/oae/asdf-flutter",
-      "learningProject": false,
-      "technologies": [],
-      "id": "proj65"
-    },
-    {
-      "title": "Dicoding Chalenge",
-      "category": "other",
-      "description": "TODO: Add description",
-      "image": "",
-      "link": "",
-      "learningProject": true,
-      "technologies": [],
-      "id": "proj66"
-    },
-    {
       "title": "Sun3Dev.Github.Io",
       "category": "other",
       "description": "This is the web deployment of CareMinderApp, a comprehensive digital companion for personal care management.",
@@ -1296,16 +1224,6 @@
       "id": "proj70"
     },
     {
-      "title": "Swe Progress",
-      "category": "other",
-      "description": "TODO: Add description",
-      "image": "",
-      "link": "",
-      "learningProject": false,
-      "technologies": [],
-      "id": "proj71"
-    },
-    {
       "title": "Amed12.Github.Io",
       "category": "web",
       "description": "<h3 align=\"center\">My name is Achmad Fathullah and I'm a software developer/Mobile Developer Android. I'm from Indonesia, living in Malang, East Java and currently working at PT. Vascomm Solusi Teknologi.</h3>",
@@ -1322,16 +1240,6 @@
       "id": "proj72"
     },
     {
-      "title": "Codebase To Course",
-      "category": "other",
-      "description": "A Claude Code skill that turns any codebase into a beautiful, interactive single-page HTML course.",
-      "image": "",
-      "link": "https://github.com/zarazhangrui/codebase-to-course",
-      "learningProject": false,
-      "technologies": [],
-      "id": "proj73"
-    },
-    {
       "title": "Resilient Noether",
       "category": "other",
       "description": "OBA Helper workflow automation tool",
@@ -1343,38 +1251,6 @@
         "Vite"
       ],
       "id": "proj74"
-    },
-    {
-      "title": "Zsh Autosuggestions",
-      "category": "other",
-      "description": "_[Fish](http://fishshell.com/)-like fast/unobtrusive autosuggestions for zsh._",
-      "image": "",
-      "link": "https://github.com/zsh-users/zsh-autosuggestions",
-      "learningProject": false,
-      "technologies": [
-        "Docker"
-      ],
-      "id": "proj75"
-    },
-    {
-      "title": "Zsh Syntax Highlighting",
-      "category": "other",
-      "description": "=======================",
-      "image": "",
-      "link": "https://github.com/zsh-users/zsh-syntax-highlighting",
-      "learningProject": false,
-      "technologies": [],
-      "id": "proj76"
-    },
-    {
-      "title": "Oba Helper",
-      "category": "other",
-      "description": "TODO: Add description",
-      "image": "",
-      "link": "https://github.com/fathullahqiscus/support-oba-helper",
-      "learningProject": false,
-      "technologies": [],
-      "id": "proj77"
     },
     {
       "title": "Intent Based Engine Agentlabs",

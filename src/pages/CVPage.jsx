@@ -315,7 +315,7 @@ const CVPage = ({ data }) => {
               <li><strong>Certifications:</strong> Filtered to show only position-relevant credentials</li>
             </ul>
             <p className="text-green-800 text-sm mt-3 font-semibold">
-              💡 Tip: Select the position you're applying for before downloading to maximize ATS score!
+              💡 Tip: Select the position you&apos;re applying for before downloading to maximize ATS score!
             </p>
           </div>
 

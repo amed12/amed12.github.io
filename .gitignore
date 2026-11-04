@@ -26,3 +26,7 @@ dist-ssr
 
 # Backup
 backup-old-site
+
+# Knowledge hub internal (catatan kerja, client, tiket) — LOKAL SAJA.
+# Repo ini PUBLIC + GitHub Pages. Dijaga juga oleh .githooks/pre-commit dan CI.
+/internal/
