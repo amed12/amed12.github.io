@@ -65,9 +65,9 @@
 - [x] **B20.** Data hygiene: hapus 12 proyek hasil career-dump yang bukan karya sendiri (asdf/pyenv/zsh/node-build/codebase-to-course) atau masih `TODO`; `src/data.test.js` menjaga `data.json`; skill scanner wajib review kerahasiaan.
 - [x] **B21.** CI: job `verify` (guard internal/, lint, test, build) di setiap PR/push; `deploy` hanya di `master` setelah verify lolos. Node 22 via `.nvmrc`, dependabot, CODEOWNERS.
 - [x] **B22.** Kolaborasi: CONTRIBUTING.md, template PR & issue, README/SETUP/CLAUDE.md diperbarui, dokumen dashboard lama diarsipkan ke `docs/archive/`. Folder lokal `internal/` di-gitignore + diblokir pre-commit hook & CI.
-- [x] **B23.** Review proyek client di `data.json` selesai (2026-11-04): 20 proyek client/pribadi/kurang relevan dihapus (71 → 51 proyek), 6 proyek backend digeneralisasi (nama + deskripsi tanpa nama client/produk internal), 10 proyek lain dinetralkan namanya, nama pasangan di proyek undangan dibuang, deskripsi proyek budget dipangkas. Path gambar yang memuat nama client dikosongkan. Sisa keputusan pemilik di B25.
+- [ ] **B23.** Review proyek client di `data.json`: perubahan pembersihan konten sebelumnya dibatalkan atas permintaan pemilik; perlu ditinjau kembali sesuai preferensi pemilik.
 - [ ] **B24.** *(Pengaturan GitHub, pemilik)* Aktifkan branch protection `master`: wajib PR + status check `verify` hijau.
-- [ ] **B25.** *(Keputusan pemilik)* Sisa review konten: (a) PII di `profile` dan `testimonials`; (b) nama client freelance di `exp6`; (c) proyek Dealaja/MyBB (proj13, proj32, proj38); (d) pangkas deskripsi proj5, proj17, proj18; (e) cek proj10.
+- [ ] **B25.** Review konten: pemilik memilih mempertahankan data pribadi dan nama client yang sudah publik; deskripsi proj5, proj17, dan proj18 sudah dipangkas. Masih perlu konfirmasi kelayakan proyek Dealaja/MyBB (proj13, proj32, proj38) dan apakah Qiscus SDK Core benar dipakai di proj10.
 
 ## Sprint Plan (~1 minggu per sprint)
 
@@ -78,7 +78,7 @@
 | 3 | "Konten & keamanan" | B2 (sisa deskripsi proyek), B7 | ✅ Done | Seluruh konten publik lolos "human read test" |
 | 4 | "Long-term health" | B9, B10, B11, B12 | ✅ Done | Config posisi single-source, test hijau, repo bersih |
 | 5 | "Share portofolio multi-posisi" | B13, B14, B15, B16 | ✅ Done | `/share?positions=a,b` bisa dibuka langsung di GH Pages (query utuh), builder + Copy Link jalan, konten terfilter union keywords, test cvScoring hijau, lint & build lolos |
-| 6 | "Production ready & kolaborasi" | B18–B23 (B24, B25 menunggu pemilik) | 🔶 In progress | Lint/test/build hijau di CI, audit 0, deploy tergating, dokumen kolaborasi lengkap, data.json bebas TODO & repo pihak ketiga |
+| 6 | "Production ready & kolaborasi" | B18–B22 (B23–B25 belum selesai) | 🔶 In progress | Lint/test/build hijau di CI, audit 0, deploy tergating, dokumen kolaborasi lengkap, data.json bebas TODO & repo pihak ketiga |
 
 Status legend: 🔲 Not started · 🔶 In progress · ✅ Done
 
