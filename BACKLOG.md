@@ -3,7 +3,7 @@
 > Sumber acuan tunggal untuk perbaikan portfolio/CV site.
 > **Aturan:** setiap kali ada pekerjaan dari backlog ini dikerjakan/selesai, update status di file ini (checkbox + kolom status sprint).
 >
-> Dibuat: 2026-08-07 (hasil review total project). Terakhir diupdate: 2026-09-23 (Sprint 6: production readiness & kolaborasi B18–B22).
+> Dibuat: 2026-08-07 (hasil review total project). Terakhir diupdate: 2026-11-04 (Sprint 6: production readiness & kolaborasi B18–B23).
 
 ## Hasil Review (Ringkasan)
 
@@ -65,8 +65,9 @@
 - [x] **B20.** Data hygiene: hapus 12 proyek hasil career-dump yang bukan karya sendiri (asdf/pyenv/zsh/node-build/codebase-to-course) atau masih `TODO`; `src/data.test.js` menjaga `data.json`; skill scanner wajib review kerahasiaan.
 - [x] **B21.** CI: job `verify` (guard internal/, lint, test, build) di setiap PR/push; `deploy` hanya di `master` setelah verify lolos. Node 22 via `.nvmrc`, dependabot, CODEOWNERS.
 - [x] **B22.** Kolaborasi: CONTRIBUTING.md, template PR & issue, README/SETUP/CLAUDE.md diperbarui, dokumen dashboard lama diarsipkan ke `docs/archive/`. Folder lokal `internal/` di-gitignore + diblokir pre-commit hook & CI.
-- [ ] **B23.** *(Keputusan pemilik)* Review proyek client Qiscus di `data.json` (Astra Insurance, Iami Bot, Panorama JTB, Demo Melawai, Bank Raya, Intent Based Engine AgentLabs, Qismo/Tencent, MWT Bot, Gbr Channel, Custom Sessional Widget, Chat History Service, Qiscus Support Claude Skills, dll.) — hapus atau tulis generik; plus entri pribadi/kurang relevan (Demo Istri, Important Cert, Amed12.Github.Io, Resilient Noether) dan deskripsi hasil copy README.
+- [x] **B23.** Review proyek client di `data.json` selesai (2026-11-04): 20 proyek client/pribadi/kurang relevan dihapus (71 → 51 proyek), 6 proyek backend digeneralisasi (nama + deskripsi tanpa nama client/produk internal), 10 proyek lain dinetralkan namanya, nama pasangan di proyek undangan dibuang, deskripsi proyek budget dipangkas. Path gambar yang memuat nama client dikosongkan. Sisa keputusan pemilik di B25.
 - [ ] **B24.** *(Pengaturan GitHub, pemilik)* Aktifkan branch protection `master`: wajib PR + status check `verify` hijau.
+- [ ] **B25.** *(Keputusan pemilik)* Sisa review konten: (a) PII di `profile` dan `testimonials`; (b) nama client freelance di `exp6`; (c) proyek Dealaja/MyBB (proj13, proj32, proj38); (d) pangkas deskripsi proj5, proj17, proj18; (e) cek proj10.
 
 ## Sprint Plan (~1 minggu per sprint)
 
@@ -77,7 +78,7 @@
 | 3 | "Konten & keamanan" | B2 (sisa deskripsi proyek), B7 | ✅ Done | Seluruh konten publik lolos "human read test" |
 | 4 | "Long-term health" | B9, B10, B11, B12 | ✅ Done | Config posisi single-source, test hijau, repo bersih |
 | 5 | "Share portofolio multi-posisi" | B13, B14, B15, B16 | ✅ Done | `/share?positions=a,b` bisa dibuka langsung di GH Pages (query utuh), builder + Copy Link jalan, konten terfilter union keywords, test cvScoring hijau, lint & build lolos |
-| 6 | "Production ready & kolaborasi" | B18–B22 (B23, B24 menunggu pemilik) | 🔶 In progress | Lint/test/build hijau di CI, audit 0, deploy tergating, dokumen kolaborasi lengkap, data.json bebas TODO & repo pihak ketiga |
+| 6 | "Production ready & kolaborasi" | B18–B23 (B24, B25 menunggu pemilik) | 🔶 In progress | Lint/test/build hijau di CI, audit 0, deploy tergating, dokumen kolaborasi lengkap, data.json bebas TODO & repo pihak ketiga |
 
 Status legend: 🔲 Not started · 🔶 In progress · ✅ Done
 
