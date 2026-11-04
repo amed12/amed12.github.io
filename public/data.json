@@ -603,10 +603,10 @@
     },
     {
       "id": "proj22",
-      "title": "Garuda Indonesia - Android App",
+      "title": "Airline Booking App (Android)",
       "category": "mobile",
-      "description": "Garuda Indonesia's Android app — flight booking, check-in, and passenger services, built with MVVM and Retrofit.",
-      "image": "/projects/garuda-android.png",
+      "description": "Airline Android app — flight booking, check-in, and passenger services, built with MVVM and Retrofit.",
+      "image": "",
       "link": "",
       "learningProject": false,
       "technologies": [
@@ -619,10 +619,10 @@
     },
     {
       "id": "proj23",
-      "title": "Garuda Indonesia - iOS App",
+      "title": "Airline Booking App (iOS)",
       "category": "mobile",
-      "description": "iOS counterpart to the Garuda Indonesia Android app — same flight booking, check-in, and passenger management features, built with Swift/UIKit and Combine.",
-      "image": "/projects/garuda-ios.png",
+      "description": "iOS counterpart to the airline Android app — same flight booking, check-in, and passenger management features, built with Swift/UIKit and Combine.",
+      "image": "",
       "link": "",
       "learningProject": false,
       "technologies": [
@@ -701,10 +701,10 @@
     },
     {
       "id": "proj28",
-      "title": "BTPN Multichannel React Native",
+      "title": "Mobile Banking App (React Native)",
       "category": "mobile",
-      "description": "React Native app for BTPN's multichannel banking — account management, transfers, and customer support tied into a shared backend across channels.",
-      "image": "/projects/btpn-rn.png",
+      "description": "React Native app for multichannel banking — account management, transfers, and customer support tied into a shared backend across channels.",
+      "image": "",
       "link": "",
       "learningProject": false,
       "technologies": [
@@ -716,40 +716,11 @@
       ]
     },
     {
-      "id": "proj29",
-      "title": "Jitsi Meet Integration",
-      "category": "mobile",
-      "description": "Integrated the Jitsi Meet SDK into a React Native app for video calls, screen sharing, and in-call chat without standing up a custom WebRTC signaling server.",
-      "image": "/projects/jitsi-meet.png",
-      "link": "https://github.com/amed12/jitsi-meet",
-      "learningProject": false,
-      "technologies": [
-        "React Native",
-        "Jitsi SDK",
-        "WebRTC",
-        "TypeScript"
-      ]
-    },
-    {
-      "id": "proj30",
-      "title": "Qiscus Meet IT - Video Meeting Platform",
-      "category": "mobile",
-      "description": "Video meeting app for Qiscus's internal IT team, built on React Native and WebRTC for calls and screen sharing.",
-      "image": "/projects/qiscus-meet.png",
-      "link": "",
-      "learningProject": false,
-      "technologies": [
-        "React Native",
-        "WebRTC",
-        "Video Conferencing"
-      ]
-    },
-    {
       "id": "proj31",
-      "title": "AHM Honda - Automotive App",
+      "title": "Dealership Service App",
       "category": "mobile",
-      "description": "App for AHM (Astra Honda Motor) covering vehicle info, service booking, and customer management for dealerships, built with Kotlin/MVVM.",
-      "image": "/projects/ahm-honda.png",
+      "description": "App covering vehicle info, service booking, and customer management for dealerships, built with Kotlin/MVVM.",
+      "image": "",
       "link": "",
       "learningProject": false,
       "technologies": [
@@ -811,10 +782,10 @@
     },
     {
       "id": "proj35",
-      "title": "Dunia Games Call - Gaming Platform",
+      "title": "In-app Voice/Video Call (WebRTC)",
       "category": "mobile",
-      "description": "In-app voice/video calling for the Dunia Games platform, built on WebRTC so players can talk while gaming without leaving the app.",
-      "image": "/projects/dg-call.png",
+      "description": "In-app voice/video calling for a gaming platform, built on WebRTC so players can talk while gaming without leaving the app.",
+      "image": "",
       "link": "",
       "learningProject": false,
       "technologies": [
@@ -826,10 +797,10 @@
     },
     {
       "id": "proj36",
-      "title": "Mekari Chat Android",
+      "title": "Custom Android Chat Module",
       "category": "mobile",
-      "description": "Custom Android chat module built for Mekari's platform — file sharing, group chat, and admin-level moderation controls over a WebSocket connection.",
-      "image": "/projects/mekari-chat.png",
+      "description": "Custom Android chat module built for a client platform — file sharing, group chat, and admin-level moderation controls over a WebSocket connection.",
+      "image": "",
       "link": "",
       "learningProject": false,
       "technologies": [
@@ -841,10 +812,10 @@
     },
     {
       "id": "proj37",
-      "title": "Everpro Chat - Flutter",
+      "title": "Internal Team Chat (Flutter)",
       "category": "mobile",
-      "description": "Flutter chat app built for Everpro's internal team communication — messaging, file sharing, and hooks into their existing business tools.",
-      "image": "/projects/everpro-chat.png",
+      "description": "Flutter chat app built for a client's internal team communication — messaging, file sharing, and hooks into their existing business tools.",
+      "image": "",
       "link": "",
       "learningProject": false,
       "technologies": [
@@ -904,8 +875,8 @@
       "id": "proj41",
       "title": "Wedding Invitation Sites",
       "category": "web",
-      "description": "Collection of beautiful wedding invitation websites including our-love-story (interactive timeline), wedding-invite (elegant template), weddingfathulririn (custom site), and felaundangan (invitation platform). Features responsive design, photo galleries, and RSVP management.",
-      "image": "/projects/wedding-sites.png",
+      "description": "Kumpulan website undangan pernikahan digital dengan timeline interaktif, galeri foto, dan pengelolaan RSVP. Dibuat dengan React, Vite, dan Tailwind CSS.",
+      "image": "",
       "link": "",
       "learningProject": false,
       "technologies": [
@@ -949,26 +920,11 @@
       ]
     },
     {
-      "id": "proj44",
-      "title": "Bank Raya Sample Integration",
-      "category": "mobile",
-      "description": "Flutter sample showing how to integrate with Bank Raya's API — request signing, secure token storage, and typical banking operations (balance check, transfer).",
-      "image": "/projects/bankraya.png",
-      "link": "",
-      "learningProject": false,
-      "technologies": [
-        "Flutter",
-        "Dart",
-        "REST API",
-        "Secure Storage"
-      ]
-    },
-    {
       "id": "proj45",
-      "title": "Rewigo Apps - Localization Demo",
+      "title": "Flutter Localization Demo",
       "category": "mobile",
-      "description": "Flutter localization demo for the Rewigo app — switching UI language/region at runtime using the intl package.",
-      "image": "/projects/rewigo.png",
+      "description": "Flutter localization demo — switching UI language/region at runtime using the intl package.",
+      "image": "",
       "link": "",
       "learningProject": true,
       "technologies": [
@@ -992,12 +948,11 @@
         "Flame Engine",
         "Game Development"
       ]
-    }
-  ,
+    },
     {
-      "title": "Chat History Service",
+      "title": "Chat History Replication Service",
       "category": "web",
-      "description": "A robust, enterprise-grade backend service written in Go (Golang) using **Clean Architecture** principles. This service acts as a middleware that consumes Qiscus Omnichannel webhooks (incoming/outgoing messages, ticket resolved status) and replicates them into an independent PostgreSQL database.",
+      "description": "Backend Go yang menerima webhook pesan dan status tiket, lalu menyimpannya ke database PostgreSQL terpisah sebagai riwayat chat independen. Disusun dengan Clean Architecture memakai Gin dan GORM.",
       "image": "",
       "link": "",
       "learningProject": false,
@@ -1028,178 +983,9 @@
       "id": "proj48"
     },
     {
-      "title": "Kepoin",
-      "category": "mobile",
-      "description": "Kepoin - Your Pocket Toolbox monorepo workspace",
-      "image": "",
-      "link": "",
-      "learningProject": false,
-      "technologies": [
-        "Dart",
-        "Flutter"
-      ],
-      "id": "proj49"
-    },
-    {
-      "title": "Learnwithfath.Github.Io",
-      "category": "other",
-      "description": "Interactive learning platform using Google Codelabs",
-      "image": "",
-      "link": "",
-      "learningProject": true,
-      "technologies": [],
-      "id": "proj50"
-    },
-    {
-      "title": "Yugioh Masterdeck",
-      "category": "web",
-      "description": "An interactive, static-first, and data-driven Yu-Gi-Oh combo visualizer and practice cockpit built to prevent user misplays under complex branching conditions (Success paths vs. Negated paths).",
-      "image": "",
-      "link": "https://github.com/amed12/ygh-ilustrator",
-      "learningProject": false,
-      "technologies": [
-        "Next.js",
-        "React",
-        "Tailwind CSS",
-        "TypeScript",
-        "Vite"
-      ],
-      "id": "proj51"
-    },
-    {
-      "title": "Support Multichannel Widget Embed Version",
-      "category": "other",
-      "description": "A lightweight, production-ready customer support chat widget built with vanilla JavaScript following SOLID principles.",
-      "image": "",
-      "link": "",
-      "learningProject": false,
-      "technologies": [],
-      "id": "proj52"
-    },
-    {
-      "title": "Qismo Tencent",
-      "category": "web",
-      "description": "You can find the documentation for this application [here](/docs/README.md)",
-      "image": "",
-      "link": "",
-      "learningProject": false,
-      "technologies": [
-        "Docker",
-        "GORM",
-        "Go"
-      ],
-      "id": "proj53"
-    },
-    {
-      "title": "Mwt Bot",
-      "category": "other",
-      "description": "Chat bot for supervise/support agent activity.",
-      "image": "",
-      "link": "",
-      "learningProject": false,
-      "technologies": [
-        "Docker",
-        "Webpack",
-        "jQuery"
-      ],
-      "id": "proj54"
-    },
-    {
-      "title": "Tencent Video",
-      "category": "web",
-      "description": "This template should help get you started developing with Vue 3 in Vite.",
-      "image": "",
-      "link": "",
-      "learningProject": false,
-      "technologies": [
-        "Axios",
-        "Docker",
-        "TypeScript",
-        "Vite",
-        "Vue.js"
-      ],
-      "id": "proj55"
-    },
-    {
-      "title": "Demo Melawai",
-      "category": "other",
-      "description": "Qiscus Omnichannel custom channel menu widget + customization showcase dashboard — Demo Melawai",
-      "image": "",
-      "link": "https://github.com/Qiscus-Integration/custom-live-widget-example",
-      "learningProject": true,
-      "technologies": [],
-      "id": "proj56"
-    },
-    {
-      "title": "Important Cert",
-      "category": "other",
-      "description": "run ./gradlew signingReport",
-      "image": "",
-      "link": "https://github.com/amed12/important-cert",
-      "learningProject": false,
-      "technologies": [],
-      "id": "proj57"
-    },
-    {
-      "title": "Gbr Channel Fe",
-      "category": "web",
-      "description": "This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.",
-      "image": "",
-      "link": "",
-      "learningProject": false,
-      "technologies": [
-        "Axios",
-        "Docker",
-        "Express.js",
-        "Tailwind CSS",
-        "TypeScript",
-        "Vite",
-        "Vue.js"
-      ],
-      "id": "proj58"
-    },
-    {
-      "title": "Demo Istri",
-      "category": "other",
-      "description": "Aplikasi web sederhana (tanpa backend/database) untuk mencatat utang keluarga, melihat riwayat cicilan per bulan, dan mendapat proyeksi keuangan otomatis. Dibuat dengan HTML + [Alpine.js](https://alpinejs.dev/) + CSS murni, di-deploy sebagai static site di Cloudflare Pages dengan proteksi Basic Auth",
-      "image": "",
-      "link": "",
-      "learningProject": true,
-      "technologies": [],
-      "id": "proj59"
-    },
-    {
-      "title": "Sun3Dev.Github.Io",
-      "category": "other",
-      "description": "This is the web deployment of CareMinderApp, a comprehensive digital companion for personal care management.",
-      "image": "",
-      "link": "https://github.com/sun3dev/sun3dev.github.io",
-      "learningProject": false,
-      "technologies": [],
-      "id": "proj67"
-    },
-    {
-      "title": "Kepoin Flutter",
-      "category": "mobile",
-      "description": "KepoIn - Track and manage your items efficiently.",
-      "image": "",
-      "link": "https://github.com/amed12/kepoin-flutter",
-      "learningProject": false,
-      "technologies": [
-        "Cloud Firestore",
-        "Dart",
-        "Firebase",
-        "Firebase Auth",
-        "Flutter",
-        "Riverpod",
-        "Shared Preferences"
-      ],
-      "id": "proj68"
-    },
-    {
       "title": "Aturen Your Budget",
       "category": "web",
-      "description": "Aplikasi pencatatan keuangan keluarga yang sangat simpel, berfokus pada kecepatan input (di bawah 5 detik) dan alokasi *Reserved Budget* (Dana Wajib).",
+      "description": "Aplikasi pencatatan keuangan pribadi yang simpel dan fokus pada kecepatan input, dengan alokasi dana wajib.",
       "image": "",
       "link": "https://github.com/amed12/aturen-your-budget",
       "learningProject": false,
@@ -1214,48 +1000,9 @@
       "id": "proj69"
     },
     {
-      "title": "Backend Roadmap",
-      "category": "other",
-      "description": "This roadmap is designed for beginners to effectively master backend development with a focus on LLM (Large Language Model) integration. It's specifically tailored for the Go ecosystem used at Qiscus.",
-      "image": "",
-      "link": "https://github.com/amed12/backend-roadmap",
-      "learningProject": false,
-      "technologies": [],
-      "id": "proj70"
-    },
-    {
-      "title": "Amed12.Github.Io",
+      "title": "Custom API Fulfillment untuk Chatbot",
       "category": "web",
-      "description": "<h3 align=\"center\">My name is Achmad Fathullah and I'm a software developer/Mobile Developer Android. I'm from Indonesia, living in Malang, East Java and currently working at PT. Vascomm Solusi Teknologi.</h3>",
-      "image": "",
-      "link": "",
-      "learningProject": false,
-      "technologies": [
-        "Lucide Icons",
-        "React",
-        "Tailwind CSS",
-        "Vite",
-        "jsPDF"
-      ],
-      "id": "proj72"
-    },
-    {
-      "title": "Resilient Noether",
-      "category": "other",
-      "description": "OBA Helper workflow automation tool",
-      "image": "",
-      "link": "",
-      "learningProject": false,
-      "technologies": [
-        "TypeScript",
-        "Vite"
-      ],
-      "id": "proj74"
-    },
-    {
-      "title": "Intent Based Engine Agentlabs",
-      "category": "web",
-      "description": "Backend integration (Custom API / Fulfillment webhook) for Qiscus Intent-based Engine - AgentLabs",
+      "description": "Backend Express yang menjadi webhook fulfillment untuk chatbot berbasis intent, dengan unit test memakai Jest. Dibuat untuk menjembatani data dari sistem eksternal ke percakapan bot.",
       "image": "",
       "link": "",
       "learningProject": false,
@@ -1267,9 +1014,9 @@
       "id": "proj78"
     },
     {
-      "title": "Astra Insurance",
+      "title": "WhatsApp Flow Webhook Service",
       "category": "web",
-      "description": "Astra Insurance is a webhook handler service built with Go to manage integrations between WhatsApp Flow and Agent Labs. This service processes webhook events from WhatsApp Flow form submissions and Agent Labs interactions, enabling seamless communication and data flow between these platforms.",
+      "description": "Layanan backend Go yang menerima webhook dari form WhatsApp Flow dan meneruskannya ke platform chatbot agar data pengisian form bisa diproses otomatis. Dibangun dengan Gin dan GORM, dijalankan lewat Docker.",
       "image": "",
       "link": "",
       "learningProject": false,
@@ -1281,9 +1028,9 @@
       "id": "proj79"
     },
     {
-      "title": "Custom Sessional Widget",
+      "title": "Chat Archive Service",
       "category": "web",
-      "description": "Layanan Golang mandiri (standalone) ini berfungsi untuk mengarsipkan pesan ruang obrolan Qiscus dan menyajikannya ke aplikasi klien (misal: Flutter) saat *sessional mode* token telah kedaluwarsa.",
+      "description": "Service Go mandiri yang mengarsipkan riwayat chat dan menyajikannya ke aplikasi mobile saat sesi token sudah kedaluwarsa. Dijalankan lewat Docker.",
       "image": "",
       "link": "",
       "learningProject": false,
@@ -1294,19 +1041,9 @@
       "id": "proj80"
     },
     {
-      "title": "Qiscus Support Claude Skills",
-      "category": "other",
-      "description": "Kumpulan skill Claude Code untuk kebutuhan support & debugging tim Solution and Support.",
-      "image": "",
-      "link": "",
-      "learningProject": false,
-      "technologies": [],
-      "id": "proj81"
-    },
-    {
-      "title": "Iami Bot",
+      "title": "Custom Bot Routing Service",
       "category": "web",
-      "description": "Service for Custom bot routing",
+      "description": "Service Go yang mengarahkan percakapan masuk ke bot atau agen sesuai aturan tertentu. Memakai Echo dan GORM, dan dijalankan lewat Docker.",
       "image": "",
       "link": "",
       "learningProject": false,
@@ -1319,9 +1056,9 @@
       "id": "proj82"
     },
     {
-      "title": "Panorama Jtb Chatbot",
+      "title": "Chatbot Fulfillment Webhook Service",
       "category": "web",
-      "description": "Intermediary Service for Handling Bot Fulfillments and Webhooks between Qiscus Multichannel and Dialogflow.",
+      "description": "Service perantara di Go yang menangani webhook dan fulfillment antara platform chat dan Dialogflow. Memakai Gin dan GORM, dan dijalankan lewat Docker.",
       "image": "",
       "link": "",
       "learningProject": false,
